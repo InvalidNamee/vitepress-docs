@@ -22,4 +22,3 @@ features:
   - title: 但是删了太丑了他必须在这儿
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
-
