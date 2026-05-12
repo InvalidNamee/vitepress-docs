@@ -36,6 +36,11 @@
   padding: 18px;
 }
 
+/* increase markmap mind map font size */
+.markmap-container svg {
+  font-size: 18px;
+}
+
 /* used in reference/default-theme-search */
 img[src='/search.png'] {
   width: 100%;

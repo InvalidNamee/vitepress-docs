@@ -1,7 +1,8 @@
 import { defineConfig } from 'vitepress'
 import { withSidebar } from 'vitepress-sidebar';
-import type { UserConfig, DefaultTheme } from 'vitepress' 
+import type { UserConfig, DefaultTheme } from 'vitepress'
 import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
+import markmapPlugin from '@vitepress-plugin/markmap'
 
 // https://vitepress.dev/reference/site-config
 const vitePressOptions: UserConfig<DefaultTheme.Config> = {
@@ -65,7 +66,7 @@ const vitePressOptions: UserConfig<DefaultTheme.Config> = {
   },
 
   vite: {
-    plugins: [groupIconVitePlugin()]
+    plugins: [groupIconVitePlugin(), markmapPlugin()],
   },
 };
 
