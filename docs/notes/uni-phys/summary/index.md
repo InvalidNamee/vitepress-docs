@@ -151,7 +151,7 @@ $$
 
 $$
 \begin{align}
-  \varPhi &= \oiint_S \vec{E} \cdot \mathrm{d} \vec{S} = \frac{1}{\varepsilon_0} \sum_{S\text{内}} q  
+  \varPhi &= {\LARGE ∯}_S \vec{E} \cdot \mathrm{d} \vec{S} = \frac{1}{\varepsilon_0} \sum_{S\text{内}} q  
 \end{align}
 $$
 
