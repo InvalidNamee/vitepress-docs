@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { withSidebar } from 'vitepress-sidebar';
 import type { UserConfig, DefaultTheme } from 'vitepress'
+import markdownItContainer from 'markdown-it-container'
 import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
 import { chineseSearchOptimize, pagefindPlugin } from 'vitepress-plugin-pagefind'
 import markmapPlugin from '@vitepress-plugin/markmap'
@@ -56,6 +57,13 @@ const vitePressOptions: UserConfig<DefaultTheme.Config> = {
   markdown: {
     config(md) {
       md.use(groupIconMdPlugin)
+      md.use(markdownItContainer, 'no-index', {
+        render(tokens, idx) {
+          return tokens[idx].nesting === 1
+            ? '<div data-pagefind-ignore>\n'
+            : '</div>\n'
+        }
+      })
     },
     math: true,
     image: {
@@ -71,8 +79,7 @@ const vitePressOptions: UserConfig<DefaultTheme.Config> = {
         customSearchQuery: chineseSearchOptimize,
         btnPlaceholder: '搜索',
         placeholder: '搜索文档',
-        emptyText: '没有搜索结果',
-        excludeSelector: ['pre']
+        emptyText: '没有搜索结果'
       })
     ],
   },
