@@ -2,10 +2,12 @@ import { defineConfig } from 'vitepress'
 import { withSidebar } from 'vitepress-sidebar';
 import type { UserConfig, DefaultTheme } from 'vitepress'
 import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
+import { chineseSearchOptimize, pagefindPlugin } from 'vitepress-plugin-pagefind'
 import markmapPlugin from '@vitepress-plugin/markmap'
 
 // https://vitepress.dev/reference/site-config
 const vitePressOptions: UserConfig<DefaultTheme.Config> = {
+  lang: 'zh-CN',
   title: "Star 的档案库",
   description: "刷题记录 & 结构化笔记",
   cleanUrls: true,
@@ -29,10 +31,6 @@ const vitePressOptions: UserConfig<DefaultTheme.Config> = {
     footer: {
       message: '© 2026 InvalidNamee. All Rights Reserved.',
       copyright: '<div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:4px 12px;margin-top:8px;font-size:13px;"><a style="color:var(--vp-c-brand-1);text-decoration:none;font-weight:500;display:flex;align-items:center;gap:4px;" target="_blank" href="https://beian.mps.gov.cn/#/query/webSearch?code=13042702000231"><img src="/gongan.png" style="width:14px;height:14px;" alt="公安号"><span>冀公网安备13042702000231号</span></a><span style="color:rgba(128,128,128,0.4);">/</span><a style="color:var(--vp-c-brand-1);text-decoration:none;font-weight:500;" target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index">冀ICP备2026000059号-1</a></div>',
-    },
-
-    search: {
-      provider: 'local'
     },
 
     outline: {
@@ -66,7 +64,17 @@ const vitePressOptions: UserConfig<DefaultTheme.Config> = {
   },
 
   vite: {
-    plugins: [groupIconVitePlugin(), markmapPlugin()],
+    plugins: [
+      groupIconVitePlugin(),
+      markmapPlugin(),
+      pagefindPlugin({
+        customSearchQuery: chineseSearchOptimize,
+        btnPlaceholder: '搜索',
+        placeholder: '搜索文档',
+        emptyText: '没有搜索结果',
+        excludeSelector: ['pre']
+      })
+    ],
   },
 };
 
