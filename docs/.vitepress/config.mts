@@ -3,7 +3,6 @@ import { withSidebar } from 'vitepress-sidebar';
 import type { UserConfig, DefaultTheme } from 'vitepress'
 import markdownItContainer from 'markdown-it-container'
 import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
-import { chineseSearchOptimize, pagefindPlugin } from 'vitepress-plugin-pagefind'
 import markmapPlugin from '@vitepress-plugin/markmap'
 
 // https://vitepress.dev/reference/site-config
@@ -28,6 +27,15 @@ const vitePressOptions: UserConfig<DefaultTheme.Config> = {
     socialLinks: [
       { icon: 'github', link: 'https://github.com/InvalidNamee/vitepress-docs' }
     ],
+
+    search: {
+      provider: 'algolia',
+      options: {
+        appId: 'AZ0CRCTFDM',
+        apiKey: '7504d37964350a8efdb9fb2366d6ab71',
+        indexName: 'vitepress-docs',
+      },
+    },
 
     footer: {
       message: '© 2026 InvalidNamee. All Rights Reserved.',
@@ -74,13 +82,7 @@ const vitePressOptions: UserConfig<DefaultTheme.Config> = {
   vite: {
     plugins: [
       groupIconVitePlugin(),
-      markmapPlugin(),
-      pagefindPlugin({
-        customSearchQuery: chineseSearchOptimize,
-        btnPlaceholder: '搜索',
-        placeholder: '搜索文档',
-        emptyText: '没有搜索结果'
-      })
+      markmapPlugin()
     ],
   },
 };
