@@ -1,7 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { withSidebar } from 'vitepress-sidebar';
 import type { UserConfig, DefaultTheme } from 'vitepress'
-import markdownItContainer from 'markdown-it-container'
 import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
 import markmapPlugin from '@vitepress-plugin/markmap'
 
@@ -65,13 +64,6 @@ const vitePressOptions: UserConfig<DefaultTheme.Config> = {
   markdown: {
     config(md) {
       md.use(groupIconMdPlugin)
-      md.use(markdownItContainer, 'no-index', {
-        render(tokens, idx) {
-          return tokens[idx].nesting === 1
-            ? '<div data-pagefind-ignore>\n'
-            : '</div>\n'
-        }
-      })
     },
     math: true,
     image: {
