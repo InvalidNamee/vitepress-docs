@@ -82,7 +82,7 @@ jobs:
               --retry 3 --retry-all-errors \
               --user "$ALGOLIA_CRAWLER_USER_ID:$ALGOLIA_CRAWLER_API_KEY" \
               "https://crawler.algolia.com/api/1/crawlers/$ALGOLIA_CRAWLER_ID/tasks/$ALGOLIA_TASK_ID")"
-            pending="$(jq -er '.pending' <<< "$response")"
+            pending="$(jq -r 'if (.pending | type) == "boolean" then .pending else error("missing boolean pending field") end' <<< "$response")"
 
             if [ "$pending" = "false" ]; then
               echo "Algolia reindex task completed."
