@@ -14,7 +14,7 @@ title: 存储器
 
 ## 三级存储结构
 
-![stucture](stucture.png)
+![structure](structure.png)
 
 - Cache 存储系统，Cache 硬件调度
 - 虚拟存储系统，主要操作系统调度
@@ -76,4 +76,3 @@ title: 存储器
 ## 虚拟存储器
 
 <!-- todo 虚拟存储器 -->
-

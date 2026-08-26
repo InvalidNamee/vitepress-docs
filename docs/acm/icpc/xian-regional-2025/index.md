@@ -169,7 +169,7 @@ int main() {
 - 否则就往一侧递归找下一只企鹅停下的位置；
 - 如果一路都没有这种特殊性质的话最后会变成第三种情况，正好构成一个环，这种情况左行的企鹅和右行的企鹅会分别停在最左边两个和最右边两个的中点。
 
-![Sketch](Sketch.jpeg)
+![sketch](sketch.jpeg)
 
 ## I. Imagined Holly<sup style="color: red">(补题)</sup>
 

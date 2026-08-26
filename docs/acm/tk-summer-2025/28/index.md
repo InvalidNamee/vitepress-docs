@@ -90,7 +90,7 @@ int main() {
 
 然后从左到右做一遍最大子段和和 f 拼接一下取 max 就是答案。
 
-![Sketch.png](Sketch.png)
+![sketch](sketch.png)
 
 第一遍预处理的是红线右边的部分，第二遍顺着遍历的时候处理的是红线左边的部分。
 

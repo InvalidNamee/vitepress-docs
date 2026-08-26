@@ -1,0 +1,972 @@
+[
+  {
+    "from": "/acm/AcWing/geometry/",
+    "to": "/acm/acwing/geometry/",
+    "status": 301
+  },
+  {
+    "from": "/acm/AcWing/math/",
+    "to": "/acm/acwing/math/",
+    "status": 301
+  },
+  {
+    "from": "/acm/CSES/adcanced-techniques/",
+    "to": "/acm/cses/advanced-techniques/",
+    "status": 301
+  },
+  {
+    "from": "/acm/CSES/advanced-techniques/",
+    "to": "/acm/cses/advanced-techniques/",
+    "status": 301
+  },
+  {
+    "from": "/acm/CSES/dp/",
+    "to": "/acm/cses/dp/",
+    "status": 301
+  },
+  {
+    "from": "/acm/CSES/geometry/",
+    "to": "/acm/cses/geometry/",
+    "status": 301
+  },
+  {
+    "from": "/acm/CSES/intro/",
+    "to": "/acm/cses/intro/",
+    "status": 301
+  },
+  {
+    "from": "/acm/CSES/mathematics/",
+    "to": "/acm/cses/mathematics/",
+    "status": 301
+  },
+  {
+    "from": "/acm/CSES/range-queries/",
+    "to": "/acm/cses/range-queries/",
+    "status": 301
+  },
+  {
+    "from": "/acm/CSES/sorting-searching/",
+    "to": "/acm/cses/sorting-searching/",
+    "status": 301
+  },
+  {
+    "from": "/acm/CSES/string/",
+    "to": "/acm/cses/string/",
+    "status": 301
+  },
+  {
+    "from": "/acm/GPLT/",
+    "to": "/acm/gplt/",
+    "status": 301
+  },
+  {
+    "from": "/acm/GPLT/2025cd/",
+    "to": "/acm/gplt/cuit-2025/",
+    "status": 301
+  },
+  {
+    "from": "/acm/GPLT/2026/",
+    "to": "/acm/gplt/national-2026/",
+    "status": 301
+  },
+  {
+    "from": "/acm/GPLT/2026cd/",
+    "to": "/acm/gplt/cuit-2026/",
+    "status": 301
+  },
+  {
+    "from": "/acm/HduSummer26/",
+    "to": "/acm/hdu-summer-2026/",
+    "status": 301
+  },
+  {
+    "from": "/acm/HduSummer26/01",
+    "to": "/acm/hdu-summer-2026/01",
+    "status": 301
+  },
+  {
+    "from": "/acm/HduSummer26/02",
+    "to": "/acm/hdu-summer-2026/02",
+    "status": 301
+  },
+  {
+    "from": "/acm/HduSummer26/08",
+    "to": "/acm/hdu-summer-2026/08",
+    "status": 301
+  },
+  {
+    "from": "/acm/HduSummer26/09",
+    "to": "/acm/hdu-summer-2026/09",
+    "status": 301
+  },
+  {
+    "from": "/acm/ICPC/21icpc-ec/",
+    "to": "/acm/icpc/east-continent-final-2021/",
+    "status": 301
+  },
+  {
+    "from": "/acm/ICPC/22icpc-ec/",
+    "to": "/acm/icpc/east-continent-final-2022/",
+    "status": 301
+  },
+  {
+    "from": "/acm/ICPC/23icpc-ec/",
+    "to": "/acm/icpc/east-continent-final-2023/",
+    "status": 301
+  },
+  {
+    "from": "/acm/ICPC/25icpc-ol-1/",
+    "to": "/acm/icpc/east-continent-online-2025-01/",
+    "status": 301
+  },
+  {
+    "from": "/acm/ICPC/25icpc-xa/",
+    "to": "/acm/icpc/xian-regional-2025/",
+    "status": 301
+  },
+  {
+    "from": "/acm/ICPC/nac2025/",
+    "to": "/acm/icpc/nac-2025/",
+    "status": 301
+  },
+  {
+    "from": "/acm/lanqiao/provincial26",
+    "to": "/acm/lanqiao/provincial-2026",
+    "status": 301
+  },
+  {
+    "from": "/acm/NowCoderSummer25/01/",
+    "to": "/acm/nowcoder-summer-2025/01/",
+    "status": 301
+  },
+  {
+    "from": "/acm/NowCoderSummer25/02/",
+    "to": "/acm/nowcoder-summer-2025/02/",
+    "status": 301
+  },
+  {
+    "from": "/acm/NowCoderSummer25/03/",
+    "to": "/acm/nowcoder-summer-2025/03/",
+    "status": 301
+  },
+  {
+    "from": "/acm/NowCoderSummer25/04/",
+    "to": "/acm/nowcoder-summer-2025/04/",
+    "status": 301
+  },
+  {
+    "from": "/acm/NowCoderSummer25/05/",
+    "to": "/acm/nowcoder-summer-2025/05/",
+    "status": 301
+  },
+  {
+    "from": "/acm/NowCoderSummer25/06/",
+    "to": "/acm/nowcoder-summer-2025/06/",
+    "status": 301
+  },
+  {
+    "from": "/acm/NowCoderSummer25/07/",
+    "to": "/acm/nowcoder-summer-2025/07/",
+    "status": 301
+  },
+  {
+    "from": "/acm/NowCoderSummer25/08/",
+    "to": "/acm/nowcoder-summer-2025/08/",
+    "status": 301
+  },
+  {
+    "from": "/acm/NowCoderSummer25/09/",
+    "to": "/acm/nowcoder-summer-2025/09/",
+    "status": 301
+  },
+  {
+    "from": "/acm/NowCoderSummer25/1/",
+    "to": "/acm/nowcoder-summer-2025/01/",
+    "status": 301
+  },
+  {
+    "from": "/acm/NowCoderSummer25/10/",
+    "to": "/acm/nowcoder-summer-2025/10/",
+    "status": 301
+  },
+  {
+    "from": "/acm/NowCoderSummer25/2/",
+    "to": "/acm/nowcoder-summer-2025/02/",
+    "status": 301
+  },
+  {
+    "from": "/acm/NowCoderSummer25/3/",
+    "to": "/acm/nowcoder-summer-2025/03/",
+    "status": 301
+  },
+  {
+    "from": "/acm/NowCoderSummer25/4/",
+    "to": "/acm/nowcoder-summer-2025/04/",
+    "status": 301
+  },
+  {
+    "from": "/acm/NowCoderSummer25/5/",
+    "to": "/acm/nowcoder-summer-2025/05/",
+    "status": 301
+  },
+  {
+    "from": "/acm/NowCoderSummer25/6/",
+    "to": "/acm/nowcoder-summer-2025/06/",
+    "status": 301
+  },
+  {
+    "from": "/acm/NowCoderSummer25/7/",
+    "to": "/acm/nowcoder-summer-2025/07/",
+    "status": 301
+  },
+  {
+    "from": "/acm/NowCoderSummer25/8/",
+    "to": "/acm/nowcoder-summer-2025/08/",
+    "status": 301
+  },
+  {
+    "from": "/acm/NowCoderSummer25/9/",
+    "to": "/acm/nowcoder-summer-2025/09/",
+    "status": 301
+  },
+  {
+    "from": "/acm/NowCoderSummer26/",
+    "to": "/acm/nowcoder-summer-2026/",
+    "status": 301
+  },
+  {
+    "from": "/acm/NowCoderSummer26/01",
+    "to": "/acm/nowcoder-summer-2026/01",
+    "status": 301
+  },
+  {
+    "from": "/acm/NowCoderSummer26/02",
+    "to": "/acm/nowcoder-summer-2026/02",
+    "status": 301
+  },
+  {
+    "from": "/acm/NowCoderSummer26/03",
+    "to": "/acm/nowcoder-summer-2026/03",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSpring25/01/",
+    "to": "/acm/tk-spring-2025/01/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSpring25/02/",
+    "to": "/acm/tk-spring-2025/02/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSpring25/03/",
+    "to": "/acm/tk-spring-2025/03/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSpring25/04/",
+    "to": "/acm/tk-spring-2025/04/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSpring25/05/",
+    "to": "/acm/tk-spring-2025/05/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSpring25/06/",
+    "to": "/acm/tk-spring-2025/06/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSpring25/07/",
+    "to": "/acm/tk-spring-2025/07/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSpring25/08/",
+    "to": "/acm/tk-spring-2025/08/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSpring25/09/",
+    "to": "/acm/tk-spring-2025/09/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSpring25/1/",
+    "to": "/acm/tk-spring-2025/01/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSpring25/10/",
+    "to": "/acm/tk-spring-2025/10/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSpring25/11/",
+    "to": "/acm/tk-spring-2025/11/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSpring25/12/",
+    "to": "/acm/tk-spring-2025/12/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSpring25/13/",
+    "to": "/acm/tk-spring-2025/13/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSpring25/14/",
+    "to": "/acm/tk-spring-2025/14/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSpring25/15/",
+    "to": "/acm/tk-spring-2025/15/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSpring25/16/",
+    "to": "/acm/tk-spring-2025/16/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSpring25/17/",
+    "to": "/acm/tk-spring-2025/17/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSpring25/18/",
+    "to": "/acm/tk-spring-2025/18/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSpring25/19/",
+    "to": "/acm/tk-spring-2025/19/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSpring25/2/",
+    "to": "/acm/tk-spring-2025/02/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSpring25/20/",
+    "to": "/acm/tk-spring-2025/20/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSpring25/21/",
+    "to": "/acm/tk-spring-2025/21/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSpring25/22/",
+    "to": "/acm/tk-spring-2025/22/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSpring25/23/",
+    "to": "/acm/tk-spring-2025/23/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSpring25/26/",
+    "to": "/acm/tk-spring-2025/26/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSpring25/27/",
+    "to": "/acm/tk-spring-2025/27/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSpring25/28/",
+    "to": "/acm/tk-spring-2025/28/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSpring25/3/",
+    "to": "/acm/tk-spring-2025/03/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSpring25/4/",
+    "to": "/acm/tk-spring-2025/04/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSpring25/5/",
+    "to": "/acm/tk-spring-2025/05/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSpring25/6/",
+    "to": "/acm/tk-spring-2025/06/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSpring25/7/",
+    "to": "/acm/tk-spring-2025/07/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSpring25/8/",
+    "to": "/acm/tk-spring-2025/08/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSpring25/9/",
+    "to": "/acm/tk-spring-2025/09/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSpring26/01",
+    "to": "/acm/tk-spring-2026/01",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSpring26/02",
+    "to": "/acm/tk-spring-2026/02",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSpring26/04",
+    "to": "/acm/tk-spring-2026/04",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSpring26/07",
+    "to": "/acm/tk-spring-2026/07",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer25/01/",
+    "to": "/acm/tk-summer-2025/01/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer25/02/",
+    "to": "/acm/tk-summer-2025/02/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer25/03/",
+    "to": "/acm/tk-summer-2025/03/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer25/04/",
+    "to": "/acm/tk-summer-2025/04/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer25/05/",
+    "to": "/acm/tk-summer-2025/05/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer25/06/",
+    "to": "/acm/tk-summer-2025/06/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer25/07/",
+    "to": "/acm/tk-summer-2025/07/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer25/08/",
+    "to": "/acm/tk-summer-2025/08/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer25/09/",
+    "to": "/acm/tk-summer-2025/09/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer25/1/",
+    "to": "/acm/tk-summer-2025/01/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer25/10/",
+    "to": "/acm/tk-summer-2025/10/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer25/11/",
+    "to": "/acm/tk-summer-2025/11/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer25/12/",
+    "to": "/acm/tk-summer-2025/12/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer25/13/",
+    "to": "/acm/tk-summer-2025/13/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer25/14/",
+    "to": "/acm/tk-summer-2025/14/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer25/15/",
+    "to": "/acm/tk-summer-2025/15/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer25/2/",
+    "to": "/acm/tk-summer-2025/02/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer25/27/",
+    "to": "/acm/tk-summer-2025/27/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer25/28/",
+    "to": "/acm/tk-summer-2025/28/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer25/29/",
+    "to": "/acm/tk-summer-2025/29/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer25/3/",
+    "to": "/acm/tk-summer-2025/03/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer25/33/",
+    "to": "/acm/tk-summer-2025/33/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer25/34/",
+    "to": "/acm/tk-summer-2025/34/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer25/36/",
+    "to": "/acm/tk-summer-2025/36/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer25/4/",
+    "to": "/acm/tk-summer-2025/04/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer25/5/",
+    "to": "/acm/tk-summer-2025/05/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer25/6/",
+    "to": "/acm/tk-summer-2025/06/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer25/7/",
+    "to": "/acm/tk-summer-2025/07/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer25/8/",
+    "to": "/acm/tk-summer-2025/08/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer25/9/",
+    "to": "/acm/tk-summer-2025/09/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer26/",
+    "to": "/acm/tk-summer-2026/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer26/05",
+    "to": "/acm/tk-summer-2026/05",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer26/16",
+    "to": "/acm/tk-summer-2026/16",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer26/17",
+    "to": "/acm/tk-summer-2026/17",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer26/18",
+    "to": "/acm/tk-summer-2026/18",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer26/19",
+    "to": "/acm/tk-summer-2026/19",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer26/20",
+    "to": "/acm/tk-summer-2026/20",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer26/21",
+    "to": "/acm/tk-summer-2026/21",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer26/22",
+    "to": "/acm/tk-summer-2026/22",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer26/23",
+    "to": "/acm/tk-summer-2026/23",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer26/24",
+    "to": "/acm/tk-summer-2026/24",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer26/26",
+    "to": "/acm/tk-summer-2026/26",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer26/28",
+    "to": "/acm/tk-summer-2026/28",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer26/29",
+    "to": "/acm/tk-summer-2026/29",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer26/30",
+    "to": "/acm/tk-summer-2026/30",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer26/31",
+    "to": "/acm/tk-summer-2026/31",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer26/32",
+    "to": "/acm/tk-summer-2026/32",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer26/33",
+    "to": "/acm/tk-summer-2026/33",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer26/34",
+    "to": "/acm/tk-summer-2026/34",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer26/35",
+    "to": "/acm/tk-summer-2026/35",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer26/36",
+    "to": "/acm/tk-summer-2026/36",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkSummer26/37",
+    "to": "/acm/tk-summer-2026/37",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkTeam25/16/",
+    "to": "/acm/tk-team-summer-2025/16/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkTeam25/17/",
+    "to": "/acm/tk-team-summer-2025/17/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkTeam25/18/",
+    "to": "/acm/tk-team-summer-2025/18/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkTeam25/19/",
+    "to": "/acm/tk-team-summer-2025/19/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkTeam25/20/",
+    "to": "/acm/tk-team-summer-2025/20/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkTeam25/21/",
+    "to": "/acm/tk-team-summer-2025/21/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkTeam25/22/",
+    "to": "/acm/tk-team-summer-2025/22/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkTeam25/23/",
+    "to": "/acm/tk-team-summer-2025/23/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkTeam25/24/",
+    "to": "/acm/tk-team-summer-2025/24/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkTeam25/25/",
+    "to": "/acm/tk-team-summer-2025/25/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkTeam25/26/",
+    "to": "/acm/tk-team-summer-2025/26/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkTeam25/27/",
+    "to": "/acm/tk-team-summer-2025/27/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkTeam26/",
+    "to": "/acm/tk-team-summer-2026/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkTeam26/04",
+    "to": "/acm/tk-team-summer-2026/04",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkTeam26/4",
+    "to": "/acm/tk-team-summer-2026/04",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkWinter26/01/",
+    "to": "/acm/tk-winter-2026/01/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkWinter26/02/",
+    "to": "/acm/tk-winter-2026/02/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkWinter26/03/",
+    "to": "/acm/tk-winter-2026/03/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkWinter26/04/",
+    "to": "/acm/tk-winter-2026/04/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkWinter26/05/",
+    "to": "/acm/tk-winter-2026/05/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkWinter26/06/",
+    "to": "/acm/tk-winter-2026/06/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkWinter26/07/",
+    "to": "/acm/tk-winter-2026/07/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkWinter26/15/",
+    "to": "/acm/tk-winter-2026/15/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkWinter26/16/",
+    "to": "/acm/tk-winter-2026/16/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkWinter26/17/",
+    "to": "/acm/tk-winter-2026/17/",
+    "status": 301
+  },
+  {
+    "from": "/acm/TkWinter26/18/",
+    "to": "/acm/tk-winter-2026/18/",
+    "status": 301
+  },
+  {
+    "from": "/acm/UPCPC/2025-online/",
+    "to": "/acm/upcpc/online-2025/",
+    "status": 301
+  },
+  {
+    "from": "/acm/UPCPC/2025/",
+    "to": "/acm/upcpc/final-2025/",
+    "status": 301
+  },
+  {
+    "from": "/acm/UPCPC/2026-online/",
+    "to": "/acm/upcpc/online-2026/",
+    "status": 301
+  },
+  {
+    "from": "/notes/COA/",
+    "to": "/notes/coa/",
+    "status": 301
+  },
+  {
+    "from": "/notes/COA/01/",
+    "to": "/notes/coa/01/",
+    "status": 301
+  },
+  {
+    "from": "/notes/COA/02/",
+    "to": "/notes/coa/02/",
+    "status": 301
+  },
+  {
+    "from": "/notes/COA/03/",
+    "to": "/notes/coa/03/",
+    "status": 301
+  },
+  {
+    "from": "/notes/COA/11/",
+    "to": "/notes/coa/11/",
+    "status": 301
+  },
+  {
+    "from": "/notes/COA/12/",
+    "to": "/notes/coa/12/",
+    "status": 301
+  },
+  {
+    "from": "/notes/COA/13/",
+    "to": "/notes/coa/13/",
+    "status": 301
+  },
+  {
+    "from": "/notes/COA/14/",
+    "to": "/notes/coa/14/",
+    "status": 301
+  },
+  {
+    "from": "/notes/COA/15/",
+    "to": "/notes/coa/15/",
+    "status": 301
+  },
+  {
+    "from": "/notes/coa/15/stucture.png",
+    "to": "/notes/COA/15/structure.png",
+    "status": 301
+  },
+  {
+    "from": "/notes/COA/15/stucture.png",
+    "to": "/notes/COA/15/structure.png",
+    "status": 301
+  },
+  {
+    "from": "/notes/COA/16/",
+    "to": "/notes/coa/16/",
+    "status": 301
+  },
+  {
+    "from": "/notes/COA/17/",
+    "to": "/notes/coa/17/",
+    "status": 301
+  },
+  {
+    "from": "/notes/COA/18/",
+    "to": "/notes/coa/18/",
+    "status": 301
+  },
+  {
+    "from": "/notes/data-structure/contest0/",
+    "to": "/notes/data-structure/contest-00/",
+    "status": 301
+  },
+  {
+    "from": "/notes/data-structure/contest1/",
+    "to": "/notes/data-structure/contest-01/",
+    "status": 301
+  },
+  {
+    "from": "/notes/data-structure/contest2/",
+    "to": "/notes/data-structure/contest-02/",
+    "status": 301
+  },
+  {
+    "from": "/notes/data-structure/contest3/",
+    "to": "/notes/data-structure/contest-03/",
+    "status": 301
+  },
+  {
+    "from": "/notes/data-structure/contest4/",
+    "to": "/notes/data-structure/contest-04/",
+    "status": 301
+  },
+  {
+    "from": "/notes/data-structure/contest5/",
+    "to": "/notes/data-structure/contest-05/",
+    "status": 301
+  },
+  {
+    "from": "/notes/data-structure/contest6/",
+    "to": "/notes/data-structure/contest-06/",
+    "status": 301
+  },
+  {
+    "from": "/notes/decrete-math/dm01/",
+    "to": "/notes/discrete-math/dm01/",
+    "status": 301
+  },
+  {
+    "from": "/notes/uni-phys/3/",
+    "to": "/notes/uni-phys/03/",
+    "status": 301
+  },
+  {
+    "from": "/notes/uni-phys/4/",
+    "to": "/notes/uni-phys/04/",
+    "status": 301
+  }
+]

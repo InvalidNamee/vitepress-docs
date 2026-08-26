@@ -1,7 +1,7 @@
 ---
-title: CSES Adcanced Techniques
+title: CSES Advanced Techniques
 ---
-# CSES Adcanced Techniques
+# CSES Advanced Techniques
 
 更新 ing（但是会优先补 vp ICPC 没做出来的题）
 
@@ -680,4 +680,3 @@ int main() {
     return 0;
 }
 ```
-

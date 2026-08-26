@@ -24,9 +24,9 @@ There are no tests, linting, or type-checking configured.
 docs/
   index.md                 # Landing page (home layout)
   acm/                     # ACM solution write-ups
-    {platform}/            # e.g. AcWing/, CSES/, GPLT/, ICPC/, lanqiao/
+    {platform}/            # e.g. acwing/, cses/, gplt/, icpc/, lanqiao/
   notes/                   # University course notes
-    {subject}/             # e.g. uni-phys/, data-structure/, decrete-math/
+    {subject}/             # e.g. uni-phys/, data-structure/, discrete-math/
   public/                  # Static assets (favicon, ICP filing images)
   .vitepress/
     config.mts             # Full site configuration
@@ -34,6 +34,13 @@ docs/
       index.ts             # Theme entry — imports default theme + plugins
       styles.css           # Hero gradient, Persian font fallback, search tweaks
 ```
+
+### Content naming
+
+- Follow `CONTENT_NAMING.md` for all new content.
+- New paths use lowercase ASCII kebab-case and four-digit years.
+- Ordered content uses two-digit numbering and the `NN/index.md` layout.
+- When a published path changes, update `redirects.json`.
 
 ### Key configuration details
 
