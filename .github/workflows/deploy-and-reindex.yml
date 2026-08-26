@@ -1,0 +1,97 @@
+name: Refresh search index after EdgeOne deployment
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: production-search-index
+  cancel-in-progress: true
+
+jobs:
+  wait-for-deployment:
+    name: Wait for EdgeOne Pages deployment
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Wait until the pushed commit is live
+        env:
+          EXPECTED_COMMIT: ${{ github.sha }}
+          SITE_ORIGIN: https://docs.starlab.top
+        run: |
+          for attempt in {1..120}; do
+            url="$SITE_ORIGIN/deployment-id.txt?commit=$EXPECTED_COMMIT&attempt=$attempt&run=$GITHUB_RUN_ID"
+            deployed_commit="$(curl --fail --silent --show-error --location \
+              --max-time 15 \
+              --header 'Cache-Control: no-cache' \
+              "$url" || true)"
+            deployed_commit="$(printf '%s' "$deployed_commit" | tr -d '[:space:]')"
+
+            if [ "$deployed_commit" = "$EXPECTED_COMMIT" ]; then
+              echo "EdgeOne is serving commit $EXPECTED_COMMIT."
+              exit 0
+            fi
+
+            echo "Waiting for EdgeOne deployment (attempt $attempt/120, live: ${deployed_commit:-unavailable})."
+            sleep 10
+          done
+
+          echo "Timed out waiting for EdgeOne to serve commit $EXPECTED_COMMIT." >&2
+          exit 1
+
+  reindex:
+    name: Refresh Algolia index
+    needs: wait-for-deployment
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Start crawler reindex
+        id: reindex
+        env:
+          ALGOLIA_CRAWLER_API_KEY: ${{ secrets.ALGOLIA_CRAWLER_API_KEY }}
+          ALGOLIA_CRAWLER_ID: ${{ secrets.ALGOLIA_CRAWLER_ID }}
+          ALGOLIA_CRAWLER_USER_ID: ${{ secrets.ALGOLIA_CRAWLER_USER_ID }}
+        run: |
+          curl --fail-with-body --silent --show-error \
+            --retry 3 --retry-all-errors \
+            --request POST \
+            --user "$ALGOLIA_CRAWLER_USER_ID:$ALGOLIA_CRAWLER_API_KEY" \
+            --output "$RUNNER_TEMP/algolia-reindex.json" \
+            "https://crawler.algolia.com/api/1/crawlers/$ALGOLIA_CRAWLER_ID/reindex"
+
+          task_id="$(jq -er '.taskId' "$RUNNER_TEMP/algolia-reindex.json")"
+          echo "task-id=$task_id" >> "$GITHUB_OUTPUT"
+          echo "Algolia reindex task started: $task_id"
+
+      - name: Wait for crawler task
+        env:
+          ALGOLIA_CRAWLER_API_KEY: ${{ secrets.ALGOLIA_CRAWLER_API_KEY }}
+          ALGOLIA_CRAWLER_ID: ${{ secrets.ALGOLIA_CRAWLER_ID }}
+          ALGOLIA_CRAWLER_USER_ID: ${{ secrets.ALGOLIA_CRAWLER_USER_ID }}
+          ALGOLIA_TASK_ID: ${{ steps.reindex.outputs.task-id }}
+        run: |
+          for attempt in {1..60}; do
+            response="$(curl --fail-with-body --silent --show-error \
+              --retry 3 --retry-all-errors \
+              --user "$ALGOLIA_CRAWLER_USER_ID:$ALGOLIA_CRAWLER_API_KEY" \
+              "https://crawler.algolia.com/api/1/crawlers/$ALGOLIA_CRAWLER_ID/tasks/$ALGOLIA_TASK_ID")"
+            pending="$(jq -er '.pending' <<< "$response")"
+
+            if [ "$pending" = "false" ]; then
+              echo "Algolia reindex task completed."
+              exit 0
+            fi
+
+            echo "Crawler task is still pending (attempt $attempt/60)."
+            sleep 10
+          done
+
+          echo "Timed out waiting for Algolia reindex task." >&2
+          exit 1

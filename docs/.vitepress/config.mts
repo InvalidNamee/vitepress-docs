@@ -1,8 +1,36 @@
 import { defineConfig } from 'vitepress'
+import { execFileSync } from 'node:child_process'
+import type { Plugin } from 'vite'
 import { withSidebar } from 'vitepress-sidebar';
 import type { UserConfig, DefaultTheme } from 'vitepress'
 import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
 import markmapPlugin from '@vitepress-plugin/markmap'
+
+function deploymentIdPlugin(): Plugin {
+  return {
+    name: 'deployment-id',
+    apply: 'build',
+    generateBundle() {
+      let commit = process.env.GITHUB_SHA?.trim()
+
+      if (!commit) {
+        try {
+          commit = execFileSync('git', ['rev-parse', 'HEAD'], {
+            encoding: 'utf8'
+          }).trim()
+        } catch {
+          commit = 'unknown'
+        }
+      }
+
+      this.emitFile({
+        type: 'asset',
+        fileName: 'deployment-id.txt',
+        source: `${commit}\n`
+      })
+    }
+  }
+}
 
 // https://vitepress.dev/reference/site-config
 const vitePressOptions: UserConfig<DefaultTheme.Config> = {
@@ -11,6 +39,9 @@ const vitePressOptions: UserConfig<DefaultTheme.Config> = {
   description: "刷题记录 & 结构化笔记",
   cleanUrls: true,
   lastUpdated: true,
+  sitemap: {
+    hostname: 'https://docs.starlab.top'
+  },
   head: [
     ['link',{ rel: 'icon', href: '/vitepress-logo-mini.png'}],
   ],
@@ -73,6 +104,7 @@ const vitePressOptions: UserConfig<DefaultTheme.Config> = {
 
   vite: {
     plugins: [
+      deploymentIdPlugin(),
       groupIconVitePlugin(),
       markmapPlugin()
     ],
