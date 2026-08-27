@@ -7,6 +7,8 @@ title: 2025春训第四场
 
 ## A. 美丽数
 
+<!-- algorithm-tags: greedy, constructive -->
+
 * 先考虑合法情况，从高位到低位从小到大试填。该位填 i 合法当且仅当 i 和上一位不相等且用掉一次 i 之后剩下的状态是合法状态（即个数最大的数的个数不大于 $\lceil \frac{\text{总数}}{2} \rceil$）
     
 * 如果填到某一位时，任何 i 都不合法，那么整体就不合法，输出 -1.
@@ -62,6 +64,8 @@ int main() {
 
 ## B. **军训**
 
+<!-- algorithm-tags: implementation, ad_hoc -->
+
 大水题，如果相邻两个位置的数相差不为 1，就需要切割一次。
 
 ```cpp
@@ -85,6 +89,8 @@ int main() {
 ```
 
 ## D. **发工资**
+
+<!-- algorithm-tags: greedy, sorting, data_structures, set -->
 
 经典的贪心问题，把区间按照右端点排序，对于每一个区间，查找区间内最靠左的金砖给他，找不到就跳过。
 
@@ -127,6 +133,8 @@ int main() {
 ```
 
 ## **E. 筹备计划**
+
+<!-- algorithm-tags: data_structures, segtree, lazyprop, binary_search -->
 
 最优解应该是开两个权值线段树，分别维护中位数和合法位置。对于每次查询，查询第一个线段树找到中位数，然后在第二个线段树中查左侧第一个和右侧第一个合法位置，比较两个位置的结果即可；比较时还需要再开一个线段树维护前缀和和后缀和。
 

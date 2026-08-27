@@ -14,6 +14,8 @@ title: 2025牛客暑期多校训练营5
 
 ## A. Entangled Coins <sup style="color: red">补</sup>
 
+<!-- algorithm-tags: math, arithmetic, case_work -->
+
 这道题属实感觉有点不应该，我中间推对了很多结论，但是后面不知道怎么又给自己推翻了。
 
 我思维卡在的点是
@@ -70,6 +72,8 @@ int main() {
 ```
 
 ## C. Array Deletion Game <sup style="color: red">补</sup>
+
+<!-- algorithm-tags: game_theory, binary_search, prefix_sum -->
 
 我是对博弈论先天性抗拒，但是这道题的性质还真不难，问题也是我们没有人看这道题。逆向思维很容易想到，比较难注意到的性质是，因为左右各差 1 个位置，l + r 相同的要么全必胜要么全必负，二分卡到中间最小的那个合法区间，现在左右端点有一个就不能动了，把移动左端点和移动右端点的情况分别讨论一下取并。这个转化也很巧妙。
 
@@ -130,6 +134,8 @@ int main() {
 
 ## E. Mysterious XOR Operation
 
+<!-- algorithm-tags: bitmask, prefix_sum -->
+
 这道题是我想的 + 我做的，想到的有点慢了，如果没有限制条件，传统的做法就是对每个二进制位分别前缀和，对于每个数枚举数位和前缀和比较，统计答案。加上第奇数个 1 的限制之后统计就稍微复杂了，本来我想着要 dp，但是是不合理的，如果做了线性 dp 相当于把所有数位拆开排列组合了一遍，显然不对；应该做的是统计。后来灵机一动想到无论如何两个后缀 1 个数都是偶数的数的后缀异或之后 1 的个数一定还是偶数，因为只能两个 1 相消偶数 + 偶数 - 偶数还是偶数，于是就解决了。
 
 ```cpp
@@ -163,6 +169,8 @@ int main() {
 ```
 
 ## H. VI Civilization <sup style="color: red">补</sup>
+
+<!-- algorithm-tags: binary_search, dp, precomputation -->
 
 这道是最可惜的一道，似乎可能是题干比较长[?]没人做，实际上很简单，我们都被骗了，一眼都没看，其实就是一个简单的二分和一个简单的 dp。
 
@@ -218,6 +226,8 @@ int main() {
 
 ## I. Block Combination Minimal Perimeter
 
+<!-- algorithm-tags: math, case_work -->
+
 超级大水题。
 
 ```cpp
@@ -235,6 +245,8 @@ int main() {
 ```
 
 ## J. Fastest Coverage Problem <sup style="color: blue">队友</sup>
+
+<!-- algorithm-tags: binary_search, bfs, implementation -->
 
 这也是一道简单题，逻辑上来说二分答案就可以，实际上当时写代码的时候并不顺利，WA 了两次才过。
 
@@ -322,6 +334,8 @@ int main() {
 ```
 
 ## K. Perfect Journey <sup style="color: red">补</sup>
+
+<!-- algorithm-tags: bitmask, dp_bitfield, trees, tree_isomorphism -->
 
 佬们放着简单的 H 不做，都来 K 题当卡常高手了……
 

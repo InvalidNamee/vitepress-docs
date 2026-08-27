@@ -5,6 +5,8 @@ title: 2025 春训第十场
 
 ## **A. 鲁的学生**
 
+<!-- algorithm-tags: arithmetic, math -->
+
 大水题，但是我没看到要取模连 WA 两次。
 
 ```cpp
@@ -31,6 +33,8 @@ int main() {
 ```
 
 ## B. **鲁的探险**
+
+<!-- algorithm-tags: graphs, functional_graph -->
 
 n 个点 n 条边，而且每个点都至少有 1 度，显然这张图是基环树（一棵树随便加一条边构成的连通的只有一个环的图）构成森林。所有的点最后都会走到对应连通块的环里，随后绕一圈结束；明白了这点那么做法就很简单了，记点 i 的答案为 $val_i$
 
@@ -142,6 +146,8 @@ int main() {
 ```
 
 ## C. **他会输出啥**
+
+<!-- algorithm-tags: simulation, arithmetic -->
 
 我用 python 写的，实际上用 C++ 区别不大，注意别爆 int 就行。
 

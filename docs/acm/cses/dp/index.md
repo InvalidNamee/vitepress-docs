@@ -7,6 +7,8 @@ title: CSES Dynamic Programming
 
 ## Longest Common Subsequence
 
+<!-- algorithm-tags: dp, dp_bitfield, lcs -->
+
 经典的 LCS，一个二维 DP 就可以解决，同时需要统计一下前驱，横着走和竖着走的时候不在 LCS 上，斜着走的时候在 LCS 上，最后输出。
 
 ```cpp
@@ -52,6 +54,8 @@ int main() {
 
 ## Minimal Grid Path
 
+<!-- algorithm-tags: dp, greedy, grid_graph -->
+
 刚开始只想着怎么 DP 出来一条路径，然后不是 TLE 就是 MLE，后来才发现事情远没有我想象的那么复杂。
 
 从左上角开始贪心的选最小的，同步更新所有疑似是答案的路径。可行的 $O(n^2)$ 做法有**沿着主对角线方向一层一层手动更新**或者**用单调队列bfs**。我用了第一种，[MoScenix](https://moscenix.cn/)用了第二种。
@@ -96,6 +100,8 @@ int main() {
 ```
 
 ## Mountain Range
+
+<!-- algorithm-tags: dp, segtree, trees -->
 
 ~~根据直觉~~这个可以巧妙的转化成一个用一个中序遍历的序列生成一个二叉堆，求最大深度。这个问题就相当于在二叉堆上从上到下走到底的路径长度，需要注意如果一个节点和父亲节点权值一样那么这一条边不计入深度，因为不能平飞，用线段树维护出来区间最大值的位置就可以 $O(n\log n)$ 处理完。
 
@@ -173,6 +179,8 @@ int main() {
 ```
 
 ## Increasing Subsequence II
+
+<!-- algorithm-tags: dp, coordinate_compression, data_structures -->
 
 也是比较经典的题，从求长度变成了求个数。初始化一个末尾是 0 的子序列个数是 1，离散化一下权值，用**树状数组维护动态前缀和**统计方案数。
 

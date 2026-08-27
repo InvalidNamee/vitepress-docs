@@ -9,6 +9,8 @@ D 一开始想错了方向，各种分解质因数把自己搞头疼了都，事
 
 ## A. 矩形
 
+<!-- algorithm-tags: geometry, implementation -->
+
 把三个矩形的左下角坐标取 max，右上角坐标取 min，就是重叠部分的矩形。
 
 * ps：注意判断是否重叠，否则不重叠的可能会负负得正，然后 WA.
@@ -38,6 +40,8 @@ int main() {
 这么水的题还有人用 AI 写，还被抓了😲.
 
 ## B. 全球通勤
+
+<!-- algorithm-tags: prefix_sum, difference_array, greedy, trees, implementation -->
 
 每条边的 VIP 是相互独立的，直接差分前缀和统计每条边经过的次数，最后遍历一次算出来每条边的最优解加起来即可。
 
@@ -77,6 +81,8 @@ int main() {
 ```
 
 ## C. 社交网络
+
+<!-- algorithm-tags: graphs, dfs, graph_traversal, data_structures -->
 
 不能继续执行操作的情况只有一种，任何一个点所在的连通块都是完全图。所以直接找连通块，统计连通块的点数和边数算出每个连通块的操作次数累加即可。
 
@@ -134,6 +140,8 @@ int main() {
 
 ## D. 数数
 
+<!-- algorithm-tags: math, bruteforcing, hash_set, number_theory -->
+
 我的做法有点暴力，但是时间复杂度是没有问题的。
 
 * 首先考虑暴力如何解决，直接枚举指数 i in \[2, 60\]，底数 j in \[1, $n^{\frac{1}{i}}$\]，把所有 $j^i$去重统计个数。
@@ -177,6 +185,8 @@ int main() {
 ```
 
 ## E. **出题 (problem)**
+
+<!-- algorithm-tags: backtracking, dfs, constructive, greedy, primality_test -->
 
 我能力不足，找不到选择策略，只能暴搜了😭
 
@@ -229,11 +239,15 @@ int main() {
 
 ### **WARNINGS**
 
+<!-- algorithm-tags-ignore -->
+
 * **不要用 vector** 频繁 push\_back 和 pop\_back，会严重超时！！！<s>害我打了 20min 表</s>
     
 * 注意**常数**优化，能算一次就不算第二次，否则搜索规模会指数级扩大。
     
 
 ## F. 连续段 (row[)](https://icpc.upc.edu.cn/problem.php?cid=4080&pid=5)
+
+<!-- algorithm-tags: data_structures, implementation, trees -->
 
 这道题目前 0/0，我量力而为💔

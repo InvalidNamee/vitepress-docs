@@ -7,6 +7,8 @@ title: 2025春训第五场
 
 ## A. 游戏
 
+<!-- algorithm-tags: game_theory, greedy, sorting -->
+
 答案= min(max(从小到大交替选，从大到小交替选)，max(A从最大的连续选，A从最小的连续选)).
 
 * **提示**：A 希望答案尽可能大，所以由 A 决策决定的应取 max，B 希望答案尽可能小，所以由 B 决策决定的应该取 min.
@@ -57,6 +59,8 @@ int main() {
 ```
 
 ## B. 音符
+
+<!-- algorithm-tags: dp, two_pointer, monotone_queue_optimization, binary_search, segtree -->
 
 单调队列优化的 dp 效率最高， 或者线段树也行，两版代码都贴一下。
 
@@ -192,6 +196,8 @@ int main() {
 
 ## C. 星星点灯
 
+<!-- algorithm-tags: mst, graphs, disjoint_set, greedy, sorting -->
+
 过滤掉所有边权大于 m 的边，然后跑最小生成树，同时统计边权和，最后加上 连通块个数 \* m 就是答案。相对比较 easy.
 
 ```cpp
@@ -242,6 +248,8 @@ int main() {
 ```
 
 ## D. **翘课**
+
+<!-- algorithm-tags: dp, knapsack -->
 
 类似于分组背包问题，先把每一天单独的旷 \[0, k\] 节课的后呆在教学楼的时间算出来，然后跑分组背包dp即可。（理论上可以在维护每天单独的时间的同时做分组背包dp，但是我不知道为什么一直写挂）
 

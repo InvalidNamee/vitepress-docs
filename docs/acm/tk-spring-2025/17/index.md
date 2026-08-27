@@ -5,6 +5,8 @@ title: 2025春训第十七场
 
 ## A. 最大公约数
 
+<!-- algorithm-tags: math, bruteforcing, number_theory -->
+
 直接枚举 1 ~ n 对于每一个数从他不等于自己的约数里面找个最大的，然后全部取个 max。
 
 ```cpp
@@ -31,6 +33,8 @@ int main() {
 ```
 
 ## B. 数的变换
+
+<!-- algorithm-tags: math, greedy, case_work -->
 
 非常的水。
 
@@ -65,6 +69,8 @@ int main() {
 ```
 
 ## C. 回文
+
+<!-- algorithm-tags: greedy, bruteforcing, case_work -->
 
 这道题其实可以直接暴力，因为一共只可能有 $\binom{2}{26}$种可能的不能配对的方式，于是就有不多于 $\binom{2}{26}^2$种可能的交换情况，于是直接枚举所有情况交换即可。
 
@@ -130,6 +136,8 @@ int main() {
 ```
 
 ## E. 船长的自助餐
+
+<!-- algorithm-tags: dp, greedy, implementation -->
 
 一道数据比较友好的 dp 题，至于我为什么在红温，当然是没好好读题就去做了 😇😇😇
 

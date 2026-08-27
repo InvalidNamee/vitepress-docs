@@ -5,6 +5,8 @@ import { withSidebar } from 'vitepress-sidebar';
 import type { UserConfig, DefaultTheme } from 'vitepress'
 import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
 import markmapPlugin from '@vitepress-plugin/markmap'
+import solvedAcTags from '../../data/solved-ac-tags.json'
+import { algorithmTagsPlugin } from './plugins/algorithm-tags'
 
 function deploymentIdPlugin(): Plugin {
   return {
@@ -95,6 +97,7 @@ const vitePressOptions: UserConfig<DefaultTheme.Config> = {
   markdown: {
     config(md) {
       md.use(groupIconMdPlugin)
+      md.use(algorithmTagsPlugin, { tags: solvedAcTags.tags })
     },
     math: true,
     image: {

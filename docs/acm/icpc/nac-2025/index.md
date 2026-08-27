@@ -7,6 +7,8 @@ title: 【NAC2025】2025 拼题A XCPC 系统测试赛
 
 ## K. SLA Tomography
 
+<!-- algorithm-tags: greedy -->
+
 这道题题目特别难读，里面一大堆的专业的词汇，读了好半天理解了之后发现就是一个简单的贪心，对每个单调不增的子段新开辟一块宽度为 当前子段最大值 - 上一个子段最小值 + 1 的空间存多出来的，直接就秒了。
 
 ```cpp
@@ -30,6 +32,8 @@ int main() {
 ```
 
 ## H. Ornaments on a Tree
+
+<!-- algorithm-tags: dp_tree, greedy -->
 
 按我的理解，这是一道略简单一点的树形 dp，洛谷上题解说是贪心，但是说的其实是一个意思。当时我翻译的这道题，然后想出来思路之后讲了一下，没问题就去写了，期间想错，改状态转移方程少改一个 WA 一发。
 
@@ -81,6 +85,8 @@ int main() {
 ```
 
 ## B. Circle of Leaf <sup style="color: blue">队友</sup>
+
+<!-- algorithm-tags: dp_tree, combinatorics -->
 
 他们在研究 A 的时候我往后读题，发现这个似乎可做，队友先研究明白了，思路刚开始就是对的，而且很完整，低级错误 WA 三发。
 
@@ -148,6 +154,8 @@ int main() {
 
 ## L. Solar Farm <sup style="color: red">补</sup>
 
+<!-- algorithm-tags: geometry, math, bruteforcing -->
+
 这道题通过率低的可怜,当时我们都感觉在正方形周围暴力一个小区间能过……然而没有，WA 了好几发，后来调大了一下区间长度，然后就莫名其妙的过了。
 
 ```cpp
@@ -178,6 +186,8 @@ int main() {
 }
 ```
 ## D. Geometry Rush <sup style="color: red">补</sup>
+
+<!-- algorithm-tags: geometry, case_work, math -->
 
 这道很可惜，难度还行，属于是相见恨晚了，最后四十分钟发现他的时候已经来不及了，当时情急之下想麻烦了，又写线段交又写特判的，最后挂了没调出来。
 

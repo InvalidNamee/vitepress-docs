@@ -5,6 +5,8 @@ title: 2025春训第十五场
 
 ## A. Lucky 7
 
+<!-- algorithm-tags: implementation -->
+
 一道签到题。
 
 ```cpp
@@ -32,6 +34,8 @@ int main() {
 ```
 
 ## B. We Want You Happy!
+
+<!-- algorithm-tags: greedy, sorting -->
 
 两道签到题。
 
@@ -68,6 +72,8 @@ int main() {
 
 ## **C. Snailography**
 
+<!-- algorithm-tags: implementation, simulation -->
+
 生成一个下标矩阵然后对着矩阵输出。
 
 ```cpp
@@ -100,6 +106,8 @@ int main() {
 ```
 
 ## **D. Good Goalie**
+
+<!-- algorithm-tags: geometry, math -->
 
 * 肯定不行的情况，原点到直线的距离大于 r；
     
@@ -139,6 +147,8 @@ int main() {
 
 ## **E. Most Valuable Pez**
 
+<!-- algorithm-tags: dp, knapsack -->
+
 分组背包。
 
 ```cpp
@@ -168,6 +178,8 @@ int main() {
 ```
 
 ## **G. Not So Close**
+
+<!-- algorithm-tags: dp, dp_bitfield -->
 
 经典的状压dp，用一个二进制数 mask 表示一行的状态。只考虑当前行合法状态需要满足 mask » 1 & mask == 0，因为不能相邻；相邻两行的状态 i，j 需要满足 i « 1 & j == 0 and i & j == 0 and i » 1 & j == 0。
 
@@ -203,6 +215,8 @@ int main() {
 ```
 
 ## **H. The Duel of Smokin’ Joe**
+
+<!-- algorithm-tags: data_structures, game_theory, parity -->
 
 统计逆序对数量，如果是奇数就是 `Smokin Joe!`，否则就是 `Oh No!`.
 
@@ -249,6 +263,8 @@ int main() {
 <s>归并排序是什么，感觉不如树状数组（）</s>
 
 ## **J. Grow Measure Cut Repeat**
+
+<!-- algorithm-tags: segtree, lazyprop, data_structures -->
 
 因为每次 cut 都是**单调不增**的，所以不会发生第一次 cut 过的树第二次不 cut 的情况，这就好办了。维护两个线段树，一个维护忽略所有裁剪的前提下的高度，一个维护只考虑最后一次裁剪的情况下的高度。
 
@@ -353,6 +369,8 @@ int main() {
 ```
 
 ## K. **Bad Bunny**
+
+<!-- algorithm-tags: bcc, graphs, trees, lca -->
 
 点双联通分量缩点，然后树上倍增求路径上**割点的个数**，如果**端点**不是割点，就额外加上端点。
 

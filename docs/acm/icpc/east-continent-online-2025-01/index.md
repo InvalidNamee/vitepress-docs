@@ -7,9 +7,13 @@ title: ICPC Asia EC Online 2025(I)
 
 ## A. Who Can Win
 
+<!-- algorithm-tags: implementation, simulation, case_work -->
+
 这就是一道大模拟，逻辑上没有难度，代码不在我这个机子上，没存也不想再写一遍了，记得当时有三个东西没初始化挂掉了（当时没有立刻发现），然后电脑让出去了，浪费了好长时间。
 
 ## B. Creating Chaos
+
+<!-- algorithm-tags: greedy, ad_hoc -->
 
 当时说是隔几个取一个来着，后来发现直接取前 k 个就行。
 
@@ -28,6 +32,8 @@ int main() {
 ```
 
 ## C. Canvas Painting
+
+<!-- algorithm-tags: greedy, priority_queue, sorting -->
 
 用贪心的思想，维护一个候选集合，枚举位置，加入的时候先取左端点最小的，取出的时候优先取右端点最小的，补题的时候挂了好几次。
 
@@ -70,6 +76,8 @@ int main() {
 ```
 
 ## D. Min-Max Tree
+
+<!-- algorithm-tags: dp, dp_tree, graphs, trees -->
 
 这道是树形 dp，关键就是不能被题目描述带着走，不能从怎么删这个角度考虑，应该考虑在树中取 k 个正值，k 个负值，一个连通块只能有一个正和一个负，权值和最大，把合法状态空间扩大了，但是最优解一定还是原问题的最优解。对于一个连通块只有三种情况，平衡，正，负，考虑状态转移，一个块最多只能有一个正和一个负，正向反向线性 dp 维护一下只有一个正，只有一个负，全是 0 的前后缀，枚举分界点向根合并。这道题补的时候没有调很久。
 
@@ -151,6 +159,8 @@ int main() {
 
 ## G. Sorting
 
+<!-- algorithm-tags: greedy, implementation, ad_hoc -->
+
 签到题，我们当时被卡了会儿，不应该，举了一个错的例子卡了自己对的想法。
 
 ```cpp
@@ -184,6 +194,8 @@ int main() {
 
 
 ## J. Moving on the Plane<sup style="color: red">补</sup>
+
+<!-- algorithm-tags: combinatorics, dp, math, inclusion_and_exclusion -->
 
 感觉我们当时的思路就差一点就想出来了，我感觉确实是因为感觉排名够了，都不是很想努力了。
 
@@ -263,6 +275,8 @@ int main() {
 ```
 
 ## M. Teleporter
+
+<!-- algorithm-tags: graphs, shortest_path, dijkstra, trees -->
 
 当时我们分层图 Dijkstra 卡过了，补题的时候我也这么过的，但是这个 Dijkstra 应该比较多余，目测再从上到下扫一遍也能达成效果。
 

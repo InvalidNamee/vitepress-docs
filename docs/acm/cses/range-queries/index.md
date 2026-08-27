@@ -7,6 +7,8 @@ title: CSES Range Queries
 
 ## Visible Buildings Queries
 
+<!-- algorithm-tags: ad_hoc, stack -->
+
 单调栈维护每个元素右侧第一个比他大的元素的位置，然后用倍增查询。
 
 ```cpp
@@ -59,6 +61,8 @@ int main() {
 ```
 
 ## Range Interval Queries
+
+<!-- algorithm-tags: pst, data_structures -->
 
 主席树（可持久化线段树）板子，离散化之后维护一个可持久化的权值线段树查询的时候用两颗不同版本的树作差。
 
@@ -134,6 +138,8 @@ int main() {
 
 ## Subarray Sum Queries II
 
+<!-- algorithm-tags: segtree, maximum_subarray -->
+
 最大子段和，上一道是带修改的，这一道是静态查询。都是线段树维护和，最大前缀和，最大后缀和，最大子段和。推荐开结构体，建议专门写一个 merge 函数合并两个节点。
 
 ```cpp
@@ -196,6 +202,8 @@ int main() {
 ```
 
 ## Distinct Values Queries II
+
+<!-- algorithm-tags: segtree, offline_queries -->
 
 把所有可能的权值离散化，各开一个 set 存所有的出现位置。开线段树维护区间内的元素前一次出现位置的最大值。
 
@@ -266,6 +274,8 @@ int main() {
 
 ## Movie Festival Queries
 
+<!-- algorithm-tags: precomputation, binary_search -->
+
 > [!NOTE]
 > 这道题看了题解
 
@@ -319,6 +329,8 @@ int main() {
 ```
 
 ## Range Queries and Copies
+
+<!-- algorithm-tags: pst, data_structures -->
 
 刚开始我以为他是一个数组一直往尾部加，又看了看发现他是新建一整组，所以又是一个主席树。
 
@@ -415,6 +427,8 @@ int main() {
 ```
 
 ## Missing Coin Sum Queries
+
+<!-- algorithm-tags: pst, greedy -->
 
 > [!NOTE]
 > 事实证明不能做太多的数据结构，我该休息了。被一个 int 爆了一个小时才发现，还有这么蠢的人吗😭

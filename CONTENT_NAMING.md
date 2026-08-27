@@ -43,6 +43,32 @@ docs/acm/nowcoder-summer-2026/
 - 使用能够表达图片内容的名称，避免 `image.png`、`Sketch.png`、UUID 等无语义名称。
 - 页面专用资源优先与该页面的 `index.md` 放在同一目录。
 
+## 算法标签
+
+- ACM 题解使用 solved.ac 标签 ID，标签声明紧跟在对应题目的二级或三级标题后。
+- 多个标签使用英文逗号分隔；标签 ID 必须存在于 `data/solved-ac-tags.json`。
+- 标签由 VitePress 在构建阶段转换为中文标签，不要在正文中手写标签样式。
+
+示例：
+
+```md
+## A. 最短路问题
+
+<!-- algorithm-tags: graphs, shortest_path, dijkstra -->
+```
+
+三级题目标题使用相同写法：
+
+```md
+### AcWing 850. Dijkstra 求最短路 II
+
+<!-- algorithm-tags: graphs, shortest_path, dijkstra -->
+```
+
+可使用 `npm run tags:scan` 查找尚未标注的候选标题，使用 `npm run tags:suggest` 调用 LLM 生成建议。脚本默认只预览 diff，确认后追加 `-- --write` 才会修改文件；详细说明见 `scripts/README.md`。
+
+自动扫描确认某个标题只是普通小节时，会在其下写入 `<!-- algorithm-tags-ignore -->`，防止后续重复调用 API。该注释不会渲染到页面；需要重新判断时将其删除。
+
 ## 重命名
 
 - 已发布页面重命名时，必须同步更新站内链接和资源引用。

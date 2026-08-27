@@ -7,6 +7,8 @@ title: 2025春训第八场
 
 ## **A. 能量传输**
 
+<!-- algorithm-tags: math, greedy, sorting -->
+
 不难<s>（不容易）</s>发现，k 越小聚集到的位置越多，操作次数越小，所以做法是
 
 * 统计 1 的个数，找到除了 1 以外的最小的约数作为 k；
@@ -68,6 +70,8 @@ signed main() {
 
 ## **B. 能源危机**
 
+<!-- algorithm-tags: arbitrary_precision -->
+
 <s>你说的对，但是我可以用 Python</s>，用 C++ 写高精的话大概思路就是除数后面补零直到最高位和被除数对齐，减到不能再减，然后除数删一个零继续减，[高精全家桶传送门](https://invalidname.hashnode.dev/high-precision)。
 
 ```python
@@ -79,6 +83,8 @@ print(a // b)
 ```
 
 ## C. **鲁星救援**
+
+<!-- algorithm-tags: bfs, graphs, grid_graph -->
 
 没什么技术含量，来来回回搜的很恶心。先从 s 搜到 p，把路上的点全都标记上；然后，把标记上的点都加到一个新队列里，搜 t 即可。
 
@@ -174,6 +180,8 @@ int main() {
 ```
 
 ## E. **俄罗斯方块 (tetris)**
+
+<!-- algorithm-tags: dp, exponentiation_by_squaring -->
 
 简化版：[覆盖墙壁](https://www.luogu.com.cn/problem/P1990).
 

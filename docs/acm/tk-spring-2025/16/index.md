@@ -7,6 +7,8 @@ title: 2025春训第十六场
 
 ## **A. Number Maximization**
 
+<!-- algorithm-tags: sorting -->
+
 签到题 \* 1
 
 ```cpp
@@ -26,6 +28,8 @@ int main() {
 
 ## **B. Simplified Calendar System**
 
+<!-- algorithm-tags: implementation, arithmetic -->
+
 签到题 \* 2
 
 ```cpp
@@ -42,6 +46,8 @@ int main() {
 ```
 
 ## **C. Letter Frequency**
+
+<!-- algorithm-tags: implementation -->
 
 签到题 \* 3
 
@@ -77,6 +83,8 @@ int main() {
 
 ## **D. Pseudo Pseudo Random Numbers**
 
+<!-- algorithm-tags: bitmask, bruteforcing -->
+
 数据非常的小，所以直接暴力枚举检查就行，签到题 \* 4
 
 ```cpp
@@ -109,6 +117,8 @@ int main() {
 ```
 
 ## **E. Word Tree**
+
+<!-- algorithm-tags: mst, graphs, disjoint_set, sorting -->
 
 没什么特别的，就是最小生成树。
 
@@ -165,6 +175,8 @@ int main() {
 
 ## **F. House Prices Going Up**
 
+<!-- algorithm-tags: data_structures, prefix_sum, segtree -->
+
 树状数组（线段树）模板题。
 
 ```cpp
@@ -210,6 +222,8 @@ int main() {
 ```
 
 ## **G. Which Number**
+
+<!-- algorithm-tags: binary_search, inclusion_and_exclusion, bitmask -->
 
 到这里难度开始正常了，这道题是二分答案+容斥原理，先二分答案，然后用容斥原理检查前面合法的数的个数。
 
@@ -257,6 +271,8 @@ int main() {
 ```
 
 ## **I. Share Auction**
+
+<!-- algorithm-tags: binary_search, greedy -->
 
 又是一道二分题，考虑这样一个问题，对于一个 lot 如果一块一块的 bid **每一块的收益都会逐渐减小**，目标状态是使得最后 bid 了 v 之后目标状态是一个**相对均匀的状态**。具体来说是让其中的一部分（有可能是全部）在投了 v 之后再投 1 时或者的收益在误差允许的范围内尽可能相等，这样就能最大程度保证每次投的都是最优解。
 
@@ -337,6 +353,8 @@ int main() {
 ```
 
 ## **J. Desert Travel**
+
+<!-- algorithm-tags: mst, trees, lca, graphs -->
 
 基本功大考核，**最小生成树 + 树上倍增**，思维难度不是很大，但是比较有操作难度，这中间炸了死哪都不知道。
 

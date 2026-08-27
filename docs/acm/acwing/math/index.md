@@ -7,7 +7,11 @@ title: 快速傅立叶变换 (FFT)
 
 ## FFT
 
+<!-- algorithm-tags-ignore -->
+
 ### AcWing 3122. 多项式乘法
+
+<!-- algorithm-tags: fft, implementation -->
 
 ```cpp
 #include <iostream>
@@ -70,6 +74,8 @@ int main() {
 ```
 
 ### AcWing 3123. 高精度乘法II
+
+<!-- algorithm-tags: fft, arbitrary_precision -->
 
 复数乘法运算符写挂，回扣计算几何的向量叉积写挂。
 

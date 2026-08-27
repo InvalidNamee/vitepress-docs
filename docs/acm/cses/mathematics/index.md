@@ -5,6 +5,8 @@ title: CSES Mathematics
 
 ## Josephus Queries
 
+<!-- algorithm-tags: math, implementation -->
+
 一个经典问题，一次一次模拟时间上肯定不允许。需要**一次走一轮，一轮一轮走**。
 
 1. 检查 $n = 1$，如果是直接返回 $1$。
@@ -47,6 +49,8 @@ int main() {
 
 ## Exponentiation
 
+<!-- algorithm-tags: math, exponentiation_by_squaring -->
+
 平平无奇的快速幂。
 
 ```cpp
@@ -81,6 +85,8 @@ int main() {
 ```
 
 ## Exponentiation II
+
+<!-- algorithm-tags: math, exponentiation_by_squaring -->
 
 也是平平无奇的快速幂，指数上对 $10^9 + 7 - 1$ 取模即可。
 
@@ -117,6 +123,8 @@ int main() {
 
 ## Counting Divisors
 
+<!-- algorithm-tags: number_theory, math -->
+
 直接暴力数就行了。当然用线筛的标记数组数会更快一点。
 
 ```cpp
@@ -147,6 +155,8 @@ int main() {
 ```
 
 ## Common Divisors
+
+<!-- algorithm-tags: number_theory, math -->
 
 直接暴力就行，顺着扫一遍，把约数都标记上，如果想标记一个约数的时候发现他已经标记了就尝试更新答案。
 
@@ -183,6 +193,8 @@ int main() {
 
 ## Sum of Divisors
 
+<!-- algorithm-tags: number_theory, math, prefix_sum -->
+
 经典的数论分块，答案是
 
 $$
@@ -216,6 +228,8 @@ int main() {
 ```
 
 ## Divisor Analysis
+
+<!-- algorithm-tags: number_theory, math -->
 
 有三个任务，一个一个看
 
@@ -274,6 +288,8 @@ int main() {
 
 ## Prime Multiples
 
+<!-- algorithm-tags: number_theory, math, inclusion_and_exclusion -->
+
 这个很简单，容斥一下就行，应该需要防一下爆 long long。
 
 ```cpp
@@ -313,6 +329,8 @@ int main() {
 ```
 
 ## Counting Coprime Pairs
+
+<!-- algorithm-tags: number_theory, math, dp -->
 
 > [!NOTE]
 > 这道题看了题解，我没见过这种套路，我只能想到用 bitset 维护状态然后把不可选的或起来算个数，但是这样时间和空间都正好会爆掉。
@@ -361,6 +379,8 @@ int main() {
 
 ## Next Prime
 
+<!-- algorithm-tags: number_theory, math, primality_test -->
+
 > [!NOTE]
 > 这道也看了题解，但是我真的很不理解为什么能变快。
 
@@ -405,6 +425,8 @@ int main() {
 ```
 
 ## Binomial Coefficients
+
+<!-- algorithm-tags: math, combinatorics, modular_multiplicative_inverse -->
 
 预处理一下逆元然后直接算就行。
 
@@ -451,6 +473,8 @@ int main() {
 ```
 
 ## Creating Strings II
+
+<!-- algorithm-tags: math, combinatorics -->
 
 先 $\mathrm{A}_n^n$ 排列一下，然后相同字母是无序的，在除掉字母的顺序。假设把所有字母映射到了 $[0, 25]$，每个字母的数量用 $m_i$ 表示，那么答案就是
 
@@ -504,6 +528,8 @@ int main() {
 
 ## Distributing Apples
 
+<!-- algorithm-tags: math, combinatorics -->
+
 隔板法，给每个板子上附带一个球保证允许一组内苹果数量是 0。
 
 ```cpp
@@ -549,6 +575,8 @@ int main() {
 ```
 
 ## Christmas Party
+
+<!-- algorithm-tags: math, combinatorics, inclusion_and_exclusion -->
 
 到这里已经继承了上面的一大坨预处理代码一路了……
 
@@ -606,6 +634,8 @@ int main() {
 ```
 
 ## Permutation Order
+
+<!-- algorithm-tags: math, implementation -->
 
 这个其实就是统计一下阶乘从前往后模拟。枚举到第 $i$ 位的时候我们知道这一位差一个 $1$，$k$ 就会差 $\left(n - i\right)!$，第一类查询就是看看 $k$ 最多能减几个阶乘就选剩余的第几个数，第二类是检查剩余的数有几个比他小就给 $k$ 加上这个阶乘的几倍。
 
@@ -682,6 +712,8 @@ int main() {
 
 ## Permutation Rounds
 
+<!-- algorithm-tags: math, number_theory -->
+
 求所有环长的 LCM 即可。
 
 ```cpp
@@ -754,6 +786,8 @@ int main() {
 
 ## Bracket Sequences I
 
+<!-- algorithm-tags: math, combinatorics -->
+
 > [!NOTE]
 > 这道题看了题解，推出来一个小性质之后不会优化了。
 
@@ -810,6 +844,8 @@ int main() {
 ```
 
 ## Bracket Sequences II
+
+<!-- algorithm-tags: math, combinatorics -->
 
 > [!NOTE]
 > 这道题没看题解，但是问了 Gemini，也算是看了题解了吧。
@@ -889,6 +925,8 @@ int main() {
 
 ## Counting Necklaces
 
+<!-- algorithm-tags: math, combinatorics, burnside -->
+
 > [!NOTE]
 > 这道也看了题解。
 
@@ -942,6 +980,8 @@ int main() {
 
 ## Counting Grids
 
+<!-- algorithm-tags: math, combinatorics, burnside -->
+
 和上道题一个原理，把上一道的直接迁移过来用就行，一共只有三种状态，初始状态是 $2^{n * n}$，旋转 $180\degree$ 是一半上取整，旋转 $90\degree$ 和 $270\degree$ 是四分之一上取整。答案是
 
 $$
@@ -977,6 +1017,8 @@ int main() {
 ```
 
 ## Fibonacci Numbers
+
+<!-- algorithm-tags: math, linear_algebra, exponentiation_by_squaring -->
 
 经典的矩阵快速幂。
 
@@ -1026,6 +1068,8 @@ int main() {
 ```
 
 ## Throwing Dice
+
+<!-- algorithm-tags: math, dp, exponentiation_by_squaring -->
 
 仍然是矩阵快速幂，递推式如下
 
@@ -1105,6 +1149,8 @@ int main() {
 
 ## Graph Paths I
 
+<!-- algorithm-tags: math, graphs, exponentiation_by_squaring -->
+
 仍然是矩阵快速幂的经典的用法，邻接矩阵的值存路径条数直接求 n 次方即可。
 
 ```cpp
@@ -1157,6 +1203,8 @@ int main() {
 ```
 
 ## Graph Paths II
+
+<!-- algorithm-tags: math, graphs, exponentiation_by_squaring, shortest_path -->
 
 仍然是矩阵快速幂，但是变成了广义矩阵，`+` 和 `min` 组成的代数系统满足对 `+` 满足结合律，`+` 对 `min` 满足分配律，所以正常矩阵的性质可以套过来用。
 
@@ -1213,6 +1261,8 @@ int main() {
 ```
 
 ## System of Linear Equations
+
+<!-- algorithm-tags: math, linear_algebra, gaussian_elimination -->
 
 高斯消元的板子，学过线性代数应该都能会。
 
@@ -1312,6 +1362,8 @@ int main() {
 
 ## Sum of Four Squares<span style="color: red">PROBLEM</span>
 
+<!-- algorithm-tags: math, dp, number_theory -->
+
 有一个很显然但是时间复杂度比较危险的做法，从前往后把这个 $10^7$ 个数全 DP 一遍。然后我就想从大到小枚举平方数以第一个遇到的为准，找到一个之后就直接不找了，没想到这个神秘的小优化跑的非常快，而且还是对的，
 
 ```cpp
@@ -1357,6 +1409,8 @@ int main() {
 ```
 
 ## Triangle Number Sums
+
+<!-- algorithm-tags: math, binary_search, two_pointer -->
 
 > [!NOTE]
 > 这道题看了题解
@@ -1414,6 +1468,8 @@ int main() {
 
 ## Dice Probability
 
+<!-- algorithm-tags: math, dp, probability -->
+
 这就是一个简单的二维 DP，但是要小心爆精度。
 
 ```cpp
@@ -1452,6 +1508,8 @@ int main() {
 ```
 
 ## Moving Robots
+
+<!-- algorithm-tags: math, dp, probability -->
 
 可以分别计算每个机器人走 $k$ 步后在每个位置的概率，最后把每个位置上不在的概率乘起来相加统计答案。
 
@@ -1510,6 +1568,8 @@ int main() {
 
 ## Candy Lottery
 
+<!-- algorithm-tags: math, probability -->
+
 利用一下容斥，最大值是 $i$ 的概率等于全部不大于 $i$ 的概率减全部不大于 $i - 1$ 的概率，套入期望的公式里面答案应该是
 
 $$
@@ -1540,6 +1600,8 @@ int main() {
 ```
 
 ## Inversion Probability
+
+<!-- algorithm-tags: math, probability -->
 
 思路完全没难度，直接暴力做都行，但是卡精度是真恶心，官方数据疑似有问题，我全用 Python 的整型算这都能错？？这是肯定不会错的 Python 代码。
 
@@ -1609,6 +1671,8 @@ int main() {
 
 ## Stick Game
 
+<!-- algorithm-tags: math, game_theory, dp -->
+
 简单的博弈论 DP，当某个状态能通过一步操作走到必败态，那这个状态就是必胜态，否则必败。拿完的人赢，所以给第 0 个位置初始化成必败态。
 
 ```cpp
@@ -1643,6 +1707,8 @@ int main() {
 
 ## Nim Game I
 
+<!-- algorithm-tags: game_theory, bitmask -->
+
 经典的取石子游戏，后手胜利当且仅当所有石子异或和为 0，必胜的策略就是每次都把先手取的值给抵消了，最后一次取消成 0。
 
 ```cpp
@@ -1669,6 +1735,8 @@ int main() {
 ```
 
 ## Nim Game II
+
+<!-- algorithm-tags: game_theory, bitmask, number_theory -->
 
 这个不能一次性取完了，单组游戏的胜负是 4 个一循环的，全部模 4，然后就变成了上一个问题。
 
@@ -1697,6 +1765,8 @@ int main() {
 
 ## Stair Game
 
+<!-- algorithm-tags: game_theory, bitmask -->
+
 偶数的异或和不为 0 则必胜，先手挪偶数，对手挪奇数你下一步就在把他挪到挪走不影响平衡，对手挪偶数那就和上面的问题一样了。
 
 ```cpp
@@ -1723,6 +1793,8 @@ int main() {
 ```
 
 ## Grundy's Game
+
+<!-- algorithm-tags: game_theory, dp, sprague_grundy -->
 
 > [!NOTE]
 > 这道题看了题解，我会暴力求 SG 函数做，但是我打的表太大了没看出来超过 1222 之后似乎就没有必败态了。
@@ -1771,6 +1843,8 @@ int main() {
 ```
 
 ## Another Game	
+
+<!-- algorithm-tags: game_theory, parity -->
 
 每次只能取一个，不难~~（其实很难）~~想到和奇偶性可能有关系。先手的人每次都给后手的留全偶数，这样一定能把 0 给后手，所以先手必胜当且仅当初始状态有奇数。
 

@@ -7,9 +7,13 @@ title: GPLT-全国赛2026
 
 ## L1
 
+<!-- algorithm-tags-ignore -->
+
 全都是水题。
 
 ### L1-1
+
+<!-- algorithm-tags: implementation -->
 
 ```python
 print('Building the Future, One Line of Code at a Time.')
@@ -17,12 +21,16 @@ print('Building the Future, One Line of Code at a Time.')
 
 ### L1-2
 
+<!-- algorithm-tags: arithmetic -->
+
 ```python
 n = int(input())
 print(n * 15)
 ```
 
 ### L1-3
+
+<!-- algorithm-tags: case_work -->
 
 ```python
 a, b = map(int, input().split())
@@ -36,6 +44,8 @@ else:
 ```
 
 ### L1-4
+
+<!-- algorithm-tags: implementation -->
 
 ```cpp
 #include <iostream>
@@ -59,6 +69,8 @@ int main() {
 ```
 
 ### L1-5
+
+<!-- algorithm-tags: implementation, hash_set -->
 
 ```cpp
 #include <iostream>
@@ -96,12 +108,16 @@ int main() {
 
 ### L1-6
 
+<!-- algorithm-tags: implementation -->
+
 ```cpp
 for _ in range(11):
     print(len(input()), end='')
 ```
 
 ### L1-7
+
+<!-- algorithm-tags: implementation, arithmetic -->
 
 ```python
 n = int(input())
@@ -117,6 +133,8 @@ else:
 ```
 
 ### L1-8
+
+<!-- algorithm-tags: string, implementation -->
 
 当时出了一小会儿事故，需要注意边界，防止 RE。
 
@@ -176,7 +194,11 @@ int main() {
 
 ## L2
 
+<!-- algorithm-tags-ignore -->
+
 ### L2-1
+
+<!-- algorithm-tags: simulation, greedy -->
 
 直接开两个数组模拟即可，非常的简单。
 
@@ -226,6 +248,8 @@ int main() {
 
 ### L2-2
 
+<!-- algorithm-tags: sorting, binary_search -->
+
 二分查找，直接用 upper_bound 就解决了。
 
 ```cpp
@@ -270,6 +294,8 @@ int main() {
 ```
 
 ### L2-3
+
+<!-- algorithm-tags: dp_tree, dfs -->
 
 树形 DP，就是找根到每个叶子路径上的最小值，然后把最大的几个输出。
 
@@ -323,6 +349,8 @@ int main() {
 ```
 
 ### L2-4
+
+<!-- algorithm-tags: dfs, graphs -->
 
 直接按要求搜即可，非常简单。
 
@@ -389,9 +417,13 @@ int main() {
 
 ## L3
 
+<!-- algorithm-tags-ignore -->
+
 依然是第一个送分，后两个不会。
 
 ### L3-1
+
+<!-- algorithm-tags: priority_queue, simulation -->
 
 开两个优先队列，一个放老人，一个放其他人，然后按要求模拟。
 
@@ -463,6 +495,8 @@ int main() {
 ```
 ### L3-2
 
+<!-- algorithm-tags: bruteforcing, backtracking -->
+
 大概率是网络流，什么点覆盖独立集之类的，大概率会补。
 
 先贴个暴力的代码了。
@@ -515,6 +549,8 @@ int main() {
 ```
 
 ### L3-3
+
+<!-- algorithm-tags: bruteforcing, backtracking -->
 
 我直接打暴力了高达 10 分。
 

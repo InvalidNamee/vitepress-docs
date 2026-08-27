@@ -5,6 +5,8 @@ title: 2025春训第九场
 
 ## **A. 鲁的智力**
 
+<!-- algorithm-tags: math, greedy -->
+
 我刚开始看到这道题之后默默的放弃了，选择了后面的 dp 题。
 
 * 最小排名：至少有多少个人比他分数高。
@@ -36,6 +38,8 @@ int main() {
 ```
 
 ## B. **鲁的女孩**
+
+<!-- algorithm-tags: two_pointer, greedy -->
 
 最优的配对方案是一个正序一个倒序一一配对。关键的性质是 1 ≤ a, b ≤ 100，开两个数组记录 \[1, 100\] 每个数的个数，然后双指针扫描一次即可得出答案。事实可以证明，挺容易写挂的（比如我）
 
@@ -75,6 +79,8 @@ int main() {
 ```
 
 ## C. **鲁的石板**
+
+<!-- algorithm-tags: dp, dp_bitfield, exponentiation_by_squaring -->
 
 **前排警告**，最好别用 vector 一直申请内存容易 TLE😭
 
@@ -150,6 +156,8 @@ int main() {
 ```
 
 ## **D. 游览计划**
+
+<!-- algorithm-tags: graphs, bfs -->
 
 提供一个暴力的解法，具体有多暴力见下图，差点拼尽全力无法战胜了……
 

@@ -7,6 +7,8 @@ title: 2025春训第六场
 
 ## **A. 魔法石**
 
+<!-- algorithm-tags: case_work, sorting -->
+
 签到题，但是有点绕（我就被坑了）。有解的条件是三个数都相等或者两个数相等，另一个比这两个小；前者直接输出三个相等的，后者输出一个较大的和两个较小的即可。
 
 ```cpp
@@ -27,6 +29,8 @@ int main() {
 ```
 
 ## B. **回文立方数**
+
+<!-- algorithm-tags: bruteforcing, math -->
 
 直接枚举 $i \in [1, \lfloor \sqrt[3]{N} \rfloor]$，验证 i³ 是否回文，找最大的即可。
 
@@ -59,6 +63,8 @@ int main() {
 
 ## C. gcd
 
+<!-- algorithm-tags: math, bitmask -->
+
 还没问明白 GPT，但是强迫症趋势我必须在第七场前发第六场，所以先🐦一下。
 
 这是事后不知道什么原理过了的代码，似乎要求 a 是 b - a 的倍数而且和 b - a 二进制位不重叠。
@@ -85,6 +91,8 @@ int main(){
 ```
 
 ## E. **摘Galo**
+
+<!-- algorithm-tags: dp_tree, knapsack -->
 
 类似树形背包问题，树形dp回溯的时候用孩子的 f 数组更新父亲的 f 数组，最后父亲的 $f_1 = min\{f_1, w\}$，注意优化常数，容易被卡成 TLE。
 
@@ -146,6 +154,8 @@ int main() {
 ```
 
 ## F. 队列安排
+
+<!-- algorithm-tags: sorting, prefix_sum -->
 
 排序，从小到大排就行。
 

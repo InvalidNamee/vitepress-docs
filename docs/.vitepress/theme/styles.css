@@ -46,3 +46,39 @@ img[src='/search.png'] {
   width: 100%;
   aspect-ratio: 1 / 1;
 }
+
+/* solved.ac algorithm tags rendered below problem headings */
+.vp-doc .algorithm-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 8px 0 18px;
+  padding: 0;
+  list-style: none;
+}
+
+.vp-doc h2 + .algorithm-tags {
+  margin-top: -8px;
+}
+
+.vp-doc .algorithm-tag {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 5px;
+  margin: 0;
+  padding: 3px 9px;
+  border: 1px solid var(--vp-c-brand-soft);
+  border-radius: 999px;
+  color: var(--vp-c-brand-1);
+  background: var(--vp-c-brand-soft);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.vp-doc .algorithm-tag__id {
+  color: var(--vp-c-text-2);
+  font-family: var(--vp-font-family-mono);
+  font-size: 10px;
+  font-weight: 400;
+}

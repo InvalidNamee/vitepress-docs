@@ -7,6 +7,8 @@ title: 2025春训第十一场
 
 ## A. 游戏
 
+<!-- algorithm-tags: bitmask, math, ad_hoc -->
+
 约数尽可能多，所以应该让约数尽可能小，那就让他都是 2，找一个最大的 i，使得 l ≤ (1 « i) ≤ r 即可。
 
 ```cpp
@@ -28,6 +30,8 @@ int main() {
 ```
 
 ## **B. 或**
+
+<!-- algorithm-tags: bitmask, greedy, ad_hoc -->
 
 只需要依次考虑每个二进制位是否含 1。于是可以从第 0 位开始一位一位找这个范围内是否包含一个 1 即可。
 
@@ -54,6 +58,8 @@ int main() {
 ```
 
 ## C. **最长子序列**
+
+<!-- algorithm-tags: greedy, data_structures, constructive -->
 
 非常反直觉的一道题，看上去很简单，实际上很恶心。
 
@@ -141,6 +147,8 @@ int main() {
 
 ## E. 精灵球
 
+<!-- algorithm-tags: data_structures, precomputation -->
+
 数据分层，预处理间隔不大于 1000 的查询，暴力处理间隔大于 1000 的查询，最坏 1e8 的计算量完全可以过。
 
 ```cpp
@@ -186,6 +194,8 @@ int main() {
 ```
 
 ## **F. 钢条(stick)**
+
+<!-- algorithm-tags: probability, math, arithmetic -->
 
 我一直在从切割的角度看，没想到从切出的段的角度看。
 

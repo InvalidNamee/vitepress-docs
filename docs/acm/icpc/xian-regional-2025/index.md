@@ -11,6 +11,8 @@ qoj 链接：[https://qoj.ac/contest/2562](https://qoj.ac/contest/2562)
 
 ## G. Grand Voting
 
+<!-- algorithm-tags: sorting, greedy -->
+
 第一道签到题一般是给我写的，从大小小排序就是最低的，从小到大就是最高的。
 
 ```cpp
@@ -49,6 +51,8 @@ int main() {
 ```
 
 ## J. January's Color
+
+<!-- algorithm-tags: dp_tree, lca -->
 
 我们一起想到的树形 DP 两轮，首先从叶子到根更新 c 值为获得这个点的最小 c 值。然后从根到叶子在做一遍求从任意结点走到根的花费，然后作差。两轮 DP 都是通过维护一个最小值和一个次小值转移状态。
 
@@ -159,9 +163,13 @@ int main() {
 
 ## L. Let's Make a Convex!<sup style="color: blue">(未参与)</sup>
 
+<!-- algorithm-tags-ignore -->
+
 我只检查了一下二分框架，过的还比较顺利。
 
 ## F. Follow the Penguins
+
+<!-- algorithm-tags: graph_traversal, functional_graph -->
 
 这道就不是特别顺了，我参与了调试和推结论。计算企鹅最后停下的位置在推时间，结论大概是这样的，企鹅之间的追逐关系可以表示成一个**基环树森林**
 
@@ -172,6 +180,8 @@ int main() {
 ![sketch](sketch.jpeg)
 
 ## I. Imagined Holly<sup style="color: red">(补题)</sup>
+
+<!-- algorithm-tags: topological_sorting, xor_basis, lca -->
 
 这题最后研究了好久好久，放弃了之后一看题解发现完全不占边。实际操作下来很容易，只要想到了立刻就能做出来，我们都往怎么删边和如何利用 $a_i < 2^{11}$ 这块想了，有点可惜。看了题解，发现三个人的题都读错了（我们原来认为点权是随机的，但是实际上点权是 indices，下标！！），恍然大悟……
 
@@ -238,6 +248,8 @@ int main() {
 ```
 
 ## B. Beautiful Dangos<sup style="color: red">(补题)</sup>
+
+<!-- algorithm-tags: binary_search, string, constructive, greedy -->
 
 有点榜偏了的感觉，这道题其实很简单但是被我们忽略了。后来我读完题，没看题解就有想法了。这就是个**二分+字符串模拟**。
 

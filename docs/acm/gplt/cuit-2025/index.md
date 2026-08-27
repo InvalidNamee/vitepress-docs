@@ -11,15 +11,21 @@ title: 第四届成都信息工程大学天梯赛
 
 ## L1 基础级
 
+<!-- algorithm-tags-ignore -->
+
 L1 的 8 道题都非常顺利，没有被卡，可惜速度还是没有 @liuxx 快。
 
 ### **L1-1 遇见YFffffff**
+
+<!-- algorithm-tags: implementation -->
 
 ```python
 print('Hello YFffffff')
 ```
 
 ### **L1-2 桃之夭夭，灼灼其华**
+
+<!-- algorithm-tags: implementation, arithmetic, parity -->
 
 ```python
 n = int(input())
@@ -28,6 +34,8 @@ print(s, 'sad' if s & 1 else 'love')
 ```
 
 ### **L1-3 体温预警系统**
+
+<!-- algorithm-tags: implementation, case_work -->
 
 ```python
 n = int(input())
@@ -50,6 +58,8 @@ else:
 ```
 
 ### **L1-4 破碎的心，无法挽回的距离**
+
+<!-- algorithm-tags: math, bruteforcing -->
 
 ```cpp
 #include <iostream>
@@ -78,6 +88,8 @@ int main() {
 
 ### **L1-5 心碎？抽卡时间！**
 
+<!-- algorithm-tags: implementation, simulation -->
+
 ```python
 a = list(map(int, input().split()))
 b = list(map(int, input().split()))
@@ -93,6 +105,8 @@ else:
 
 ### **L1-6 字符串糕手**
 
+<!-- algorithm-tags: string, bruteforcing -->
+
 ```python
 l = int(input())
 s = input()
@@ -105,6 +119,8 @@ print(res)
 ```
 
 ### **L1-7 若敢来氪，必叫你大败而归**
+
+<!-- algorithm-tags: sorting, greedy -->
 
 ```python
 l = []
@@ -126,6 +142,8 @@ print(cnt)
 ```
 
 ### **L1-8 回到她的身边好吗**
+
+<!-- algorithm-tags: implementation, greedy -->
 
 ```python
 n, m, k, p = map(int, input().split())
@@ -149,9 +167,13 @@ else:
 
 ## L2 进阶级
 
+<!-- algorithm-tags-ignore -->
+
 实话说我感觉不是很困难的，但是 wa 了两道题。
 
 ### **L2-1 来自YFffffff的挑战**
+
+<!-- algorithm-tags: string, greedy -->
 
 这个策略当时有一定蒙的成分，实际上也是正确的。
 
@@ -185,6 +207,8 @@ int main() {
 ```
 
 ### L2\_2 不要刁难我们了
+
+<!-- algorithm-tags: graph_traversal, shortest_path, dijkstra, graphs -->
 
 最短路板子题，做到这儿的时候也还是非常顺利，这时候心态已经被机房电脑磨的差不多了，这次不怪电脑怪我没事先拷过来一份新的编译器，我在本地调试的时候因为 `>>>` 不能连续，auto 遍历 vector 不能用被折磨的要死，还好是一遍过了。
 
@@ -240,6 +264,8 @@ int main() {
 ```
 
 ### **L2-3 花非花，雾非雾**
+
+<!-- algorithm-tags: graphs, dfs, disjoint_set, trees -->
 
 我 wa 掉的做法是开了个队列存储边，有更改的时候从更改的点出发 dfs 更新所有能更新的点，但是问题在于我 dfs 的路径并不一定是按照边从前到后更新的；其实当时又想到用并查集，但是最后又暂时放弃了。
 
@@ -319,6 +345,8 @@ int main() {
 
 ### **L2-4 是留不住你的冰寒飞影**
 
+<!-- algorithm-tags: two_pointer, greedy, sweeping -->
+
 我现在还认为滑动窗口是可行的，考场上写的可能逻辑还是有点小问题，本质上我当时写的单调队列只是没有具象化的把点合并了。照着题解的思路写完代码之后发现我当时的问题是维护的范围小了，一个滑动窗口能 0 代价到达的最左端和最右端由左侧第二个和右侧第二个点决定，而不是窗口的左右端点。
 
 ```cpp
@@ -367,7 +395,11 @@ int main() {
 
 ## L3 登顶级
 
+<!-- algorithm-tags-ignore -->
+
 ### **L3-1 银白之森**
+
+<!-- algorithm-tags: graphs, precomputation, exponentiation_by_squaring -->
 
 想到敲了二十多分钟基环树 dp 代码，我自己都想笑😇😇😇。这是一张后继图，每个点初度为1，所以构成基环树，然后我就想偏了。其实不用区分环内环外直接一起倍增预处理一下然后把 k 二进制分解算就行。还是忘不了之前一道树上倍增 + 环形dp 的基环树题😮‍💨，我写着写着发现环里面还得倍增，然后用了同一个倍增数组，又写了一会儿才发现问题的严重性，直接把代码全删了重写了一遍。
 
@@ -411,6 +443,8 @@ int main() {
 ```
 
 ### **L3-2 摸球游戏**
+
+<!-- algorithm-tags: math, probability, exponentiation_by_squaring -->
 
 当时矩阵快速幂 t 了，按说不该 t 的；但是这不是重点，重点是：我要向我高中数学老师道歉😭，这道题是一阶线性递推求通项，我把他当二阶的了，甚至还试图找特征方程。2025/03/07 晚上 22:00 我突然意识到了问题的严重性，于是一个不动点求出来等比数列的递推式然后秒了。他的题解太麻烦了，其实这就是一道平平无奇的高中概率题，果然上大学🧠会退化。
 
@@ -469,6 +503,8 @@ int main() {
 ```
 
 ### **L3-3 电荷**
+
+<!-- algorithm-tags: sorting, binary_search, parametric_search, greedy -->
 
 这道自己做是真做不出来，正确的结论是一个 D 合法当且仅当**按 x 排序检查和按 y 排序检查**至少有一个可以通过，其余情况通过适当交换可以转化成按 x 和 y 检查的一种。如果我自己想只能想到按其中一个排序，调代码的时候也是调的非常头疼。
 

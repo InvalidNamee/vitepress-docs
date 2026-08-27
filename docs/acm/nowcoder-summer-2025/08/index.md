@@ -14,6 +14,8 @@ title: 2025牛客暑期多校训练营8
 
 ## A. Insert One <sup style="color: blue">队友</sup>
 
+<!-- algorithm-tags: bruteforcing, string -->
+
 签到题
 
 ```cpp
@@ -50,6 +52,8 @@ int main() {
 ```
 
 ## B. Inversion Number Parity <sup style="color: blue">队友</sup>
+
+<!-- algorithm-tags: implementation -->
 
 仍然是一道水题，难度甚至在随机数据生成器不抄错……
 
@@ -93,6 +97,8 @@ int main() {
 
 ## C. Bernoulli's Principle	<sup style="color: blue">队友</sup>
 
+<!-- algorithm-tags: sorting, implementation -->
+
 签到题。
 
 ```cpp
@@ -125,6 +131,8 @@ int main() {
 ```
 
 ## F. Broken LED Lights <sup style="color: red">补</sup>
+
+<!-- algorithm-tags: bruteforcing, bitmask, hashing -->
 
 二分卡过去的代码，当时场上我写了一半被 G 题打断了（后来 G 题稳稳的过了），暴力未遂……结束之后饭都没想着吃打了一个二分，两发就过了。
 
@@ -226,6 +234,8 @@ int main() {
 ```
 
 ## G. Changing Minimum Spanning Tree <sup style="color: blue">队友</sup>
+
+<!-- algorithm-tags: mst, trees, lca, sorting -->
 
 考虑 Kruskal 建边的过程，在每次加完全部同一个权值的所有边后在不同连通块加权值介于这个权值和下一个权值之间 (左闭右开) 的边一定会被选入最小生成树。实际统计的时候很恶心，需要考虑不能和他原有的边建重了，最终我们选择了先把重的都算上，跑 Kruskal 的时候存下来 Kruskal 重构树，之后枚举每一条边，在 Kruskal 重构树上找这两个点之间最大边权的最小值，减掉被多加的次数。
 
@@ -356,6 +366,8 @@ int main() {
 ```
 
 ## J. Multiplication in Base the Square Root of -2 <sup style="color: red">补</sup>
+
+<!-- algorithm-tags: fft, implementation -->
 
 ~~待我学一下 FFT……然后怒切板子题~~
 

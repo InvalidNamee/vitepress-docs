@@ -7,6 +7,8 @@ title: CSES Introductory Problems
 
 ## Raab Game I
 
+<!-- algorithm-tags: greedy, implementation -->
+
 首先，两个人的总分一定不会比牌数多，其次一个人合法的得分范围是 $\left[1, n - 1\right]$，只需要排序一下全部往后错一位就可以得到这两个边界，所以对于一个合法的结果一定满足
 
 $$
@@ -61,6 +63,8 @@ int main() {
 
 ## Mex Grid Construction
 
+<!-- algorithm-tags: implementation, simulation, constructive -->
+
 我刚开始看错题了，我本来以为鸽子里填的是一行和一列的 mex 值，又读了一遍之后发现只是前面的 mex 值，所以直接模拟即可。
 
 ```cpp
@@ -102,6 +106,8 @@ int main() {
 ```
 
 ## Knight Moves Grid
+
+<!-- algorithm-tags: bfs, grid_graph, shortest_path -->
 
 经过查阅资料，这个 Knight 可以等价代换成中国象棋的**马**，边权为 1 的图上的最短路直接 bfs 即可。
 
@@ -146,6 +152,8 @@ int main() {
 
 ## Grid Coloring I
 
+<!-- algorithm-tags: constructive, greedy -->
+
 一个位置合法，当且仅当和当前不一样，和左侧不一样，和上方不一样，但是每个位置有四个选择，所以**一定能选出一个合法的**，直接模拟即可。
 
 ```cpp
@@ -187,6 +195,8 @@ int main() {
 ```
 
 ## String Reorder
+
+<!-- algorithm-tags: greedy, ad_hoc, constructive -->
 
 假设现在还剩 $n$ 个字符，出现次数最多的字符的出现次数为 $cnt$。如果一上来就 $cnt > \lceil\frac{n}{2}\rceil$，那一定不合法，反之合法。确保全局合法之后从前到后一个一个选
 

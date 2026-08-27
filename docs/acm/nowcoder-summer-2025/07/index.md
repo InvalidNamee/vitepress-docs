@@ -14,6 +14,8 @@ vp 排名 185，这场打的比较好，最后 I 题差点就调出来了，结�
 
 ## A. Loopy Laggon <sup style="color: blue">队友</sup>
 
+<!-- algorithm-tags: math, parity -->
+
 Alice 的旋转不会改变逆序数，外环是一个 12-轮换，内环是一个 4-轮换，可以拆成 11 + 3 = 14 个对换，**不改变逆序数奇偶性**，Bob 随机放置只有 $\frac{1}{2}$ 的概率放对，一套 10 个检查出来的概率是 $1 - \frac{1}{2^{10}}$，可以答对 90%，他没卡暴力求逆序数的方法。
 
 讲题的时候讲了一种 O(n) 判断排列奇偶性的方法，从左往右扫一遍如果有一个数不在他的位置上就换回来，奇偶性取反，直到换完，裸的板子大概是这样的，也记录一下。
@@ -84,6 +86,8 @@ int main() {
 
 ## F. Forsaken City <sup style="color: blue">队友</sup>
 
+<!-- algorithm-tags: greedy -->
+
 一道签到题，枚举 i，答案是 $\max_{1 \le i \le n} \max_{1 \le j < i} - a_i$.
 
 ```cpp
@@ -112,6 +116,8 @@ int main() {
 ```
 
 ## F. The Correlation
+
+<!-- algorithm-tags: greedy, sorting, prefix_sum -->
 
 这道题是我写的，而且我是战犯😭
 
@@ -164,6 +170,8 @@ int main() {
 
 ## G. Nice Doppelgnger
 
+<!-- algorithm-tags: number_theory, sieve, dp -->
+
 这题一发过了，某种意义上算是当天把欠的补了吧，最近这是第二个用线筛 dp 的题了，吸取上次写挂的教训，这次一遍就对了。
 
 刚开始还打算打表来着，但是突然注意~~(猜)~~到一个关键性质，如果一个数的幂次为奇数的质因数个数为奇数个，加入集合一定不会和其他两个数组成平方数，队友考虑到有这个性质的数正好一定至少有一半（只考虑 2 的幂次，如果一个数不满足那么他的 2 倍一定满足），遂大胆的写。
@@ -211,6 +219,8 @@ int main() {
 ```
 
 ## I. Lava Layer <sup style="color: red">补</sup>
+
+<!-- algorithm-tags: dp, exponentiation_by_squaring, bitmask -->
 
 大型矩阵快速幂加速期望 dp，太恶心了，写的有一种大模拟即视感，最后结束后三分钟队友成功调出来了……
 
@@ -400,6 +410,8 @@ int main() {
 ```
 
 ## J. Ivory <sup style="color: blue">队友</sup>
+
+<!-- algorithm-tags: math, euclidean -->
 
 巧妙的数学题，不断取 b 和 d 中较小的消较大的，利用残余部分互质，留出一个常数提到外面继续递归。
 

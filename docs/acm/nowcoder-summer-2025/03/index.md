@@ -14,6 +14,8 @@ title: 2025牛客暑期多校训练营3
 
 ## A. Ad-hoc Newbie	
 
+<!-- algorithm-tags: constructive -->
+
 这道是我做的，我发现有限制 f<sub>i</sub> ≤ i，之后每行至多需要 i 个位置就可以满足要求，利用对称性，如果前 i 个位置填的同时符合第 i 行和前 i - 1 列的要求，沿着对角线对称过去一定还满足，所以问题就简单了，直接随便按要求构造半个矩阵然后对称过去就解决了。
 
 ```cpp
@@ -76,6 +78,8 @@ int main() {
 ```
 
 ## B. Bitwise Puzzle
+
+<!-- algorithm-tags: bitmask, ad_hoc, implementation -->
 
 这道题也是我做的，思路也比较简单，美中不足的是我没有把情况归纳起来，我是暴力枚举了所有可能的次序都写了一遍，被我做成大模拟了，期间还因为区间归纳的有问题错了两次。
 
@@ -219,6 +223,8 @@ int main() {
 
 ## D. Distant Control <sup style="color: blue">队友</sup>
 
+<!-- algorithm-tags: prefix_sum, case_work -->
+
 赛后补的时候还想错了好几次，用 dp 的惯性我只想到左边长度够了能一直往右开，没想到右边长度够了能往左边开……
 
 ```cpp
@@ -256,6 +262,8 @@ int main() {
 ```
 
 ## E. Equal <sup style="color: blue">队友</sup>
+
+<!-- algorithm-tags: hashing, number_theory -->
 
 这道当时没少踩坑，题解给的是 XOR hashing，我们当时用的是 $O(n \ln n)$ 的方法，刚开始因为没特判只有两个数的情况 WA 了四次，然后好像又因为前面有问题 T 了一次。
 
@@ -323,6 +331,8 @@ int main() {
 
 ## F. Flower <sup style="color: blue">队友</sup>
 
+<!-- algorithm-tags: ad_hoc, arithmetic -->
+
 本场签到题。
 
 ```cpp
@@ -348,6 +358,8 @@ int main() {
 ```
 
 ## H. Head out to the Target <sup style="color: blue">队友</sup>
+
+<!-- algorithm-tags: trees, binary_search, lca -->
 
 这道没看着呢么难，实际上可以用比较暴力的办法处理，刚开始我们都没意识到，还 WA 了一发，后来注意到的时候我正在写 B 题的大模拟，打断了我五六分钟左右就过了。
 
@@ -425,6 +437,8 @@ int main() {
 ```
 
 ## J. Jetton
+
+<!-- algorithm-tags: math, number_theory, simulation -->
 
 这道是我写的，刚开始没发现特殊性质，感觉直接暴力也未尝不可，甚至还打表验证了一下，后来不出意外就出意外了，T 了一发之后仔细思考了一下，然后换成一个式子每次 $O (log_2 \left(x + y\right))$ 稳定解决了。
 

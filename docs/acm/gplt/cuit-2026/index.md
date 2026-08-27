@@ -5,15 +5,21 @@ title: 第五届成都信息工程大学天梯赛
 
 ## L1
 
+<!-- algorithm-tags-ignore -->
+
 这里面基本上都是模拟，不太需要动脑子，但是写时候还是感觉非常的恶心。
 
 ### L1-1
+
+<!-- algorithm-tags: implementation -->
 
 ```python
 print('爱丽丝断头台"')
 ```
 
 ### L1-2
+
+<!-- algorithm-tags: implementation, case_work -->
 
 ```cpp
 #include <iostream>
@@ -32,6 +38,8 @@ int main() {
 
 ### L1-3
 
+<!-- algorithm-tags: math, arithmetic -->
+
 ```python
 s, m, n = map(int, input().split())
 if s > m and n >= m:
@@ -43,6 +51,8 @@ else:
 ```
 
 ### L1-4
+
+<!-- algorithm-tags: implementation, case_work -->
 
 ```cpp
 #include <iostream>
@@ -80,6 +90,8 @@ int main() {
 
 ### L1-5
 
+<!-- algorithm-tags: number_theory, math, bruteforcing -->
+
 ```cpp
 #include <iostream>
 #include <cmath>
@@ -114,6 +126,8 @@ int main() {
 ```
 
 ### L1-6
+
+<!-- algorithm-tags: implementation, bruteforcing -->
 
 我记得有有个公式可以直接把日期映射到一个连续的整数区间，但是我记不起来具体是什么了，于是直接暴力了。
 
@@ -157,6 +171,8 @@ int main() {
 ```
 
 ### L1-7
+
+<!-- algorithm-tags: priority_queue, implementation, simulation -->
 
 ```cpp
 #include <iostream>
@@ -205,6 +221,8 @@ int main() {
 ```
 
 ### L1-8
+
+<!-- algorithm-tags: sorting, greedy, binary_search -->
 
 按照 s 排个序，对于排序后每个位置的 v 值只需要考虑从第一个 s 严格小于他的开始的 v 值的前缀 max。
 
@@ -287,9 +305,13 @@ int main() {
 
 ## L2
 
+<!-- algorithm-tags-ignore -->
+
 三个板子题，四个全是水题。
 
 ### L2-1
+
+<!-- algorithm-tags: dfs, graphs, trees -->
 
 基环树找环，无向图找桥（目标是不是桥的边），并查集均可。
 
@@ -353,6 +375,8 @@ int main() {
 
 ### L2-2
 
+<!-- algorithm-tags: data_structures, priority_queue, greedy -->
+
 显然结论应该是尽可能先合最小的。我开了个链表 + 一个优先队列，时间复杂度是对的。但是更规范的做法可能是并查集 + 优先队列。用链表相当于是合并的时候直接把小的删了，并查集是认为直接并到一起了，都可以。
 
 ```cpp
@@ -408,6 +432,8 @@ int main() {
 ```
 
 ### L2-3
+
+<!-- algorithm-tags: dp_tree, rerooting, trees -->
 
 换根 dp 板子。
 
@@ -478,6 +504,8 @@ int main() {
 
 ### L2-4
 
+<!-- algorithm-tags: graphs, dijkstra, shortest_path -->
+
 Dijkstra 板子
 
 ```cpp
@@ -544,7 +572,11 @@ int main() {
 
 ## L3
 
+<!-- algorithm-tags-ignore -->
+
 ### L3-1
+
+<!-- algorithm-tags: dp_bitfield, graphs, bitmask -->
 
 求最短哈密顿路径，一个状压 dp 的板子（从低到高枚举 bitmask 的过程保证了无后效性）。
 
@@ -603,6 +635,8 @@ int main() {
 
 ### L3-2
 
+<!-- algorithm-tags: dp, string -->
+
 区间dp找到最长的回文子序列，剩下多出来的每个都需要额外插入一个。
 
 ```cpp
@@ -634,5 +668,7 @@ int main() {
 ```
 
 ### L3-3
+
+<!-- algorithm-tags: geometry, ternary_search -->
 
 我看着像是个大模拟，需要分类讨论，算夹角算长度比较，但是没有时间了。于是去看榜视奸别人，发现有好多三分，于是尝试全输出 `NO` 真骗到了三分😋

@@ -7,7 +7,11 @@ title: AcWing 计算几何打卡记录
 
 ## 基础知识
 
+<!-- algorithm-tags-ignore -->
+
 ### AcWing 2983. 玩具
+
+<!-- algorithm-tags: geometry, binary_search -->
 
 严重怀疑数据有问题，暴力 WA，二分能过。
 
@@ -74,6 +78,8 @@ int main() {
 }
 ```
 ### AcWing 2984. 线段
+
+<!-- algorithm-tags: geometry, line_intersection, bruteforcing -->
 
 ```cpp
 #include <iostream>
@@ -157,7 +163,11 @@ int main() {
 ```
 ## 凸包
 
+<!-- algorithm-tags-ignore -->
+
 ### AcWing 1401. 围住奶牛
+
+<!-- algorithm-tags: geometry, convex_hull, sorting -->
 
 ```cpp
 #include <iostream>
@@ -227,6 +237,8 @@ int main() {
 ```
 
 ### AcWing 2935. 信用卡凸包
+
+<!-- algorithm-tags: geometry, convex_hull -->
 
 - long double 要用 `%Lf`；
 - 括号套错，被洛谷卡了，这个问题是 GPT 发现的。
@@ -318,7 +330,11 @@ int main() {
 
 ## 半平面交
 
+<!-- algorithm-tags-ignore -->
+
 ### AcWing 2803. 凸多边形
+
+<!-- algorithm-tags: geometry, half_plane_intersection, sorting -->
 
 没想到能出这么多事，被 hack 的两组边界数据如下图
 
@@ -445,6 +461,8 @@ int main() {
 
 ### AcWing 2957. 赛车
 
+<!-- algorithm-tags: geometry, half_plane_intersection, sorting -->
+
 参考之前[牛客多校的做法](https://invalidnamee.github.io/p/25ncmu2/#h-highway-upgrade-%E8%A1%A5)这道可以直接用单调栈做，因为只需要维护半个半平面交，斜率限定为正。
 
 然后我又写挂了，`a[i].k > a[st[tp]].k` 写成了 `a[i].k > a[i - 1].k`，不知道我当时在想什么……
@@ -500,7 +518,11 @@ int main() {
 
 ## 旋转卡壳
 
+<!-- algorithm-tags-ignore -->
+
 ### AcWing 2119. 最佳包裹
+
+<!-- algorithm-tags: geometry, convex_hull, rotating_calipers -->
 
 我这还没几天又和之前凸包挂在了同一个地方，`used[st[tp]] = false` 而不是 `used[tp] = false`.
 
@@ -574,6 +596,8 @@ int main() {
 ```
 
 ### AcWing 2142. 最小矩形覆盖
+
+<!-- algorithm-tags: geometry, convex_hull, rotating_calipers -->
 
 我又又又又把凸包写挂了，这次更严重，不但写出了个 `used[i] = false`，而且 Andrew 第二轮的时候没判断有没有被取过。
 
@@ -717,7 +741,11 @@ int main() {
 
 ## 扫描线
 
+<!-- algorithm-tags-ignore -->
+
 ### AcWing 3068. 扫描线
+
+<!-- algorithm-tags: geometry, sweeping, sorting, coordinate_compression -->
 
 又是熟悉的低级错误时间。
 

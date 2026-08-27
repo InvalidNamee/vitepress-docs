@@ -12,6 +12,8 @@ title: CSES Geometry
 
 ## Point Location Test
 
+<!-- algorithm-tags: geometry -->
+
 叉积判断一下就行。
 
 ```cpp
@@ -60,6 +62,8 @@ int main() {
 ```
 
 ## Line Segment Intersection
+
+<!-- algorithm-tags: geometry, line_intersection -->
 
 也是叉积判断一下就行，但是这个需要特判共线的情况。
 
@@ -118,6 +122,8 @@ int main() {
 
 ## Polygon Area
 
+<!-- algorithm-tags: geometry, polygon_area -->
+
 多边形面积，用三角剖分，取原点为参考点，按着边的顺序做叉积，求和取绝对值，这道题让求面积的二倍，所以不用除以二。
 
 ```cpp
@@ -160,6 +166,8 @@ int main() {
 ```
 
 ## Point in Polygon
+
+<!-- algorithm-tags: geometry, point_in_non_convex_polygon -->
 
 特判在边界的情况，别的地方用射线法。
 
@@ -237,6 +245,8 @@ int main() {
 
 ## Polygon Lattice Points
 
+<!-- algorithm-tags: geometry, pick -->
+
 皮克定理 `面积 = 内部格点 + 边界格点 / 2 - 1`，算出来面积和边界的格点，然后再用公式算内部格点。
 
 ```cpp
@@ -285,6 +295,8 @@ int main() {
 ```
 
 ## Minimum Euclidean Distance
+
+<!-- algorithm-tags: geometry, divide_and_conquer, two_pointer -->
 
 > [!NOTE]
 > 这道题看了题解。
@@ -346,6 +358,8 @@ int main() {
 
 ## Convex Hull
 
+<!-- algorithm-tags: geometry, convex_hull -->
+
 一个看着很简单的 Andrew 在 Acwing 和 CSES 连挂了两次……
 
 上一次是下标填错 (`used[st[tp--]]` 写成了 `used[tp--]`)，这一次是 while 写成 if 没发现。
@@ -403,6 +417,8 @@ int main() {
 
 ## Maximum Manhattan Distances
 
+<!-- algorithm-tags: geometry, math -->
+
 这道比较简单，从训练赛到上海月赛遇到过很多次了，只和 x + y 和 x - y 的最值有关系。
 
 ```cpp
@@ -427,6 +443,8 @@ int main() {
 ```
 
 ## All Manhattan Distances
+
+<!-- algorithm-tags: geometry, math, sorting -->
 
 横纵坐标没什么大关系，可以拆开分别算，没什么难度，但是第一次爆 long long 了。
 
@@ -462,6 +480,8 @@ int main() {
 ```
 
 ## Intersection Points
+
+<!-- algorithm-tags: geometry, sweeping, segtree, data_structures -->
 
 分出来横线竖线，按照起点横坐标排序横线和竖线，枚举竖线，利用优先队列维护横坐标跨越当前竖线的横坐标的横线，用树状数组维护覆盖情况。
 
@@ -536,6 +556,8 @@ int main() {
 
 ## Line Segments Trace I
 
+<!-- algorithm-tags: geometry, stack, sorting -->
+
 这道题是半个半平面交，可以用单调栈维护，按照斜率不减的顺序排序。然后从左到右维护单调栈，保证交点横坐标单调递增。最终栈里面的就是最大值函数的边界，最终构成轮廓的几条直线在栈里的下标关于横坐标是单调的，所以输出答案的时候用双指针即可。
 
 我因为单调栈的 if 条件太长打错了一个 first / second 卡了几十分钟……
@@ -579,6 +601,8 @@ int main() {
 ```
 
 ## Line Segments Trace II
+
+<!-- algorithm-tags: geometry, li_chao_tree, data_structures -->
 
 我学会李超树了！这道题是李超树的板子，李超树利用标记永久化解决了一个线段在不同位置最优性不同的问题。一般的线段树区间修改是找到目标区间直接改懒标记就行，李超树的区间修改的思想是保证当前的懒标记能让一半是最优的，然后用相同的条件递归另一半，这样单点查询的时候取一路的 max 一定能取到一次最优的线段。如果主席树比较熟看一眼代码就明白了。
 
@@ -640,6 +664,8 @@ int main() {
 ```
 
 ## Lines and Queries I
+
+<!-- algorithm-tags: geometry, li_chao_tree -->
 
 和上一道基本上一样，甚至还省了一个区间修改，只需要更新懒标记。需要注意函数值可能是负的了，需要初始化成负无穷。
 
@@ -706,6 +732,8 @@ int main() {
 ```
 
 ## Lines and Queries II
+
+<!-- algorithm-tags: geometry, li_chao_tree -->
 
 在上一道的基础上把生效区间加回来了。
 
@@ -774,6 +802,8 @@ int main() {
 ```
 
 ## Area of Rectangles
+
+<!-- algorithm-tags: geometry, sweeping, segtree -->
 
 > [!NOTE]
 > 这道题看了题解，知道有一种用线段树的做法但是靠自己想没想出来怎么维护。
@@ -862,6 +892,8 @@ int main() {
 ```
 
 ## Robot Path
+
+<!-- algorithm-tags: geometry, data_structures, segtree, coordinate_compression -->
 
 经过不完全统计，我做这道题用了 218 分钟😇
 

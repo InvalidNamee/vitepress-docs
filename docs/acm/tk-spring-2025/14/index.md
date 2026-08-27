@@ -7,6 +7,8 @@ title: 2025春训第十四场
 
 ## A. Christmas Tree Adapter
 
+<!-- algorithm-tags: math -->
+
 终于有签到题了。
 
 ```cpp
@@ -24,6 +26,8 @@ int main() {
 ```
 
 ## B. **Cool Phone Numbers**
+
+<!-- algorithm-tags: string, set -->
 
 而且签到题还不止一道。
 
@@ -47,6 +51,8 @@ int main() {
 ```
 
 ## C. **Ready for Contest**
+
+<!-- algorithm-tags: implementation, data_structures -->
 
 竟然有四道。
 
@@ -74,6 +80,8 @@ int main() {
 
 ## D. **Fixing the Tournament**
 
+<!-- algorithm-tags: math, greedy -->
+
 尽可能把排名低的两两组队，最后如果会输，还需要加上输的那一场。
 
 ```cpp
@@ -91,6 +99,8 @@ int main() {
 ```
 
 ## **E. Identical Letters**
+
+<!-- algorithm-tags: two_pointer, sliding_window, string -->
 
 比较经典的滑动窗口问题，枚举 26 个字母，遍历数组双指针维护到每一个位置时当前字母能构成的最长连续序列的长度，全部取 max 即可。
 
@@ -121,6 +131,8 @@ int main() {
 ```
 
 ## **F. Espresso Made Your Way**
+
+<!-- algorithm-tags: math, binary_search, number_theory -->
 
 我没有调红温，绝对没有🤮🤮🤮，那个 +13 的绝对不是我😭
 
@@ -176,6 +188,8 @@ int main() {
 
 ## **G. Speed Ups**
 
+<!-- algorithm-tags: dp, greedy, sorting -->
+
 相对比较好做，线性 dp 维护到每一个加速的位置的最短时间（这里指的是可以踩到这个加速的情况，不包括上一个加速没用完路过这里的情况），然后枚举起点和所有加速的位置，算走到终点的时长取 min.
 
 ```cpp
@@ -220,6 +234,8 @@ signed main() {
 
 ## **H. Magnetic Attractions**
 
+<!-- algorithm-tags: geometry, physics, math -->
+
 众所周知，根据高中物理知识，这个区域是一个圆形区域，以 s 为原点， $\vec{sS}$ 方向为 x 轴，垂直的方向为 y 轴重新建一个坐标系，记 S 的新的坐标为 (d, 0).
 
 $$
@@ -255,6 +271,8 @@ int main() {
 ```
 
 ## **I. Hotel Rooms**
+
+<!-- algorithm-tags: data_structures, segtree, implementation -->
 
 单点修改，区间查询，线段树或者树状数组都可以，个人感觉树状数组好写一点，于是就写的树状数组，也是一遍秒了。
 

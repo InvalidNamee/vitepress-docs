@@ -20,6 +20,8 @@ title: 2025牛客暑期多校训练营9
 
 ## A. AVL tree
 
+<!-- algorithm-tags: dp, trees -->
+
 我写的，五发罚时，最后还差点挂了。
 
 最开始我先有的思路，但是思路不太对，我没完全看懂题，没有理解清楚 AVL 树的结构，甚至想着三分峰值，先吃了一发罚时。WA 了一发之后开始反思，突然想到一个性质——**树高一定不会太大**，如果太大指数级增长到一定程度之后不如全删了，“可以”直接枚举高度，这时候对 AVL 树的理解还错的，又改了一版代码，但是没交，因为之前 F 已经 WA 了两发，现在又 WA 了一发，害怕了谨慎的和队友交流了一下，发现我对 AVL 树的理解不对，**不是**完全二叉树最后一层减一半，而是一个嵌套定义的类似斐波那契数列的式子，改了求树高对应新增节点数的代码之后又交了一发，又 WA，然后我们就怀疑是被边界卡了，最后改了好几版，才终于发现**不能直接暴力枚举树高也不能在只删一次低于限制高度的点的前提下 dp**，最后发现乱七八糟的一顿改之后竟然成了一个**非常简单的树形 dp**。这波真怪我，一己之力把一队都带偏了。
@@ -87,9 +89,13 @@ int main() {
 
 ## B. Date <sup style="color: blue">队友</sup>
 
+<!-- algorithm-tags-ignore -->
+
 待补
 
 ## C. Epoch-making <sup style="color: red">补</sup>
+
+<!-- algorithm-tags: graph_traversal, dfs, bruteforcing -->
 
 只需要注意到一个性质，如果取了一个入度是 0 的权值大的点，其他入度为零的权值小的点都取了一定不会变劣，然后一个暴搜就搜过去了，只用了 61ms.
 
@@ -153,6 +159,8 @@ int main() {
 
 ## F. Military Training
 
+<!-- algorithm-tags: geometry, case_work -->
+
 这道是我写的，并且吃了两发罚时
 
 - 第一发是因为以为是爆 int 了，确实是会爆，但是不只有这个问题；
@@ -211,6 +219,8 @@ int main() {
 ```
 
 ## G. Permutation <sup style="color: blue">队友</sup>
+
+<!-- algorithm-tags: stack, prefix_sum, combinatorics -->
 
 虽然代码是我写的，而且期间还挂的特别惨，但是这道题差不多就只有我的苦力，我的贡献就是写了份代码，给出了一个正确的隔板法公式，原理是事后才明白的。
 
@@ -301,6 +311,8 @@ int main() {
 
 ## H. Counter Streak <sup style="color: red">补</sup>
 
+<!-- algorithm-tags: dp, simulation -->
+
 dp 很简单，稍微复杂一点的地方在怎么把年份映射成连续的整数，题解给出了一种用**蔡勒公式**的做法 (看不懂，好高深，好神奇，记到板子里)。
 
 ```cpp
@@ -360,6 +372,8 @@ int main() {
 
 ## J. Too many catgirls nya
 
+<!-- algorithm-tags: implementation -->
+
 本日签到题，我当时看到他的时候还愣了几秒，真就这么简单吗。
 
 直到我实在看不出什么端倪了，交了一发过了。
@@ -375,6 +389,8 @@ for _ in range(n):
 ```
 
 ## L. Ping Pong <sup style="color: red">补</sup>
+
+<!-- algorithm-tags: simulation, math -->
 
 这道题其实比上面的 A, B 和 G 都简单，但是没有早点发现他，很可惜，走 2n - 2 步一定会进入一个长度为 2n - 2 的循环，前面个暴力，后面利用循环节优化一下。
 
@@ -442,5 +458,7 @@ int main() {
 ```
 
 ## M. Digit Sum	<sup style="color: blue">队友</sup>
+
+<!-- algorithm-tags-ignore -->
 
 本日签到题，被队友稳稳拿下。

@@ -14,6 +14,8 @@ title: 2025牛客暑期多校训练营4
 
 ## B. Blind Alley <span style="color: blue"><sup>队友</sup></span>
 
+<!-- algorithm-tags: dfs, dp, grid_graph -->
+
 两遍 dfs + 一遍dp，理论上应该很好写，但是我赛后自己写的时候一直不断出各种情况。
 
 ```cpp
@@ -96,6 +98,8 @@ int main() {
 ```
 
 ## D. Determinant of 01-Matrix
+
+<!-- algorithm-tags: constructive, linear_algebra, math -->
 
 这道是我写的，尝试了应该有三个小时，刚开始队友给出了一种方案，但是有超长度的风险，于是就真超长度了……后面我自己试了好久试出来一种看似可行的方法
 ，也是基于二进制的。
@@ -204,6 +208,8 @@ int main()
 ```
 
 ## E. Echoes of 24 <span style="color: red"><sup>补</sup></span>
+
+<!-- algorithm-tags: graphs, trees, hld, segtree, dp -->
 
 写完之后发现，还是数据结构适合我，看着吓人，但是赛后没怎么调就直接过了。
 
@@ -365,6 +371,8 @@ int main() {
 
 ## F. For the Treasury!	<span style="color: blue"><sup>队友</sup></span>
 
+<!-- algorithm-tags: greedy, sorting -->
+
 这应该是这一场最简单的题，可惜我们刚开始没发现他，后来补的时候也感觉很简单。
 
 ```cpp
@@ -395,6 +403,8 @@ int main() {
 ```
 
 ## G. Ghost in the Parentheses <span style="color: red"><sup>补</sup></span>
+
+<!-- algorithm-tags: combinatorics, math, dp -->
 
 这道当时也是差一点，一人 a 了一道之后队友就是在想这个，样例都验证过了，交了一发 WA 了后面就没调对。赛后还和标程对拍了，最终调对了。
 
@@ -451,6 +461,8 @@ int main() {
 ```
 
 ## I. I, Box <span style="color: red"><sup>补</sup></span>
+
+<!-- algorithm-tags: bfs, simulation, grid_graph -->
 
 这道也相对简单，很可惜后面没时间了，直接每个 box bfs 一遍就可以，输出路径也比较无脑，如果有被别的箱子挡的情况就直接把挡他的那个箱子视为这个箱子继续就行，全程没有一点难度。
 

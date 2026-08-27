@@ -7,6 +7,8 @@ title: 2025春训第一场
 
 ## A. 好的序列
 
+<!-- algorithm-tags: dp, lis -->
+
 签到题，最长上升子序列变体，但是前置状态是固定的，直接开一个标记数组即可。
 
 ```cpp
@@ -35,6 +37,8 @@ int main() {
 ```
 
 ## B. 一路向上
+
+<!-- algorithm-tags: graphs, topological_sorting, dag -->
 
 对于每个点向比他高的点建边，拓扑排序找最长的路径即可。
 
@@ -99,6 +103,8 @@ int main() {
 
 ## C. 神使
 
+<!-- algorithm-tags: sorting, binary_search, greedy -->
+
 每轮票只可能投到战力值最大的或者最小的，所以按照 $a_i$ 排序，不断比较头和尾的票数进行淘汰，直到剩下最后一个。
 
 ```cpp
@@ -139,6 +145,8 @@ int main() {
 ```
 
 ## D. 遥远的她
+
+<!-- algorithm-tags: coordinate_compression, sorting, data_structures -->
 
 $(x_1,y_1)$和 $(x_2, y_2)$ 之间互相可达，当且仅当 $||x_1 - x_2| - |y_1 - y_2||\  \%\ 2 = 0$.
 
@@ -218,6 +226,8 @@ int main() {
 
 ## E. **spongebob**
 
+<!-- algorithm-tags: ternary_search, math -->
+
 这道题是后来补的，显然最后叠加出来的函数是单峰的，用三分求峰值即可。
 
 * 需要注意：三分的 rps 应该比题目要求的小，因为最坏的情况有 3e5 个 1e6 倍的 x 叠加。
@@ -257,6 +267,8 @@ int main() {
 ```
 
 ## F. **patrick**
+
+<!-- algorithm-tags: difference_array, data_structures -->
 
 每个 h 对应的答案可以用数状数组或者线段树在线维护，我这里用的数状数组。
 

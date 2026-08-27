@@ -5,6 +5,8 @@ title: 2025春训第十二场
 
 ## **A. 拼写检查**
 
+<!-- algorithm-tags: implementation, string -->
+
 按要求模拟就行，只需要注意 **如果要检查的单词在词表中出现，则原样输出该单词。**
 
 ```python
@@ -37,6 +39,8 @@ else:
 ```
 
 ## **B. 翻转**
+
+<!-- algorithm-tags: dp, greedy -->
 
 有点类似线性dp的思想，核心问题就是 0 和 1 的分界点在哪。预处理把右侧全变成 1 的操作数。
 
@@ -83,6 +87,8 @@ int main() {
 ```
 
 ## C. 集合
+
+<!-- algorithm-tags: data_structures, binary_search, divide_and_conquer, sweeping -->
 
 比较暴力的做法（容易爆空间），可以用分治的思想，预处理 k 小的，暴力 k 大的，平均每次查询只需要 1000 次左右计算。
 
@@ -158,6 +164,8 @@ int main() {
 不那么暴力的做法，因为没有删除操作，所以对于每一个 k，后一次得到的答案一定是在前一次答案的后面，于是把较小的 k 打上标记，每次查询从标记开始往后面查即可（但是我没想到，还在暴力树状数组+二分）。
 
 ## D. 计数
+
+<!-- algorithm-tags: dp, data_structures, stack -->
 
 线性dp，大概思路很好想，比较难做到的是不重不漏，我🧠不行，于是写了个 $O(2^n \times n^3)$的大暴力对拍拍出来了。
 

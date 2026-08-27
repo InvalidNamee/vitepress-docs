@@ -7,6 +7,8 @@ title: CSES Sorting and Searching
 
 ## Distinct Values Subarrays
 
+<!-- algorithm-tags: sliding_window, two_pointer -->
+
 很经典的滑动窗口问题，我们只需要维护以每一个位置为结尾往左延伸的最长长度，这个滑动窗口随着右端点的右移左端点一定不会左移。做法是记录一个左端点 $j$ 初始化成 1，右端点 $i$ 从 $1$ 到 $n$ 枚举，每次往右走时，$j = \max\left\{j, x_i\text{上次出现的位置} + 1\right\}$，区间长度相加就是答案。
 
 ```cpp
@@ -36,6 +38,8 @@ int main() {
 ```
 
 ## Distinct Values Subsequences
+
+<!-- algorithm-tags: combinatorics -->
 
 每个数只能出现一次或者不出现，统计一下每个数出现的个数，然后`+1`累乘就是答案。
 
