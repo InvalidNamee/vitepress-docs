@@ -11,6 +11,8 @@ qoj 链接：[https://qoj.ac/contest/1522](https://qoj.ac/contest/1197)
 
 ## M. Dining Professors
 
+<!-- algorithm-tags: greedy, sorting -->
+
 签到题，按照每个位置能够到的不吃辣的人的数量排序，优先给较大的不辣的。
 
 
@@ -19,6 +21,8 @@ qoj 链接：[https://qoj.ac/contest/1522](https://qoj.ac/contest/1197)
 我对这道题完全没印象，在讨论这道题的时候我好像在努力 C 题。
 
 ## C. Best Carry Player 2
+
+<!-- algorithm-tags: dp, greedy -->
 
 折磨死我了，这个墨迹了一个小时属实是不应该，最后的原因竟然是<span style="color: blue">数组没清空</span>。
 
@@ -101,6 +105,8 @@ int main() {
 ```
 
 ## I. Chase Game
+
+<!-- algorithm-tags: graphs, shortest_path, bfs, dijkstra, greedy -->
 
 这道也是我自己切掉的（基本是一眼看出来了）。注意到当**被对方瞬移到自己脚底下第一次之后唯一的最优解就是走最短路快速到达终点**。可以这么理解，当被瞬移一次后不管怎么走，最短路的所有伤害构成的 multiset 一定是其他路径的子集。现在问题转化成了两段，第一段是在攻击范围内走，第二段是出去之后立刻走最短路到终点。先两次 bfs 找到所有点到 k 和 n 的距离，然后对起点和在攻击范围内的点进行 Dijkstra，过程中对于每一条出界的边都尝试计算一次答案，取最小值。
 
@@ -198,6 +204,8 @@ int main() {
 四次查询能确定一对大小关系，但是用归并排序正好会被卡，需要优化。好像是做了类似选择排序的操作。
 
 ## L. Aqre<sup style="color: red">(补题)</sup>
+
+<!-- algorithm-tags: constructive, bruteforcing, ad_hoc -->
 
 简直是大暴力……中途下班的下班，吃饭的吃饭，导致最后吃完回来发现他的时候为时已晚了。
 

@@ -9,6 +9,8 @@ title: 2026寒假个人训练赛第二场
 
 ## A. 投票
 
+<!-- algorithm-tags: sorting, priority_queue, set -->
+
 签到题，排序，优先队列，set 应该都可以。
 
 ```cpp
@@ -39,6 +41,8 @@ int main() {
 ```
 
 ## B. 接网线
+
+<!-- algorithm-tags: simulation -->
 
 按要求模拟即可。
 
@@ -79,6 +83,8 @@ int main() {
 
 ## C. 简单排序题
 
+<!-- algorithm-tags: sorting, hash_set -->
+
 也是按要求统计，然后 sort 即可。
 
 ```cpp
@@ -111,6 +117,8 @@ int main() {
 ```
 
 ## D. 我要飞得更高
+
+<!-- algorithm-tags: dp, prefix_sum -->
 
 需要注意题面说的是
 
@@ -167,6 +175,8 @@ int main() {
 
 ## E. 拼数
 
+<!-- algorithm-tags: sorting -->
+
 [洛谷](https://www.luogu.com.cn/problem/P14357)
 
 直接把数字取出来排序就行。
@@ -193,6 +203,8 @@ int main() {
 ```
 
 ## F. 座位
+
+<!-- algorithm-tags: sorting, arithmetic -->
 
 [洛谷](https://www.luogu.com.cn/problem/P14358)
 

@@ -5,6 +5,8 @@ title: 2025春训第二十二场
 
 ## A. 染色
 
+<!-- algorithm-tags: bruteforcing, simulation -->
+
 数据非常小，直接暴力就可以，非常保险。
 
 ```cpp
@@ -27,6 +29,8 @@ int main() {
 ```
 
 ## **B. 石头称重**
+
+<!-- algorithm-tags: bitmask, arithmetic -->
 
 本来很简单的题刚开始被我想复杂了，当然，还有别的因素影响，导致卡了不到一个小时……
 
@@ -67,6 +71,8 @@ int main() {
 ```
 
 ## **C. 字符串**
+
+<!-- algorithm-tags: dp -->
 
 这道题也有那么一点纸老虎的样子，看着无从下手，但是如果发现了就非常简单。
 
@@ -137,6 +143,8 @@ int main() {
 ```
 
 ## **D. 喵喵**
+
+<!-- algorithm-tags: graphs, dijkstra, dp_tree -->
 
 这道题相对简单一点（因为虽然流程有点麻烦，但是一看容易看出来办法）
 
@@ -219,6 +227,8 @@ int main() {
 
 ## **E. 变量定义**
 
+<!-- algorithm-tags: parsing, string -->
+
 比较水，没什么好说的，按要求做就行。
 
 ```python
@@ -242,6 +252,8 @@ for _ in range(n):
 ```
 
 ## **F. 跳远比赛**
+
+<!-- algorithm-tags: binary_search, greedy -->
 
 我因为 check 函数写挂$\textcolor{green}{+11}$……
 
@@ -291,6 +303,8 @@ int main() {
 ```
 
 ## **G. 宝藏**
+
+<!-- algorithm-tags: dp, graphs -->
 
 这道题也很简单，看着像是个图论，实际上是个二维 dp，图都不用建出来。记 $f_{i, j} $ 表示走到 i 点用了 j 体力的时宝藏价值的最大值。$f_{i, 0}$ 其实就是 i 山洞领一次的宝藏价值。更新状态时从低到高枚举 j，对于每一个 j 枚举所有边
 

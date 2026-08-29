@@ -14,6 +14,8 @@ title: 2025牛客暑期多校训练营6
 
 ## B. Base Conversion Master
 
+<!-- algorithm-tags: binary_search, parametric_search -->
+
 这么简单的题，一直没人做，最后被我捡了个漏……就是一个二分，唯一需要考虑的地方就是怎么防止非法数据把 long long 炸掉。
 
 ```cpp
@@ -118,6 +120,8 @@ int main() {
 
 ## C. Stack <sup style="color: blue">队友</sup>
 
+<!-- algorithm-tags: dp -->
+
 刚开始我卡了一会儿，讨论的时候我受到只考虑最后一个数的位置的启发想出来了正解，两个人的思路整合一下就完整了。
 
 ```cpp
@@ -150,6 +154,8 @@ int main() {
 ```
 
 ## D. Beautiful Matrix <sup style="color: blue">队友</sup>
+
+<!-- algorithm-tags: combinatorics, modular_multiplicative_inverse, math -->
 
 我感觉挺难的，我没反应过来就已经被队友秒了，数学题的思路都挺巧的，两次差分转化了一下，思路就会变清晰了。
 
@@ -184,6 +190,8 @@ int main() {
 ```
 
 ## G. Turn around <sup style="color: red">补</sup>
+
+<!-- algorithm-tags: segtree, dp, data_structures -->
 
 学到了**广义矩阵**，这道题用 max 和 加法 替代了原来的 加法 和 乘法，这个规则下的矩阵乘法依然满足结合律，之后开了线段树维护每个位置的转移矩阵。
 
@@ -270,6 +278,8 @@ int main() {
 
 ## K. Maximum GCD
 
+<!-- algorithm-tags: number_theory, segtree -->
+
 这道题是我想的，但是 WA 两次，我是战犯😭
 
 - 第一次是因为里面的边界没处理好，少算了边界情况；
@@ -354,6 +364,8 @@ int main() {
 }
 ```
 ## L. Minimum Parenthesis String <sup style="color: blue">队友</sup>
+
+<!-- algorithm-tags: greedy, sorting -->
 
 这道水一点，就是一个贪心。
 

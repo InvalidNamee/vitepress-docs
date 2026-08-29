@@ -5,6 +5,8 @@ title: 2025组队训练赛第 26 场
 
 ## A. An Olympian Math Problem
 
+<!-- algorithm-tags: math -->
+
 打表发现应该输出 n - 1.
 
 ```cpp
@@ -26,9 +28,13 @@ int main() {
 
 ## B. The writing on the wall
 
+<!-- algorithm-tags: data_structures -->
+
 单调栈
 
 ## C. GDY
+
+<!-- algorithm-tags: simulation -->
 
 大模拟，我的 2 能管住 2，卡了 2h😇。
 
@@ -128,6 +134,8 @@ int main() {
 
 ## E. AC Challenge
 
+<!-- algorithm-tags: dp_bitfield -->
+
 状压 dp，维护第 i 次选后结果是一个 bitmask 的得分最大值。
 
 我状态转移神秘不取 max，挂掉了一次。
@@ -182,13 +190,19 @@ int main() {
 
 ## G. Lpl and Energy-saving Lamps
 
+<!-- algorithm-tags: data_structures -->
+
 似乎是个平衡树，用 set 能做。
 
 ## I. Skr
 
+<!-- algorithm-tags: palindrome_tree -->
+
 裸的回文自动机板子。
 
 ## J. Nanjing Sum
+
+<!-- algorithm-tags: math, number_theory, dp -->
 
 对于一个数做质因数分解，如果最高幂次超过 2，必定有一边不是 square-free integer，所有的分解方案是把幂次为 2 的一边取一个，其余的任意放。
 
@@ -245,6 +259,8 @@ int main() {
 ```
 
 ## L. Magical Girl Haze
+
+<!-- algorithm-tags: graphs, shortest_path -->
 
 裸的分层图最短路板子。
 

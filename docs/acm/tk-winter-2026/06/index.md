@@ -7,6 +7,8 @@ title: 2026寒假个人训练赛第六场
 
 ## A. 奇数(odd)
 
+<!-- algorithm-tags: prefix_sum, parity -->
+
 先算出来全局的奇偶性，然后每次修改看一下区间和的奇偶性和 k * 区间长度 的奇偶性是否相同。
 
 ```cpp
@@ -40,6 +42,8 @@ int main() {
 ```
 
 ## B. 覆盖层数(cover)
+
+<!-- algorithm-tags: coordinate_compression, difference_array -->
 
 离散化差分前缀和即可。
 
@@ -77,6 +81,8 @@ int main() {
 
 ## C. 卡牌(card)
 
+<!-- algorithm-tags: sorting, greedy, two_pointer -->
+
 我刚开始把他想的特别复杂，实际上并没有。保证了 $a_i \le d_i$ 所以无视 a 和 d 的绑定关系，自己也不可能杀掉自己；另外也不可能出现环。所以尽可能贪心打，直接 a 和 d 分开排序双指针扫描，每成功配对一次答案 `-1` 即可。
 
 ```cpp
@@ -108,6 +114,8 @@ int main() {
 ```
 
 ## D. 链(chain)<sup style="color: red">(补题)</sup>
+
+<!-- algorithm-tags: dp, exponentiation_by_squaring -->
 
 这题感觉我本来可能还能做出来，都是 E 题的那个树套树的点子害的……
 
@@ -188,9 +196,13 @@ int main() {
 
 ## E. 完美的答卷(perfect)<sup style="color: red">(补题)</sup>
 
+<!-- algorithm-tags: dp_tree, trie, pst -->
+
 我想到了一个特别麻烦的树形 DP + 可持久化 Trie 的做法，然而没写完。这个做法是单 log 时间复杂度，跑的很快。
 
 ### 树形 DP + 可持久化 Trie
+
+<!-- algorithm-tags-ignore -->
 
 看到这种区间最大和最小，我直接本能的想到**单调栈**，单调栈能快速得到某个数为最大值的最大区间。然后问题就转化成了已知一个区间和最大值的位置，找到一个包含最大值的子区间，使得最小值和最大值的异或和最大。异或和最大，是经典的 Trie 能解决的问题。现在问题转化成了如何快速得到这个区间的所有可能的最小值构成的 Trie，因为必须包含这个最大值，所以整个问题可以分成两个子问题，右边的**前缀 min** 和左边的 **后缀min**。以前缀 min 为例，后缀 min 直接把数组 reverse 一下再来一遍就好了。我们想要得到的是每一个子区间可能的前缀 min，也是从左到右做单调递增单调栈的栈底元素，**单调栈弹栈的过程其实就是新的最小值覆盖旧的最小值的过程**，每个元素可能且仅可能被一个后面的元素弹出，最终这种覆盖的过程构成一棵内向树，反转所有的边，令树的结点为字典树，**从根到叶子进行树形 DP**（从右往左）可以得到任何一个中间点走到末尾路径上的所有前缀 min。最后只需要在维护一个树上倍增，然后**利用可持久化 Trie 进行差分**，就可以得到目标 Trie 了。
 
@@ -317,9 +329,13 @@ int main() {
 
 ### 分治
 
+<!-- algorithm-tags-ignore -->
+
 [MoScenix](https://moscenix.cn) 的双 log 做法非常简洁干净。
 
 ## F. City Game
+
+<!-- algorithm-tags: bruteforcing, bitset -->
 
 用 bitset 暴力。
 
@@ -370,6 +386,8 @@ int main() {
 ```
 
 ## G. Colorful Lines
+
+<!-- algorithm-tags: set, simulation -->
 
 从后往前算，给已经染过色的行和列打上标记，每次更新答案的时候减掉重复的即可。
 

@@ -5,6 +5,8 @@ title: 2025春训第二十八场
 
 ## A. 评估
 
+<!-- algorithm-tags: math -->
+
 关键在于 $|a_i| \le 1000$，所以可以**开一个长度为 2000 的数组统计一下每个值的个数**，然后 $\Theta(n^2)$ 处理这个 2000 的数组。
 
 ```cpp
@@ -35,6 +37,8 @@ int main() {
 ```
 
 ## **B. 拆分数字**
+
+<!-- algorithm-tags: math, number_theory -->
 
 记 n 在**三进制表示下的各位数之和**为 t，想要满足要求的充要条件是 $t \le k \le n\  \land\ t \equiv k\ (mod\ 2)$.
 
@@ -70,6 +74,8 @@ int main() {
 
 ## C. 露营
 
+<!-- algorithm-tags: bruteforcing -->
+
 比较水，直接枚举一个中间点向三个点分别连线就行。
 
 ```cpp
@@ -97,6 +103,8 @@ int main() {
 ```
 
 ## **D. 寻宝**
+
+<!-- algorithm-tags: dp, string, graph_traversal -->
 
 思路比较简单，实际操作有点复杂
 
@@ -211,12 +219,16 @@ int main() {
 
 ## **E. 饼干**
 
+<!-- algorithm-tags: arithmetic -->
+
 ```python
 n, m = map(int, input().split())
 print(n // m)
 ```
 
 ## F. 方差
+
+<!-- algorithm-tags: math -->
 
 水题++
 
@@ -247,6 +259,8 @@ int main() {
 ```
 
 ## G. 正方形划分
+
+<!-- algorithm-tags: binary_search, constructive, simulation -->
 
 二维的有点乱，思路比较好猜，但是不好操作。
 

@@ -5,6 +5,8 @@ title: 2025春训第二十七场
 
 ## A. 序列
 
+<!-- algorithm-tags: constructive -->
+
 逻辑非常简单，先输出 k 个 0 之后 01 交替输出直到把 0 用完，最后输出剩下的 1.
 
 ```cpp
@@ -29,6 +31,8 @@ int main() {
 ```
 
 ## **B. 异或之力**
+
+<!-- algorithm-tags: math -->
 
 也比较容易，不难想到**最优方案是取 11111…0**，因为这是个偶数，对半分异或 = 0；任意从中间断开，然后异或还是原数，答案是 $2^{n} - 2$.
 
@@ -60,6 +64,8 @@ int main() {
 ```
 
 ## **C. 队伍集结**
+
+<!-- algorithm-tags: dp, bruteforcing -->
 
 看着吓人，实则不是，直接暴力 $\Theta(n^4)$ **预处理所有区间的最小不满度**，然后开一个二维状态 $f_{i, j}$ 表示以 i 结尾的区间加了 j 个汇合点时不满都的最小值，枚举最后一段区间 dp 即可。
 
@@ -107,6 +113,8 @@ int main() {
 ```
 
 ## D. **花**
+
+<!-- algorithm-tags: trees, segtree, dfs -->
 
 子树在 dfs 序下一定是一段连续区间，把节点**按 dfs 序建一棵线段树**维护单点修改和区间查询即可。
 
@@ -195,6 +203,8 @@ int main() {
 
 ## **E. 分糖果**
 
+<!-- algorithm-tags: arithmetic -->
+
 水题
 
 ```cpp
@@ -211,6 +221,8 @@ int main() {
 ```
 
 ## **F. 新字典**
+
+<!-- algorithm-tags: string, case_work -->
 
 水题
 
@@ -249,6 +261,8 @@ int main() {
 ```
 
 ## **G. 机器人**
+
+<!-- algorithm-tags: binary_search -->
 
 二分答案，需要注意**二分下界是** $\max_{i=1}^na_i$，初始任务也是任务😭
 
@@ -291,6 +305,8 @@ signed main() {
 
 ## **H. 游戏**
 
+<!-- algorithm-tags: dp -->
+
 基础的二维 dp， $f_{i, j}$ 表示**第 i 天还剩 j 资源能获得的最大强度值**，每天枚举所有的 j 和买不买更新状态。
 
 ```cpp
@@ -328,6 +344,8 @@ int main() {
 
 ## **I. ABB**
 
+<!-- algorithm-tags: string, set -->
+
 水题
 
 ```cpp
@@ -354,6 +372,8 @@ int main() {
 ```
 
 ## J. 负重爬楼梯
+
+<!-- algorithm-tags: dp -->
 
 水题（线性 dp）
 
@@ -385,6 +405,8 @@ int main() {
 ```
 
 ## **K. 洒水器**
+
+<!-- algorithm-tags: difference_array, prefix_sum -->
 
 直接暴力维护等差数列不好维护，但是我们可以维护等差数列的**差分数列**，等差数列公差一定，所以这个差分数列可以**再用它的差分数列**维护，最后前缀和两次输出答案即可。
 

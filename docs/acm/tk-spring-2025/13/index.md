@@ -5,6 +5,8 @@ title: 2025春训第十三场
 
 ## A. 团结
 
+<!-- algorithm-tags: math, number_theory, greedy -->
+
 其实非常简单，但是我中招了😭
 
 他这个操作等价于先把 $\gcd_{i = 1}^{n} A_i$算出来，然后在 1 ～ n 里面选一些数和前面的结果取 gcd，直到结果为 1.
@@ -41,6 +43,8 @@ int main() {
 ```
 
 ## **B. 染色**
+
+<!-- algorithm-tags: dfs, trees, greedy -->
 
 简单的 dfs 题，从根开始往下搜，遇到不符合的就染色，统计次数即可。
 
@@ -88,6 +92,8 @@ int main() {
 （还在 TLE 但是有戏）
 
 ## **E. 思维导图**
+
+<!-- algorithm-tags: graphs, eulerian_path, dfs -->
 
 一笔画问题，离散 2-2 刚讲了。对于每个连通块，记度数为奇数的点有 k 个，则需要画 $\lceil \frac{k}{2} \rceil$ 次。把连通块的答案累加即可。
 
@@ -138,6 +144,8 @@ int main() {
 ```
 
 ## F. **ESP\_8266**
+
+<!-- algorithm-tags: simulation, parsing, string -->
 
 这就是个单纯的模拟题，没什么需要注意的。
 

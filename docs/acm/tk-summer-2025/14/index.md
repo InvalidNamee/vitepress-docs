@@ -5,6 +5,8 @@ title: 2025夏季个人训练赛第十四场
 
 ## A. 公交线路
 
+<!-- algorithm-tags: simulation -->
+
 按要求模拟即可。
 
 ```cpp
@@ -63,6 +65,8 @@ int main() {
 ## <span style="color: red">B. 攻防演练</span>
 
 ## C. 连锁商店
+
+<!-- algorithm-tags: bitmask, dp, topological_sorting -->
 
 2<sup>36</sup> 会爆空间和时间，但是 2<sup>18</sup> 正好不会，最多 36 个景点，只有公司出现次数 ≥ 2 的点记录状态才有意义，统计一下出现次数 ≥ 2 的景点拓扑排序 + 状压dp 就可以解决。
 
@@ -137,6 +141,8 @@ int main() {
 
 ## D. 修建道路
 
+<!-- algorithm-tags: greedy -->
+
 从左到右连成一条链一定是最优的，如果中间跨越了几个村庄，代价就是中间的所有的路取 max，一定不比连成一条链小。
 
 ```cpp
@@ -164,6 +170,8 @@ int main() {
 
 ## G. 3G网络
 
+<!-- algorithm-tags: math -->
+
 $r \rarr + \infty$ 了，圆心的距离就能忽略了，所以答案是 $\frac{1}{n}$.
 
 ```cpp
@@ -180,6 +188,8 @@ int main() {
 ```
 
 ## I. 驾驶卡丁车
+
+<!-- algorithm-tags: simulation -->
 
 一般的大模拟，都挺好实现的。
 
@@ -231,6 +241,8 @@ int main() {
 ```
 
 ## K. 音乐游戏
+
+<!-- algorithm-tags: string -->
 
 数据有问题，实际上 n 不太准，直接统计 `-` 的个数就是对的。
 

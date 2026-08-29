@@ -7,6 +7,8 @@ title: 2025夏季个人训练赛第十一场
 
 ## A. 战斗爽
 
+<!-- algorithm-tags: sorting, greedy -->
+
 重要的性质，对同一个敌人的攻击一定是连续的，如果一个敌人已经是剩余血量最低，攻击最低，编号最小，那么他被攻击后血量更低，所以他还是最低的。
 
 排序之后挨个打就可以了。
@@ -69,6 +71,8 @@ int main() {
 
 ## E. 持家
 
+<!-- algorithm-tags: math, sorting, greedy -->
+
 先打折再减免一定比先减免再打折更优，枚举用几个打折用几个减免，先打折后减免即可。
 
 ```cpp
@@ -108,6 +112,8 @@ int main() {
 ```
 
 ## F. 进步
+
+<!-- algorithm-tags: data_structures, prefix_sum -->
 
 树状数组的板子题。
 
@@ -167,6 +173,8 @@ int main() {
 ```
 
 ## H. 制衡
+
+<!-- algorithm-tags: dp -->
 
 比较简单的二维 dp，状态 $f_{i, j}$ 表示第 i 个数在第 j 组的最大开心值
 

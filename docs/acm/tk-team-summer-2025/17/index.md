@@ -7,6 +7,8 @@ title: 2025组队训练赛第 17 场
 
 ## C. Insertion Sort
 
+<!-- algorithm-tags: combinatorics, math -->
+
 <span style="font-size: 30px; color: red; font-weight: Bold;">特判 k >= n！特判 k >= n！特判 k >= n！</span>
 
 被 k > n 搞了，我们本以为他不会 > n 的，也没往那里想，真没想到是因为这里。
@@ -52,6 +54,8 @@ int main() {
 ```
 
 ## G. Best ACMer Solves the Hardest Problem
+
+<!-- algorithm-tags: bruteforcing, simulation, geometry -->
 
 当大模拟写就对了，$n^2 \sqrt{n}$ 能过，我不知道这道题为什么 WA 的这么多，我一次就过了，挺奇怪的。
 
@@ -189,6 +193,8 @@ int main() {
 
 ## J. How Much Memory Your Code Is Using?
 
+<!-- algorithm-tags: case_work, parsing, arithmetic -->
+
 我又挂了一次签到题，原因是没想起来 long double 是 16 个字节。
 
 | type | memory(Byte) |
@@ -254,6 +260,8 @@ int main() {
 约瑟夫问题升级版，感觉能做。
 
 ## L. Machining Disc Rotors<sup style="color: red">补</sup>
+
+<!-- algorithm-tags: geometry, rotating_calipers, bruteforcing -->
 
 这个当时急死我了，刚被 C 题卡了边界，又被这道题卡精度。
 

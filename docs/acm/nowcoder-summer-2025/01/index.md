@@ -16,6 +16,8 @@ title: 2025牛客暑期多校训练营1
 
 ## E. Endless Ladders
 
+<!-- algorithm-tags: math -->
+
 又是我贡献了全场唯一的罚时，左边界第一个数被卡了，如果 d < 4 左边那一项就成负数了。
 
 ```cpp
@@ -39,9 +41,13 @@ int main() {
 
 ## G. Symmetry Intervals <span style="color: blue"><sup>队友</sup></span>
 
+<!-- algorithm-tags-ignore -->
+
 全场第二水的题。
 
 ## H. Symmetry Intervals 2 <span style="color: red"><sup>补</sup></span>
+
+<!-- algorithm-tags: bitmask, data_structures, segtree -->
 
 上一道题的升级版，传说比赛的时候常数小的暴力能卡过去，后来改了时间限制，我想到了预处理每个分段，但是没想到对齐的方法，题解看完之后就明白了，把两半的二进制状态用位运算分别拆出来再拼接就可以实现。
 
@@ -160,6 +166,8 @@ int main() {
 
 ## I. Iron Bars Cutting <span style="color: red"><sup>补</sup></span>
 
+<!-- algorithm-tags: dp -->
+
 这道也很重量级，主要也是卡常，还卡空间，$\Theta (n^4)$ 比较好想，在 dp 的数组里排序再二分属实就有点不好想了，另外
 
 ```
@@ -251,6 +259,8 @@ int main() {
 
 ## K. Museum Acceptance <span style="color: blue"><sup>队友</sup></span>
 
+<!-- algorithm-tags: graphs, hash_set -->
+
 按照他的条件，把边看成点只能是很多个环，稍微恶心一点的点在编号和去重
 
 ```cpp
@@ -315,6 +325,8 @@ int main() {
 ```
 
 ## L. Numb Numbers <span style="color: blue"><sup>队友</sup></span>
+
+<!-- algorithm-tags: data_structures, segtree, coordinate_compression -->
 
 离散化 + 权值线段树可以直接莽过去，~~然后我就又在补题的时候被边界卡了~~
 

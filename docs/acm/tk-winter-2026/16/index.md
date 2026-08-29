@@ -5,6 +5,8 @@ title: 2026寒假个人训练赛第十六场
 
 ## A. 约数个数
 
+<!-- algorithm-tags: math, number_theory -->
+
 又是一个数论分块，不标数据范围害我 TLE 了一发。
 
 ```cpp
@@ -36,6 +38,8 @@ int main() {
 ```
 
 ## B. 二哥找宝箱
+
+<!-- algorithm-tags: graphs, bfs, bitmask -->
 
 类似分层图最短路，因为宝箱很少，可以用一个 bitmask 存状态，然后 BFS 一遍。
 
@@ -85,6 +89,8 @@ int main() {
 
 ## C. 整数去位
 
+<!-- algorithm-tags: greedy, string -->
+
 贪心，尽可能让最高位的小即可。提前存一下对于某一个位置下一个 0 ~ 9 的位置，这样就可以 $O(n)$ 维护了。
 
 ```cpp
@@ -130,6 +136,8 @@ int main() {
 
 ## D. 柠檬汽水
 
+<!-- algorithm-tags: greedy, sorting -->
+
 从大到小排序，然后按他说的模拟一边即可，把容易放弃的放到最后一定不劣。
 
 ```cpp
@@ -165,6 +173,8 @@ int main() {
 这个题似乎是两个题的缝合，拼尽全力无法看懂，题面和样例不一样……
 
 ## F. Cow Dance Show 【Easy】
+
+<!-- algorithm-tags: binary_search, simulation, priority_queue -->
 
 已有答案检查是否合法很容易，答案具有单调性，二分答案。
 
@@ -209,6 +219,8 @@ int main() {
 ```
 
 ## G. The Tower of Babylon
+
+<!-- algorithm-tags: dp, sorting -->
 
 不难发现每一种方块的一种朝向只会用一次（上面的要严格小于下面的）。先排个序保证一个维度的单调性，这样一个状态的后继就一定在他后面了，满足了无后效性，然后跑给类似 LIS 的 DP 即可。
 

@@ -7,6 +7,8 @@ title: 2025夏季个人训练赛第三十六场
 
 ## A. 婚礼上的小杉
 
+<!-- algorithm-tags: sorting -->
+
 ```cpp
 #include <iostream>
 #include <algorithm>
@@ -33,6 +35,8 @@ int main() {
 ```
 
 ## B. 最佳课题选择
+
+<!-- algorithm-tags: dp, knapsack -->
 
 分组背包。
 
@@ -71,6 +75,8 @@ int main() {
 ```
 
 ## C. 武器配备
+
+<!-- algorithm-tags: dp -->
 
 最有的方案一定是机枪和盔甲分别排序，然后各抽出一个长度为 n 的子序列，问题转化成了维护这个子序列的最小不满意度。
 
@@ -119,6 +125,8 @@ int main() {
 
 ## D. 圣诞岛的走廊
 
+<!-- algorithm-tags: bfs, graphs -->
+
 典型的 bfs 问题，直接 bfs，第一次搜到终点的距离就是答案，代码其实还有很多可以优化的地方，比如好像不可能往上回，但是无伤大雅了，能过就行。
 
 
@@ -159,6 +167,8 @@ int main() {
 ```
 
 ## E. 心情很方 (square)
+
+<!-- algorithm-tags: math, arbitrary_precision -->
 
 看似考数学，实则考 int128，根据初中知识，AD' 长度是 $\frac{a^2}{b}$，a 和 b 比较大需要妥善处理，防止溢出。
 
@@ -201,6 +211,8 @@ int main() {
 ```
 
 ## H. 皇帝的烦恼
+
+<!-- algorithm-tags: binary_search, case_work, math -->
 
 答案一定不小于 $\max{a_i + a_{i + 1}}$.
 
@@ -256,6 +268,8 @@ int main() {
 ```
 
 ## I. GameZ游戏排名系统
+
+<!-- algorithm-tags: data_structures, segtree, coordinate_compression -->
 
 平衡树板子题，被我用线段树打过去了，也可以用 STL 里面的平衡树 `__gnu_pbds` 写。
 
@@ -355,6 +369,8 @@ int main() {
 ```
 
 ## J. 反质数
+
+<!-- algorithm-tags: number_theory, dfs, prime_factorization -->
 
 详见进阶指南 140 页，搜前 10 个素数的 30 以内的单调不增幂次构造出来的数，找到满足要求的最小的一个。
 

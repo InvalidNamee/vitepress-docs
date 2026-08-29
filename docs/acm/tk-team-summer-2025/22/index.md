@@ -7,6 +7,8 @@ title: 2025组队训练赛第 22 场
 
 ## A. Flag Bearer
 
+<!-- algorithm-tags: ad_hoc -->
+
 这是一道签到题，我感觉最大的难点在于把 26 个字母全部敲完（代码太长，建议点右侧导航栏跳转）。
 
 ```cpp
@@ -332,6 +334,8 @@ int main() {
 
 ## B. Cowpproximation
 
+<!-- algorithm-tags: binary_search, geometry -->
+
 做法和之前的[这道题](https://blog.starlab.top/p/2025rt18/#e-the-cake-is-a-lie%E8%A1%A5)完全一样。
 
 二分半径，验证的时候尝试每个圆把其他圆和他的相交弧离散化，差分前缀和，如果最大值是 n - 1，就表明可以，时间复杂度是 $O(n^2 \log{n} \log{m})$ (m 为半径二分的范围 / 二分的精度)，但是我们的 oj 有点卡常，可以尝试一些方法玄学的卡过。官方题解给出的验证方式和我一样，但是他用的是梯度下降，他说 Well implemented gradient descend may find the solution quickly。
@@ -436,6 +440,8 @@ int main() {
 
 ## D. Fishception
 
+<!-- algorithm-tags: geometry, sorting -->
+
 如果最大的矩形不和坐标轴平行，那么一定对应的是 x 最小，x 最大，y 最小，y 最大；如果最大矩形和坐标轴平行，那么对应的一定是 x 最小的两个，x 最大的两个。所以可以考虑按照 x 排序存一个数组，按照 y 排序存一个数组，四个指针分别指向两个数组的头和尾，按照上面的规则每次取出四个，直到还剩四个，直接找相邻三个点叉积算出面积。
 
 ```cpp
@@ -491,6 +497,8 @@ int main() {
 
 ## F. Hamster <sup style="color: blue">补</sup>
 
+<!-- algorithm-tags: parity, greedy -->
+
 这是一个小结论
 - 有一个是奇数就可以全走完；
 - 如果全是偶数，可以发现两个下标奇偶性不同的位置可以只绕过他一个，否则要绕过包含其中一个满足上面特征的格子在内的多个，所以不如只绕过一个这样的格子。
@@ -520,6 +528,8 @@ int main() {
 ```
 
 ## G. Pray Mink <sup style="color: blue">补</sup>
+
+<!-- algorithm-tags: bruteforcing, primality_test -->
 
 直接暴搜。
 
@@ -561,6 +571,8 @@ int main() {
 ```
 
 ## H. Ornithology <sup style="color: blue">补</sup>
+
+<!-- algorithm-tags: data_structures, prefix_sum -->
 
 树状数组统计逆序对，由于初始位置允许重叠，所以应该全部统计答案然后在一次性加进去。
 
@@ -610,6 +622,8 @@ int main() {
 ```
 
 ## I. P||k Cutting <sup style="color: blue">补</sup>
+
+<!-- algorithm-tags: bitmask, prefix_sum -->
 
 维护前缀每一位 1 最后出现的位置，对于每一个位置 i，以当前位置为区间右端点，计算左端点的极限位置。
 
@@ -662,6 +676,8 @@ int main() {
 
 ## J. Rabid Rabbit <sup style="color: blue">补</sup>
 
+<!-- algorithm-tags: precomputation, hashing -->
+
 斐波那契数近似是指数增长的，所以合法的斐波那契数一定不多。可以枚举每一个合法的斐波那契数，扫一遍数组维护每一个数左侧最靠右和他互补的那个数的位置，前缀 max 一下，查询的时候检查对于每一个斐波那契数，右端点的前缀 max 知否大于左端点。
 
 ```cpp
@@ -711,6 +727,8 @@ int main() {
 
 ## K. Fellow Sheep <sup style="color: blue">补</sup>
 
+<!-- algorithm-tags: greedy -->
+
 对于一个 abcde 结构，先走满 ab，和 de，最后 ace，bcd 有且仅有一条能走，再加上剩下的流量。把所有的流量去 min。
 
 ```cpp
@@ -737,6 +755,8 @@ int main() {
 ```
 
 ## L. Watchdogs <sup style="color: blue">补</sup>
+
+<!-- algorithm-tags: trees, lca, greedy -->
 
 中间的一个或者两个点可以用树上倍增算出来，如果只有一个标 2，有两个把下面的标 1。贪心的做，如果一定要放一只猫，一定尽可能的往上放，给后面留机会。dfs 一遍，回溯的时候如果当前是 2 就直接答案 + 1，如果孩子里面有 1 当前标成 2，答案 + 1.
 

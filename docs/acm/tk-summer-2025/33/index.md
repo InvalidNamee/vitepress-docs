@@ -7,6 +7,8 @@ title: 2025夏季个人训练赛第三十三场
 
 ## A. 矩阵转换
 
+<!-- algorithm-tags: greedy, simulation -->
+
 一个大的矩形的变换一定可以由多个 2 * 2 的矩形拼出来，2 * 2 的矩形是最小的可以操作的单位，直接遍历一遍矩阵，贪心的变换 2 * 2 的矩阵，如果能成 B 就是 Yes，不能就是 No。
 
 ```cpp
@@ -49,6 +51,8 @@ int main() {
 ```
 
 ## B. 胖虎的菜品
+
+<!-- algorithm-tags: dp_bitfield, bitmask -->
 
 我刚开始写了一个 $O\left(n \cdot n!\right)$ 的暴力，竟然自以为能过，被自己蠢哭了……
 
@@ -101,6 +105,8 @@ int main() {
 ```
 
 ## C. 胖虎的攻沙 <sup style="color: blue">fixed</sup>
+
+<!-- algorithm-tags: knapsack, dp -->
 
 ~~疑似数据出问题了，我的代码删了点条件之后过洛谷上的[(疑似)母题](https://www.luogu.com.cn/problem/P5322)能过。~~
 
@@ -169,6 +175,8 @@ int main() {
 
 ## E. 不知道该叫啥 (noname)	
 
+<!-- algorithm-tags: dp, divide_and_conquer -->
+
 先看一下暴力 $O\left(nm\right)$ 的做法，记 f<sub>i, j</sub> 第 i 个数选 j 的方案数, g<sub>i, j</sub> 是 f<sub>i</sub> 数组的前缀和。
 
 ```cpp
@@ -231,6 +239,8 @@ int main() {
 
 ## F. 双端队列 × LIS 问题 (dequexlis)
 
+<!-- algorithm-tags: lis, dp, data_structures -->
+
 翻译一下题意，其实就是问你从同一个点开始的单调上升子序列和单调下降子序列的长度和的最大值 - 1，正常用树状数组维护即可。
 
 ```cpp
@@ -289,6 +299,8 @@ int main() {
 ```
 
 ## I. 树的统计
+
+<!-- algorithm-tags: hld, segtree, trees -->
 
 [题面/双倍经验](https://www.luogu.com.cn/problem/P2590)
 
@@ -464,6 +476,8 @@ int main() {
 ```
 
 ## J. 棋盘制作II
+
+<!-- algorithm-tags: stack, constructive -->
 
 [题面/双倍经验](https://www.luogu.com.cn/problem/P1169)
 

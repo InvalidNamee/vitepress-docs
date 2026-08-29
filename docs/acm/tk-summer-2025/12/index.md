@@ -5,6 +5,8 @@ title: 2025夏季个人训练赛第十二场
 
 ## A. 小凯逛超市
 
+<!-- algorithm-tags: knapsack, dp -->
+
 开一个二维背包，统计方案数即可。
 
 ```cpp
@@ -46,6 +48,8 @@ int main() {
 
 ## F. 小凯在长跑
 
+<!-- algorithm-tags: geometry, math -->
+
 签到题。
 
 ```cpp
@@ -67,6 +71,8 @@ int main() {
 ```
 
 ## G. 小凯用git
+
+<!-- algorithm-tags: graphs, simulation, dfs -->
 
 一个相对简单的大模拟，据别的佬的描述，这道题数据好像不太干净，可能会把对的代码判错。
 
@@ -183,7 +189,11 @@ int main() {
 
 ## <span style="color: red">欠多-1道题</span>
 
+<!-- algorithm-tags-ignore -->
+
 ## J. 小凯做梦
+
+<!-- algorithm-tags: math, parity, dp_tree -->
 
 $$
 \begin{align}

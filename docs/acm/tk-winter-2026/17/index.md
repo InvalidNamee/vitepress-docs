@@ -5,6 +5,8 @@ title: 2026寒假个人训练赛第十七场
 
 ## A. 珂朵莉与数字
 
+<!-- algorithm-tags: binary_search, math -->
+
 可以二分答案，但是小心爆 long long，我就这么 wa 的……
 
 ```cpp
@@ -46,6 +48,8 @@ int main() {
 
 ## B. 珂朵莉与序列
 
+<!-- algorithm-tags: sorting, prefix_sum -->
+
 排个序，这样就可以把前面的和后面的拆开去绝对值，然后维护一个前缀和和后缀和即可 $O(1)$ 得出一个位置的答案。
 
 ```cpp
@@ -79,6 +83,8 @@ int main() {
 
 ## C. 珂朵莉与字符串
 
+<!-- algorithm-tags: dp -->
+
 线性 DP，维护 $f_{i, j}$ 表示 S 的前 i 位配对了 `chtholly` 中的前 j 个的方案数，根据当前位的 $S_i$ 考虑状态转移。很可恶的一点是这个题会爆 long long，所以我用 Python 重写了一遍成功过了。
 
 ```python
@@ -107,6 +113,8 @@ print(f[n][8])
 
 
 ## D. 珂朵莉与面积
+
+<!-- algorithm-tags: geometry, math -->
 
 数学题，直接用公式算就行了，方法应该不唯一。就是两个三角形 + 扇形的面积做差或者求和。我这里三角形面积就用了 $\frac{\text{底} \times \text{高}}{2}$，扇形用了 $\frac{1}{2}\alpha r^2$.
 
@@ -141,6 +149,8 @@ int main() {
 ```
 
 ## E. 最大数
+
+<!-- algorithm-tags: segtree -->
 
 直接线段树即可，或者用无旋 Treap 也可以做。
 
@@ -202,6 +212,8 @@ int main() {
 
 ## F. Cable master
 
+<!-- algorithm-tags: binary_search -->
+
 又是一道经典的模板题。答案满足单调性，二分答案即可。
 
 ```cpp
@@ -249,6 +261,8 @@ int main() {
 ```
 
 ## G. Splitting the Field【Normal】
+
+<!-- algorithm-tags: sorting, prefix_sum -->
 
 考虑到分出的两块不可能重叠，那么直接分别按一个维度排序，枚举分割点对所有可能的答案取 min 即可，排序后预处理前缀、后缀的 max 和 min 即可 $O(n)$ 枚举答案。
 
@@ -307,6 +321,8 @@ int main() {
 ```
 
 ## H. Dishwashing
+
+<!-- algorithm-tags: binary_search, stack -->
 
 考虑到如果一个前缀已经不合法了，往后加元素一定也不可能合法，所以答案具有单调性。另外检查一段前缀是否合法很好写，所以可以考虑二分答案。
 

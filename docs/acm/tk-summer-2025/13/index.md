@@ -5,6 +5,8 @@ title: 2025夏季个人训练赛第十三场
 
 ## A. Hat Circle
 
+<!-- algorithm-tags: case_work -->
+
 签到题
 
 ```cpp
@@ -30,6 +32,8 @@ int main() {
 ```
 
 ## B. Heavy-Light Composition
+
+<!-- algorithm-tags: string -->
 
 ```cpp
 #include <iostream>
@@ -71,6 +75,8 @@ int main() {
 
 ## F. kolone
 
+<!-- algorithm-tags: simulation -->
+
 这道也很水，直接模拟就行。
 
 ```cpp
@@ -102,6 +108,8 @@ int main() {
 ```
 
 ## G. bus
+
+<!-- algorithm-tags: dp -->
 
 n<sup>2</sup> dp，$f_i$ 表示前 i 个需要的巴士数目，枚举前面的状态 j 检查中间的人数是否符合要求。
 
@@ -137,6 +145,8 @@ int main() {
 ```
 
 ## H. bard
+
+<!-- algorithm-tags: simulation -->
 
 给每个歌曲编号一下，然后按要求模拟。
 

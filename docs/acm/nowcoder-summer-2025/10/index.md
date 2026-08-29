@@ -16,9 +16,13 @@ title: 2025牛客暑期多校训练营10
 
 ## D. Grammar Test (grammar) <sup style="color: blue">队友</sup>
 
+<!-- algorithm-tags-ignore -->
+
 本场签到题，排除了连续 0 和连续 1 之后讨论交换次数就比较容易的得到了结论。
 
 ## E. Sensei and Affection (affection) <sup style="color: blue">队友</sup>
+
+<!-- algorithm-tags: dp -->
 
 本来想着加完之后的序列一定不会超过最大值，但是想错了， m = 2 的时候有可能超过一点更优，让多个包含最大值的段集体加 1 如果能满足题目的条件，显然比分开加更优。
 
@@ -74,6 +78,8 @@ int main() {
 ```
 
 ## F. Sensei and Yuuka Going Shopping (yuuka) <sup style="color: blue">队友</sup>
+
+<!-- algorithm-tags: data_structures, segtree, greedy -->
 
 枚举第一个分隔点，开一个类似链表的结构记录每个 x 下一次出现的位置，线段树区间加维护前面的点对于后面的点选为第二个分隔点的贡献，实现的时候会遇到很多边界情况，比较需要谨慎。
 
@@ -207,6 +213,8 @@ int main() {
 
 ## H. Rev Equation (NOI-tAUqe ver.) (equation) <sup style="color: blue">队友</sup>
 
+<!-- algorithm-tags: case_work -->
+
 算是半个签到题吧，可能的情况比较少。
 
 ```cpp
@@ -230,6 +238,8 @@ int main() {
 ```
 
 ## I. Matrix (matrix) <sup style="color: blue">队友</sup>
+
+<!-- algorithm-tags: constructive, number_theory, math -->
 
 这道题本来一直没思路，尝试过分类讨论，只讨论出了 1 * m 或者 n * 1 的结论，当时还以为 n 和 m 不能同奇同偶。直到研究暴搜搜出来的答案的时候，暴搜搜出来一个这个
 
@@ -289,6 +299,8 @@ int main()
 ```
 
 ## K. Amazing Sets (amazing) <sup style="color: blue">队友</sup>
+
+<!-- algorithm-tags: dp_tree, bitset, data_structures -->
 
 思路还是队友那来的，我只想出来一个可能的优化，然后他竟然跑得飞快，难以置信。
 

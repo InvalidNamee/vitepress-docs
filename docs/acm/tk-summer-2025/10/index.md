@@ -5,6 +5,8 @@ title: 2025夏季个人训练赛第十场
 
 ## A. 分割数组
 
+<!-- algorithm-tags: dp, prefix_sum -->
+
 又是我最喜欢的 dp，$f_{i, j}$ 表示前 i 个数分成 j 段的方案数
 
 $$
@@ -51,6 +53,8 @@ int main() {
 
 ## B. 超电磁炮
 
+<!-- algorithm-tags: binary_search -->
+
 按说答案就是 $\lceil\log_2{n}\rceil$ 但是好像精度出了点问题，那就二分答案。
 
 ```cpp
@@ -74,6 +78,8 @@ int main() {
 ```
 
 ## C. 为美好的世界献上爆炎
+
+<!-- algorithm-tags: game_theory -->
 
 先从小到大一点一点试
 
@@ -100,6 +106,8 @@ int main() {
 ```
 
 ## D. 八进制小数
+
+<!-- algorithm-tags: arbitrary_precision -->
 
 高精硬算，之前做过所以直接复制过来了。
 
@@ -313,6 +321,8 @@ int main() {
 ```
 
 ## E. 愿此行终抵群星
+
+<!-- algorithm-tags: combinatorics, dp -->
 
 按照字典序排序，记 $f_i$ **为不经过反物质军团到达第 i 个的点的方案数**，统计方案数的一大问题就是怎么不重不漏，可以先求从起点到 i 的总方案数，然后减掉不合法的。统计不合法的方案时，可以**枚举第一个经过的反物质军团坐标**，只要第一个不一样，那么一定不会重复，后面直接用组合数算就可以正好覆盖所有方案。
 

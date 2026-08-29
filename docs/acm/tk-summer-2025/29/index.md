@@ -7,6 +7,8 @@ title: 2025夏季个人训练赛第二十九场
 
 ## B. 甜点
 
+<!-- algorithm-tags: knapsack, dp -->
+
 其实就是个多重背包问题，二进制拆分一下暴力做两次就可以了。
 
 ```cpp
@@ -101,6 +103,8 @@ int main() {
 
 ## C. 喜爱
 
+<!-- algorithm-tags: math, binary_search -->
+
 直接暴力就行了，顶多 60 位，(59 * (59 + 1)) / 2 + 1 = 1771，一共就这点数。
 
 ```cpp
@@ -152,6 +156,8 @@ int main() {
 ```
 
 ## D. 计算
+
+<!-- algorithm-tags: parsing, stack -->
 
 我发现了一种稍微取巧一点的做法，开一个 stringstream 初始化一下原来的表达式，每次读入的时候 peek 一下检验是数字还是字符，然后直接用对应的数据类型 >> 就读进去了，其他地方还是正常的中缀表达式求值，开两个栈模拟即可。
 
@@ -215,6 +221,8 @@ int main() {
 
 ## E. 子序列连续和
 
+<!-- algorithm-tags: prefix_sum, binary_search -->
+
 很水，前缀和 + 二分。
 
 ```cpp
@@ -247,6 +255,8 @@ int main() {
 ```
 
 ## G. 苹果树（tree）<sup style="color: red">补</sup>
+
+<!-- algorithm-tags: trees, lca, dp_tree, difference_array -->
 
 这道当时没想到，后来看了题解，统计的是每条树边被非树边覆盖的次数，枚举边统计答案
 
@@ -328,6 +338,8 @@ int main() {
 ```
 
 ## I. 狼和羊的故事 <sup style="color: red">补</sup>
+
+<!-- algorithm-tags: flow, mfmc -->
 
 开一个源点一个汇点 🐑 (->空地) ->🐺 求最小割
 

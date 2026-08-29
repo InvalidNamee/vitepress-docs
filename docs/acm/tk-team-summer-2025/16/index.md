@@ -7,10 +7,14 @@ title: 2025组队训练赛第 16 场
 
 ## 📢 Announcement
 
+<!-- algorithm-tags-ignore -->
+
 - **Q:** 前面的组队训练为什么都没有？
 - **A:** 组队训练的时候在上小学期，偶尔会打打，但是没空写博客。
 
 ## A. Scrambled Scrabble
+
+<!-- algorithm-tags: greedy, case_work -->
 
 带悔贪心，先贪心的构造一个，大概策略是
 
@@ -88,6 +92,8 @@ int main() {
 
 ## B. ICPC Square
 
+<!-- algorithm-tags: greedy, number_theory, prime_factorization -->
+
 - 先把 d < s 特判掉，因为不能动；
 - 如果 n 特别大，最优的方案是把 s 先趋近于 d，然后乘二；
 - 如果 n 不是特别大，考虑验证 $\lfloor \frac{n}{s} \rfloor \cdot s$ 合不合法，如果合法，那就是他了；如果不合法，$\left( \lfloor \frac{n}{s} \rfloor - 1\right) \cdot s$ 一定合法。不合法只有一种可能，就是 s 是一个大的奇数，那么只需要减成偶数，最后一步乘二即可达到。
@@ -143,6 +149,8 @@ int main() {
 
 ## C. Saraga
 
+<!-- algorithm-tags: string, bruteforcing -->
+
 枚举公共字符 c，找到 s 除了首字符的第一次出现，t 除了尾字符的最后一次出现，找个最短的。
 
 ```cpp
@@ -194,6 +202,8 @@ int main() {
 ```
 
 ## G. X Aura<sup style="color: red">补</sup>
+
+<!-- algorithm-tags: graphs, prefix_sum -->
 
 这道没时间了，怪我写挂字符串哈希和二分拖慢进度了。
 
@@ -262,6 +272,8 @@ int main() {
 ```
 
 ## H. Missing Separators
+
+<!-- algorithm-tags: dp, string, hashing, binary_search -->
 
 这个 oj 的数据太水或者是 spj 错了，一些不正确的贪心做法也判对了（为什么没判对我的😭）
 
@@ -345,6 +357,8 @@ int main() {
 
 ## I. Microwavable Subsequence
 
+<!-- algorithm-tags: data_structures, binary_search -->
+
 我自己想的时候没完全想出来，我想到用树状数组维护某个元素是否出现了，只能写出来一个 $m^2 log n$ 的做法，这里可以直接前缀和，变成 $m^2$，反正都是 T。
 
 看了题解之后恍然大悟，考虑之前的一道签到题 [P1638 逛画展](https://www.luogu.com.cn/problem/P1638)，用相同的思路就可以做到用树状数组同时维护所有的类型的最后一次出现，于是就可以枚举每个位置 i，直接在树状数组上查出来最后一次出现夹在 i 和这个元素上次出现位置之间的元素个数，问题就解决了。因为这里统计的是对数，每种组合都需要加个 1。
@@ -396,6 +410,8 @@ int main() {
 ```
 
 ## M. Mirror Maze
+
+<!-- algorithm-tags: simulation, grid_graph -->
 
 按要求模拟即可，非常好过。
 

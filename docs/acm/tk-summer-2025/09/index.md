@@ -5,6 +5,8 @@ title: 2025夏季个人训练赛第九场
 
 ## C. 水王的奇妙集合
 
+<!-- algorithm-tags: segtree -->
+
 权值线段树。
 
 ```cpp
@@ -69,6 +71,8 @@ int main() {
 
 ## D. 探险
 
+<!-- algorithm-tags: math, greedy -->
+
 每个房间都求一遍，找最短的那个。
 
 ```cpp
@@ -94,6 +98,8 @@ int main() {
 
 ## F. 最大得分
 
+<!-- algorithm-tags: math, number_theory -->
+
 a 和 b 取最小公倍数，公共位置随意，仅 a 有的位置尽量大，仅 b 有的位置尽量小，其实就变成了两个等差数列作差。
 
 ```cpp
@@ -116,6 +122,8 @@ int main() {
 ```
 
 ## G. 送分题（give）
+
+<!-- algorithm-tags: dp, combinatorics -->
 
 第十场 E 题的简化版，详细的推导见[这里](https://invalidnamee.github.io//p/2025sp10/#e-愿此行终抵群星)
 

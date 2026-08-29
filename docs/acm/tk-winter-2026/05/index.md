@@ -7,6 +7,8 @@ title: 2026寒假个人训练赛第五场
 
 ## A. 字符串数数
 
+<!-- algorithm-tags: string -->
+
 ```cpp
 #include <iostream>
 
@@ -26,6 +28,8 @@ int main() {
 ```
 
 ## B. 积分
+
+<!-- algorithm-tags: prefix_sum, bruteforcing -->
 
 维护个二维前缀和然后暴力检查即可。
 
@@ -58,6 +62,8 @@ int main() {
 
 ## C. ⼩ L 打⽐赛
 
+<!-- algorithm-tags: greedy, sorting -->
+
 经典的贪心问题，直接右端点排序然后能选择选。
 
 ```cpp
@@ -89,6 +95,8 @@ int main() {
 
 ## D. 购物
 
+<!-- algorithm-tags: bruteforcing, bitmask -->
+
 n 很小，直接暴力所有情况挨个检查。
 
 ```cpp
@@ -119,6 +127,8 @@ int main() {
 ```
 
 ## E. 地图探险
+
+<!-- algorithm-tags: simulation -->
 
 [洛谷](https://www.luogu.com.cn/problem/P11228)
 
@@ -164,6 +174,8 @@ int main() {
 ```
 
 ## F. 小木棍
+
+<!-- algorithm-tags: case_work -->
 
 [洛谷](https://www.luogu.com.cn/problem/P11229)
 
@@ -224,6 +236,8 @@ int main() {
 ```
 
 ## G. 接龙<sup style="color: red">(补)</sup>
+
+<!-- algorithm-tags: bfs, graphs, simulation -->
 
 [洛谷](https://www.luogu.com.cn/problem/P11230)
 

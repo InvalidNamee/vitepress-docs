@@ -5,6 +5,8 @@ title: 2026寒假个人训练赛第七场
 
 ## A. 松果(pinecones)
 
+<!-- algorithm-tags: greedy, arithmetic -->
+
 给最小的加 1。
 
 ```cpp
@@ -33,6 +35,8 @@ int main() {
 ```
 
 ## B. 池化(pooling)
+
+<!-- algorithm-tags: simulation, bruteforcing -->
 
 直接模拟。
 
@@ -70,6 +74,8 @@ int main() {
 ```
 
 ## C. 选择排序(select)
+
+<!-- algorithm-tags: constructive, case_work -->
 
 观察他给的样例能总结出规律。
 
@@ -134,6 +140,8 @@ int main() {
 
 ## D. 困难的题目(hard)
 
+<!-- algorithm-tags: greedy, prefix_sum, simulation -->
+
 实际上一点也不困难。贪心的想，对于每一个数能覆盖到他的区间全加 w 一定不劣，不能覆盖他的一定是不加。因为 n 很小，用前缀和优化一下暴力处理即可，否则可能要变成一道数据结构题了。
 
 ```cpp
@@ -184,6 +192,8 @@ int main() {
 ```
 
 ## E. 回文(palindrom)
+
+<!-- algorithm-tags: dp, string -->
 
 区间 DP，记 $f_{l, r}$ 为区间 $[l, r]$ 的回文串数量，考虑通过分类讨论区间左右端点的关系统计数量
 
@@ -239,6 +249,8 @@ int main() {
 
 ## F. Fill the Square
 
+<!-- algorithm-tags: greedy, constructive -->
+
 贪心的给前面填小的一定没问题，又因为有 26 个可选项，但是相邻的最多只有 4 个，后面一定能有可行解，直接暴力就行了。
 
 ```cpp
@@ -292,9 +304,13 @@ int main() {
 
 ## G. The Cow Gathering
 
+<!-- algorithm-tags-ignore -->
+
 
 
 ## H. Disruption
+
+<!-- algorithm-tags: trees, segtree, lazyprop, hld -->
 
 先建出来树，然后每次将 p 到 q 路径上的所有边和 r 取个 min。可以直接无脑**树剖 + 线段树**，或者先对 r 排序，之后贪心用**并查集**维护（每条边只走一次，所以可以暴力走）。
 

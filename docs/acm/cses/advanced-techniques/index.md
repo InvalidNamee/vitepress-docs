@@ -7,6 +7,8 @@ title: CSES Advanced Techniques
 
 ## Meet in the Middle
 
+<!-- algorithm-tags: mitm -->
+
 对半分，两半分别暴力所有情况。最后排序，遍历一边的，用二分或者双指针维护另一边的合法的组合的范围。
 
 ```cpp
@@ -52,6 +54,8 @@ int main() {
 
 ## Hamming Distance
 
+<!-- algorithm-tags: bruteforcing, bitset -->
+
 直接暴力就行了。
 
 ```cpp
@@ -92,6 +96,8 @@ int main() {
 
 ## Corner Subgrid Count
 
+<!-- algorithm-tags: combinatorics, bitset, bruteforcing -->
+
 思路应该很显然，开 bitset 存位置，暴力枚举所有行号组合两个二进制串与一下，设 1 的数量为 c，对答案贡献 $\binom{c}{2}$.然后就是怎么卡常都过不去，最后看别人开了个 `Ofast` 优化过去了，然后我也开，993ms 极限跑过去了。
 
 ```cpp
@@ -131,6 +137,8 @@ int main() {
 ```
 
 ## Reachable Nodes
+
+<!-- algorithm-tags: dfs, bitset, dp -->
 
 用 bitset 记录能到的点，用记搜做反拓扑序 dp。
 
@@ -182,6 +190,8 @@ int main() {
 ```
 
 ## Reachability Queries
+
+<!-- algorithm-tags: graphs, scc, dfs, bitset -->
 
 上一道的增强版。强联通分量缩点之后在反拓扑序 DP 即可。
 
@@ -274,6 +284,8 @@ int main() {
 
 ## Cut and Paste
 
+<!-- algorithm-tags: data_structures, trees -->
+
 可以用 [FHQ-Treap](https://oi-wiki.org/ds/treap/#%E6%97%A0%E6%97%8B-treap)（现学的）。这是一种基于分裂和合并的 Treap，感觉写起来反而还比一般的 Treap 好写。
 
 ```cpp
@@ -360,6 +372,8 @@ int main() {
 ```
 
 ## Substring Reversals
+
+<!-- algorithm-tags: data_structures, lazyprop, trees -->
 
 仍然可以用 FHQ-Treap，这次的区间反转需要打懒标记。
 
@@ -462,6 +476,8 @@ int main() {
 ```
 
 ## Reversals and Sums
+
+<!-- algorithm-tags: data_structures, lazyprop, trees -->
 
 同上，多维护一个 sum，pushup 的时候更新即可。
 
@@ -569,6 +585,8 @@ int main() {
 
 ## Necessary Roads
 
+<!-- algorithm-tags: graphs, articulation -->
+
 跑无向图 tarjan 找到桥即可。
 
 ```cpp
@@ -623,6 +641,8 @@ int main() {
 ```
 
 ## Necessary Cities
+
+<!-- algorithm-tags: graphs, articulation -->
 
 跑无向图 tarjan 找到割点即可。
 

@@ -7,6 +7,8 @@ BCD 之前都做过，写了个 A 之后什么都不会了……
 
 ## A. 迷宫大门
 
+<!-- algorithm-tags: greedy -->
+
 我不知道什么原理，但是贪心就行了，能匹配就尽量匹配算出来的数正好是对的。
 
 ```cpp
@@ -41,6 +43,8 @@ int main() {
 }
 ```
 ## B. 分数统计2
+
+<!-- algorithm-tags: disjoint_set, arbitrary_precision -->
 
 用并查集算一下最多人数，然后利用等比数列求和公式用高精算 $2^n - 1$ 即可。
 
@@ -96,6 +100,8 @@ int main() {
 
 ## C. 朋友
 
+<!-- algorithm-tags: graphs, sorting -->
+
 ```cpp
 #include <iostream>
 #include <vector>
@@ -130,6 +136,8 @@ int main() {
 ```
 
 ## D. 跳棋
+
+<!-- algorithm-tags: dp, deque_trick -->
 
 单调队列优化的 dp，维护滑动窗口的最小值。
 

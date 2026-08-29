@@ -7,6 +7,8 @@ title: 2025夏季个人训练赛第三十四场
 
 ## A. 小Biu的骰子
 
+<!-- algorithm-tags: dp, probability -->
+
 我刚开始的时候惯性思维的想遍历终点枚举起点，没有考虑到不同起点过来的概率还都得单独算，WA 了好几发之后才发现……
 
 枚举起点会好做特别多。
@@ -40,6 +42,8 @@ int main() {
 ```
 
 ## B. 小Biu的树
+
+<!-- algorithm-tags: dp_tree, trees -->
 
 我试图扭曲子树的定义 WA 了一发，是的，我的子树曾经还能剪枝😇。
 
@@ -102,6 +106,8 @@ int main() {
 
 ## C. 掰手腕
 
+<!-- algorithm-tags: sorting, greedy -->
+
 直接排序差分在排序，贪心取最小的。
 
 ```cpp
@@ -128,6 +134,8 @@ int main() {
 ```
 
 ## D. 踢石头
+
+<!-- algorithm-tags: simulation, priority_queue -->
 
 直接模拟就行，每两次移动一定会忽略掉一个石头，直接模拟最多走 2e5 次。
 
@@ -162,6 +170,8 @@ int main() {
 ```
 
 ## E. 蛋糕 (cake)
+
+<!-- algorithm-tags: number_theory, simulation -->
 
 这道题在考验优化常数的能力，主要的点是
 
@@ -230,6 +240,8 @@ int main() {
 
 ## I. 矩阵游戏
 
+<!-- algorithm-tags: bipartite_matching -->
+
 双倍经验: [洛谷](https://www.luogu.com.cn/problem/P1129)
 
 今天上午我一直在犯迷糊，我快把二分图最大匹配的过程都模拟出来了还没想到跑二分图最大匹配……中午越想越不对劲，发现我之前好像做过这个题 (洛谷有两份 22 年 9 月的提交记录)。
@@ -287,6 +299,8 @@ int main() {
 ```
 
 ## J. 时态同步 <sup style="color: red">ERROR</sup>
+
+<!-- algorithm-tags: dp_tree, trees -->
 
 双倍经验: [洛谷](https://www.luogu.com.cn/problem/P1131)
 

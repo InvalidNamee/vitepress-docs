@@ -5,6 +5,8 @@ title: 2025夏季个人训练赛第三场
 
 ## A. 扫雷I
 
+<!-- algorithm-tags: simulation -->
+
 按要求模拟就行，需要注意点不是 0 的格子视为无效操作。
 
 ```cpp
@@ -52,6 +54,8 @@ int main() {
 }
 ```
 ## B. 无根树
+
+<!-- algorithm-tags: dp_tree, bruteforcing -->
 
 如果数据大的话需要换根 dp，对每个点需要维护子树高度的最大值和次大值，换根时如果换到了最大值的那条链就用次大值，否则用最大值。
 
@@ -101,6 +105,8 @@ int main() {
 
 ## C. 积木
 
+<!-- algorithm-tags: math, bruteforcing -->
+
 $n \le 10^9$ 所以 $\sqrt[3]{n} \le 10^3$，直接暴力枚举因式就可以。
 
 ~~为什么我当时还在拉格朗日乘数法求条件极值😭~~
@@ -148,6 +154,8 @@ int main() {
 
 ## D. 幸运数III
 
+<!-- algorithm-tags: bruteforcing, combinatorics -->
+
 10 位的幸运数只有 $2^10 = 1024$ 个，所以直接暴力枚举所有的幸运数就可以解决问题。
 
 ```cpp
@@ -182,6 +190,8 @@ int main() {
 ```
 ## E. Run
 
+<!-- algorithm-tags: dp, prefix_sum -->
+
 线性 dp，需要另外开一个状态表示上一次是否 run，其他的就和经典的爬楼梯问题完全一样了。
 
 ```cpp
@@ -211,6 +221,8 @@ int main() {
 }
 ```
 ## G. Money
+
+<!-- algorithm-tags: greedy -->
 
 最大的 profit 一定是能赚的都赚了，所以对于所有单调递增的子段都在开头买了在结尾卖了即可，这样能在保证最大 profit 的同时减少操作次数。
 

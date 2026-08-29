@@ -5,6 +5,8 @@ title: 2025夏季个人训练赛第四场
 
 ## A. 牛人
 
+<!-- algorithm-tags: sorting, sliding_window -->
+
 随便按照一项标准排序，如果一个人排完序后他后面的人的另一项标准都不比他大他就是牛人。
 
 需要注意的是如果排序的主键相等的人的副键是不需要比较的，会导致后缀最大值出一点问题，按主键正序副键逆序就可以解决这个问题，或者也可以用滑动窗口。
@@ -37,6 +39,8 @@ int main() {
 }
 ```
 ## B. 斯诺克台球
+
+<!-- algorithm-tags: simulation, ad_hoc -->
 
 太阴间了，题目要求都说不清，看代码吧……
 
@@ -93,6 +97,8 @@ int main() {
 
 ## C. 演出队列
 
+<!-- algorithm-tags: dp -->
+
 线性 dp，额外开一个状态记录是否已经删了一段，正常更新就可以。
 
 ```cpp
@@ -127,11 +133,15 @@ int main() {
 
 ## D. 利比亚行动
 
+<!-- algorithm-tags: shortest_path, dijkstra, graphs -->
+
 我看到这道题的时候我知道怎么写，但是被前面恶心的不行了……放弃了写的欲望。
 
 大概思路是分层图 dijkstra，一个点拆成 maxc 个点跑 dijkstra 就能跑出来。
 
 ## E. 抓鱼
+
+<!-- algorithm-tags: greedy, sorting -->
 
 经典的贪心问题，一直抓效率最高的就行。
 
@@ -177,6 +187,8 @@ int main() {
 ```
 
 ## F. PACM Team
+
+<!-- algorithm-tags: dp, knapsack, traceback -->
 
 背包问题求方案，多开一个数组记录选择即可。
 

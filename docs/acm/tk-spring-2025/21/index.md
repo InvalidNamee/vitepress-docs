@@ -5,6 +5,8 @@ title: 2025春训第二十一场
 
 ## A. **傻鹿尖塔**
 
+<!-- algorithm-tags: greedy, priority_queue -->
+
 每次临死前贪心选择前面能选的最大的即可，但是需要注意**不要直接中途 break，会影响之后的读入** 😭😭😭
 
 ```cpp
@@ -46,6 +48,8 @@ int main() {
 ```
 
 ## B. **树联网**
+
+<!-- algorithm-tags: trees, dp_tree -->
 
 树形 dp 统计子树大小即可。
 

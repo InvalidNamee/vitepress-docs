@@ -7,6 +7,8 @@ title: 2026寒假个人训练赛第三场
 
 ## A. 编程试题
 
+<!-- algorithm-tags: simulation -->
+
 签到题，直接模拟就行。
 
 ```cpp
@@ -34,6 +36,8 @@ int main() {
 ```
 
 ## B. 密码难题
+
+<!-- algorithm-tags: bruteforcing -->
 
 一共只有 $10^4$ 种可能，直接暴力所有的情况。
 
@@ -66,6 +70,8 @@ int main() {
 
 ## C. 最少时间
 
+<!-- algorithm-tags: greedy -->
+
 问题等价于首先每个订单都必须生产，在这个前提下我们有 $k - 1$ 次机会删掉任意两次生产之间的间隔，贪心删最大的一定最优。
 
 ```cpp
@@ -96,6 +102,8 @@ int main() {
 ```
 
 ## D. 最佳时段
+
+<!-- algorithm-tags: dp -->
 
 考虑 dp，维护 $f_{i, j}$: 前 $i$ 个中选了 $j$ 段时的最大值，这道题的数据不太大可以 $O(n^2 k)$ 暴力更新，如果数据在开大一点就要考虑单调队列（栈）优化了。
 
@@ -129,6 +137,8 @@ int main() {
 ```
 
 ## E. Reorder Cards
+
+<!-- algorithm-tags: coordinate_compression, sorting -->
 
 H 和 W 没有意义，只需要所有的横坐标离散化一下，所有的纵坐标离散化一下，然后输出。
 
@@ -164,6 +174,8 @@ int main() {
 ```
 
 ## F. Longest X
+
+<!-- algorithm-tags: two_pointer, sliding_window -->
 
 问题等价于维护一个滑动窗口，需要保证窗口内的 `.` 的数量不多于 $k$，开个队列或者不开出来用双指针扫描都可以。
 

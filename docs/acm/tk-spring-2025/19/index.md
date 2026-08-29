@@ -5,6 +5,8 @@ title: 2025春训第十九场
 
 ## A. 熊孩子打卡
 
+<!-- algorithm-tags: hash_set, simulation -->
+
 一道比较水的签到题，因为数据不算太大，直接开 map 统计就可以。
 
 ```cpp
@@ -36,6 +38,8 @@ int main() {
 ```
 
 ## B. 最省力整理法
+
+<!-- algorithm-tags: sorting, simulation -->
 
 不管怎么换最后体力应该是一样的，因为数据比较小，所以直接冒泡排序就可以。
 
@@ -70,6 +74,8 @@ int main() {
 
 ## C. 穿心咒
 
+<!-- algorithm-tags: geometry, case_work -->
+
 这是高中题，两圆的位置关系有 内含、内切、相交、外切、外离，分别对应 0、1、2、1、0，根据**圆心的距离和半径的关系**判断即可。
 
 ```cpp
@@ -97,6 +103,8 @@ int main() {
 ```
 
 ## D. 吃火锅
+
+<!-- algorithm-tags: graphs, topological_sorting, dp -->
 
 之前某次训练赛的 A 题。
 
@@ -159,6 +167,8 @@ int main() {
 ```
 
 ## E. 套路比赛
+
+<!-- algorithm-tags: sqrt_decomposition, simulation -->
 
 可以用分块来做，把 $n$个数按照除以 $\lfloor \sqrt n \rfloor$ 的余数分成 $\lceil \sqrt n \rceil$块。
 
@@ -249,6 +259,8 @@ _ _ _ 3 _ _ _ _ _ _
 ```
 
 ## F. 石子合并
+
+<!-- algorithm-tags: math, greedy -->
 
 如果数据小的话，直接用 STL 的堆就可以做，但是他没给数据范围，所以我采取了打表 + 找规律的做法。
 

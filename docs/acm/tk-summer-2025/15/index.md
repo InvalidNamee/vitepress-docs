@@ -5,6 +5,8 @@ title: 2025夏季个人训练赛第十五场
 
 ## A: NPSC, Again
 
+<!-- algorithm-tags: ad_hoc, case_work -->
+
 ```cpp
 #include <iostream>
 #include <map>
@@ -43,6 +45,8 @@ int main() {
 
 ## C. 最大公因子
 
+<!-- algorithm-tags: math, number_theory, bruteforcing -->
+
 首先这个最大公因子一定是 n 的因数，其次 n 要能拆成这么 k 个数，要满足 $\frac{n}{k} \ge k$，直接枚举因子，找最大的。
 
 ```cpp
@@ -71,6 +75,8 @@ int main() {
 ```
 
 ## D. 方阵, Again^2
+
+<!-- algorithm-tags: prefix_sum, bruteforcing -->
 
 维护二维前缀和枚举所有位置依次验证。
 
@@ -106,6 +112,8 @@ int main() {
 ```
 
 ## F. 猫咪派对买早餐
+
+<!-- algorithm-tags: dp -->
 
 线性 dp，但是需要注意卡边界情况
 

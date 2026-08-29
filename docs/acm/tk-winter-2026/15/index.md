@@ -7,6 +7,8 @@ title: 2026寒假个人训练赛第十五场
 
 ## A. 奶牛大会
 
+<!-- algorithm-tags: binary_search, sorting, greedy -->
+
 二分答案，间隔越长越容易成功，二分能成功和不能成功的边界。
 
 ```cpp
@@ -47,6 +49,8 @@ int main() {
 ```
 
 ## B. 面积 (area)
+
+<!-- algorithm-tags: flood_fill, grid_graph -->
 
 往外面框一个圈，从外面的新加的点开始搜一遍，没被标记的就是内部点。
 
@@ -93,6 +97,8 @@ int main() {
 
 ## C. 营救 (save)
 
+<!-- algorithm-tags: bfs, grid_graph -->
+
 bfs 第一次搜到用的步数就是答案。
 
 ```cpp
@@ -138,6 +144,8 @@ int main() {
 ```
 
 ## D. 最少转弯问题 (turn)
+
+<!-- algorithm-tags: 0_1_bfs, bfs, deque -->
 
 相当于建了一个分层图在分层图上 bfs，边权只有 0 和 1，所以可以用双端队列做 bfs，还是第一次搜到的就是答案。
 
@@ -188,6 +196,8 @@ int main() {
 ```
 
 ## E. 社交网络
+
+<!-- algorithm-tags: floyd_warshall, shortest_path, graphs -->
 
 Floyd 板子，统计最短路和最短路条数然后按要求直接算就行。
 
@@ -245,6 +255,8 @@ int main() {
 
 ## F. Play on Words
 
+<!-- algorithm-tags: string, two_pointer -->
+
 我一直理解错了题面，他问的是前面输入的 m 个串中某个子序列和询问的串相等的串个数，直接双指针扫描就可以。
 
 ```cpp
@@ -283,6 +295,8 @@ int main() {
 ```
 
 ## G. 【树型DP】叶子的染色
+
+<!-- algorithm-tags: dp_tree, rerooting, dp -->
 
 不妨先假设都染到叶子上，然后让叶子上的颜色不断往上走，在路径上合并。记.$f_{x,i}$ 为结点 x 涂颜色 i 且子树合法需要的最少次数。枚举每个非叶子结点的颜色
 

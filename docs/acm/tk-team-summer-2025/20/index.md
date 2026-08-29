@@ -5,6 +5,8 @@ title: 2025组队训练赛第 20 场
 
 ## F. Heron and His Triangle
 
+<!-- algorithm-tags: math, number_theory, arbitrary_precision -->
+
 用海伦公式推出来的结论打出来前几个的表，发现是 4, 14, 52, 194, 724, 2702，非常眼熟，递推式是 $a_i = 4a_{i - 1} - a_{i - 2}$，打表发现只有前 53 项有效，直接开 int128 打表即可。
 
 ```cpp
@@ -53,9 +55,13 @@ int main() {
 
 ## G. Infnite Fraction Path <sup>补</sup>
 
+<!-- algorithm-tags: hashing, string -->
+
 基环树森林比较多个串的前缀的字典序，可以**倍增 + 字符串**哈希解决。当时我们三个人对着两个 log 的倍增 + 二分优化常数，快绝望的时候才茅塞顿开，倍增已经处理好了，为啥还二分😅。
 
 ## L. Little Boxes
+
+<!-- algorithm-tags: arithmetic, arbitrary_precision -->
 
 a + b + c + d，当心爆 long long。
 
@@ -66,6 +72,8 @@ for _ in range(n):
 ```
 
 ## K. Rabbits
+
+<!-- algorithm-tags: greedy, sorting -->
 
 最左侧和最右侧的一个空隙一定是会浪费掉的，选一个小的浪费，剩下的空位数就是答案。
 
@@ -97,6 +105,8 @@ int main() {
 ```
 
 ## L. Tree II
+
+<!-- algorithm-tags: trees, dfs -->
 
 当一条边两边的点数都至少为 k 时，这条边一定可以在所有颜色的交集里面。
 

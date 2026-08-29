@@ -5,11 +5,15 @@ title: 2025组队训练赛第 23 场
 
 ## C. DFS 序
 
+<!-- algorithm-tags: dp_tree -->
+
 树形 dp.
 
 ## E. 循环赛 <sup style="color: red">欠</sup>
 
 ## G. Menji 和 gcd
+
+<!-- algorithm-tags: number_theory, math, greedy -->
 
 对于每一组数据，设 gcd 为 g，一定存在一个 k，$kg, (k + 1)g \in [L, R]$，k 和 g 至少有一个是小于 $\sqrt{R}$ 的，分别枚举两次 g 和 k。（下面代码中是 l 和 t）
 
@@ -48,9 +52,13 @@ int main() {
 
 ## H. 小班课
 
+<!-- algorithm-tags: bipartite_graph, bipartite_matching, graph_traversal -->
+
 二分图最大匹配……。
 
 ## I. 不等式
+
+<!-- algorithm-tags: graph_traversal, dp, topological_sorting -->
 
 对每一个点 x 维护他的所有的 y 和 z，拓扑排序取出堆头的时候 dp，选择 $f_x = max\lbrace f_y + f_z\rbrace$，最后检查一下有没有成环。
 

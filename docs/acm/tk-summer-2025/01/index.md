@@ -7,6 +7,8 @@ title: 2025夏季个人训练赛第一场
 
 ## A. Roller Coaster Ride
 
+<!-- algorithm-tags: arithmetic -->
+
 签到题
 
 ```cpp
@@ -23,6 +25,8 @@ int main() {
 }
 ```
 ## B. Donut Shop
+
+<!-- algorithm-tags: simulation -->
 
 跟着题目要求模拟就可以了。
 
@@ -46,6 +50,8 @@ int main() {
 ```
 
 ## C. Product Codes
+
+<!-- algorithm-tags: simulation, string -->
 
 刚开始数据混乱，但是后来修好重判了。
 
@@ -89,6 +95,8 @@ int main() {
 
 ## D. Sunny Days
 
+<!-- algorithm-tags: sliding_window, two_pointer -->
+
 类似滑动窗口的思想，一个滑动窗口里面不能有两个 P，如果右边进来一个 P，就不断向右挪左端点直到队列里面只有一个 P，对于每个右端点对应的滑动窗口长度取 max 即可。
 
 需要**注意**：n = 1，只有一个 S 的时候需要特判，我就被坑了。
@@ -125,6 +133,8 @@ int main() {
 ```
 
 ## E. Connecting Territories
+
+<!-- algorithm-tags: dp -->
 
 本质上其实就是一个简单的二维 dp
 $$
@@ -163,6 +173,8 @@ int main() {
 ```
 
 ## F. 情景剧
+
+<!-- algorithm-tags: data_structures, segtree, stack, greedy -->
 
 > 感谢 liuxx 佬的支持
 

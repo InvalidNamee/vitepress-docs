@@ -5,6 +5,8 @@ title: 2025夏季个人训练赛第七场
 
 ## A. 气球（balloon）
 
+<!-- algorithm-tags: dp -->
+
 好在 k 只有 100，直接 dp 就可以解决，$f_{i, j, k}$ 表示第 i 个气球颜色为 j 颜色和上一个 (不 if k == 0) 一样的方案数。
 
 ```cpp
@@ -34,6 +36,8 @@ int main() {
 ```
 
 ## B. 机器人（robot）
+
+<!-- algorithm-tags: dp, simulation -->
 
 每次改就只会被改的那条点后面的路径，先 dp 一遍预处理出来经过每个位置的机器人个数，每次修改的时候顺着原来那条链全减掉然后再顺着新的链全加回去，全部重新取 max，并不会 TLE。
 
@@ -114,6 +118,8 @@ int main() {
 
 ## C. 积木大赛（blocks）
 
+<!-- algorithm-tags: dp, knapsack, greedy -->
+
 按 a + b 排序，$f_{i, j}$ 表示选到第 i 个积木，重量为 j 的最大高度，按照背包的思路 dp 即可。
 
 **why?** 其实我做的时候是蒙出来的。
@@ -169,6 +175,8 @@ signed main() {
 
 ## D. Positioning Peter’s Paintings
 
+<!-- algorithm-tags: ad_hoc, arithmetic -->
+
 签到题。
 
 ```cpp
@@ -185,6 +193,8 @@ int main() {
 ```
 
 ## E. Cryptogram Cracking Club
+
+<!-- algorithm-tags: string, arithmetic -->
 
 水题++
 
@@ -231,6 +241,8 @@ int main() {
 ```
 
 ## G. Floor is Lava
+
+<!-- algorithm-tags: graphs, shortest_path, dijkstra -->
 
 [洛谷链接](https://www.luogu.com.cn/problem/P11860)
 

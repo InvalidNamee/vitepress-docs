@@ -11,6 +11,8 @@ qoj 链接：[https://qoj.ac/contest/1041](https://qoj.ac/contest/1041)
 
 ## A. DFS Order
 
+<!-- algorithm-tags: dp_tree, dfs, trees -->
+
 签到题，树形 DP，深度是最小 DFS 序，n - 子树大小 + 1是最大 DFS 序。
 
 ```cpp
@@ -71,6 +73,8 @@ int main() {
 
 ## I. Future Coder
 
+<!-- algorithm-tags: combinatorics, case_work -->
+
 签到题，我把合法的数对归位了三类。
 
 - 不大于 0 的数 - 大于 0 的数
@@ -106,10 +110,14 @@ int main() {
 
 ## L. Fenwick Tree
 
+<!-- algorithm-tags: dp_tree, data_structures -->
+
 参与了，但是最后一版代码不是我的。思路是在树状数组上自底向上做树形 DP（不用真的建出来树），从当前不进行操作完全不可能满足的点开始往后传一个标记，如果一个位置有两个以上的标记，能直接通过改前面加的数来满足要求，现在前面成了一个整体，标记重置成 1 次，继续往后做。
 
 
 ## B. Beautiful String
+
+<!-- algorithm-tags: string, hashing, bruteforcing -->
 
 $n^2$ 枚举 $s_2 s_3$ 枚举分界点，找前面的这个组合的前缀和后面的这个组合出现的次数。但是常数卡的很严重，我们的哈希 + unordered_map 开 o2 优化极限的过了。
 

@@ -5,6 +5,8 @@ title: 2025组队训练赛第 19 场
 
 ## B. Lovers
 
+<!-- algorithm-tags: binary_search, sorting -->
+
 签到题，二分答案或者用 set.lower_bound。
 
 ```cpp
@@ -51,6 +53,8 @@ int main() {
 
 ## F. God of Gamblers
 
+<!-- algorithm-tags: math, probability -->
+
 $$
 \frac{a}{a + b}
 $$
@@ -71,6 +75,8 @@ int main() {
 ```
 
 ## G. Sum of xor sum
+
+<!-- algorithm-tags: segtree, dp, bitmask -->
 
 我本来想用线段树维护矩阵乘法做 dp 的，理论上似乎也可行。但是有个更简单的做法，因为**统计答案和数位是独立的**，可以分开考虑不同的数位，这样就只有 0/1 了。考虑段的拼接，如何把连续的子区间合并答案，这里就不难想到最大子段和的维护，新答案 = 左段的答案 + 右段的答案 +（左端为 0 的后缀数 * 右端为 1 的前缀数）+（左端为 1 的后缀数 * 有段为 0 的前缀数）。按位拆开，线段树维护每位的答案，对于每一个请求做区间查询即可。
 
@@ -169,6 +175,8 @@ int main() {
 
 ## H. Arrangement for Contests
 
+<!-- algorithm-tags: greedy, segtree, lazyprop -->
+
 **贪心**的从左到右一直取，需要一个线段树维护一下区间最小值。
 
 ```cpp
@@ -253,6 +261,8 @@ int main() {
 ```
 
 ## J. LOL
+
+<!-- algorithm-tags: backtracking, combinatorics -->
 
 **暴搜前四个，同时维护第五个人的选择数**，统计我方选英雄的方案数。然后需要乘 $A_{95}^{5} \cdot C_{90}^{10} \cdot C_{10}^{5}$.
 

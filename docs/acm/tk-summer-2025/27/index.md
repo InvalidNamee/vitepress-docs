@@ -7,6 +7,8 @@ title: 2025夏季个人训练赛第二十七场
 
 ## A. 折半枚举：四数之和为零 <sup style="color: red">补</sup>
 
+<!-- algorithm-tags: mitm, sorting, two_pointer -->
+
 当时被卡常卡空间，各种卡，卡绝望了……赛时 TLE 和 MLE 共计 12 发，补题的时候还有两发。
 
 ```cpp
@@ -75,6 +77,8 @@ int main() {
 
 ## B. 会议
 
+<!-- algorithm-tags: dp_tree, rerooting, trees -->
+
 朴实无华的换根 dp
 
 ```cpp
@@ -130,6 +134,8 @@ int main() {
 
 ## C. 变音量
 
+<!-- algorithm-tags: dp -->
+
 也是一道朴实无华的 dp 题，记录第 i 次能不能到 j，然后二维 dp 就可以。
 
 ```cpp
@@ -163,6 +169,8 @@ int main() {
 ```
 
 ## D. 三角棋盘上的N皇后
+
+<!-- algorithm-tags: backtracking, bitmask -->
 
 直接爆搜就可以解决，我的爆搜 171 ms.
 
@@ -218,6 +226,8 @@ int main() {
 ```
 
 ## E. 教主的游乐场
+
+<!-- algorithm-tags: segtree, dp -->
 
 最优的路径一定只往左走一次或者一直往右，从右往左更新一遍状态先处理直接往右的，再从左往右更新一遍先往左再往右的，可以用线段树维护，背板子的题写着就是😋。
 
@@ -281,6 +291,8 @@ int main() {
 
 ## F. 任务 (task)
 
+<!-- algorithm-tags: greedy, sorting, set, priority_queue -->
+
 用类似 dp 的思路贪心，按照 l 排序，维护一下目前所有线程的右端点，每次都找离第 i 个区间的左端点最近的右端点用，如果找不到就只能放弃一个，这个时候**检查一下他的右端点是否比最大的小**，如果是就把右端点最大的放弃掉把他加进去，否则直接把这个放弃掉。
 
 ```cpp
@@ -318,6 +330,8 @@ int main() {
 ```
 
 ## G. 祈求者 (invoker)
+
+<!-- algorithm-tags: dp_bitfield, dp -->
 
 把状态用三进制压缩，然后直接一遍状压 dp 就解决了，最困难的地方在于三进制状态有 27 个，需要要注意打表的时候会不会抄错。
 
@@ -384,6 +398,8 @@ int main() {
 
 ## I. 排列计数
 
+<!-- algorithm-tags: dp_tree, combinatorics, trees -->
+
 画一下样例很容易观察出来，这就是个二叉堆，对于每一个子树都保证根节点比子树的最小值小即可。于是就可以树形 dp 了。
 
 刚在数位 dp 那里爆了一次 int，然后又在这儿爆 int 了……
@@ -441,6 +457,8 @@ int main() {
 ```
 
 ## K. 【数位DP】数字计数
+
+<!-- algorithm-tags: dp_digit, dp -->
 
 这个数位dp很恶心，需要一边统计方案数一边统计数字的出现次数，还需要排除前导零的情况，正好我数位dp不好，被硬控了一上午。好不容易 dp 调对了，又爆 int 了……
 

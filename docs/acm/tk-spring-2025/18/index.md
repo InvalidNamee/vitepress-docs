@@ -7,6 +7,8 @@ title: 2025春训第十八场
 
 ## **A. 序列重排**
 
+<!-- algorithm-tags: ad_hoc, greedy, case_work -->
+
 首先，结论是答案只可能是 0, 1, 2。
 
 * 序列中 0 的个数不超过 $\lfloor \frac{n + 1}{2} \rfloor$，把 **0 穿插到其他数中间**肯定是可以放得下的，所以**答案是 0**；
@@ -38,6 +40,8 @@ int main() {
 ```
 
 ## B. **划分**
+
+<!-- algorithm-tags: number_theory, prefix_sum, math -->
 
 这道题也是，只是看起来难，但是实际上只需要预处理前缀和，只考虑分成两段的情况即可。
 
@@ -72,6 +76,8 @@ int main() {
 ```
 
 ## **C. 蛋糕**
+
+<!-- algorithm-tags: greedy, bitmask, simulation -->
 
 可以用贪心的思想，能不切就不切，实在是迫不得已了再切。
 

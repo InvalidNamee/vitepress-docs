@@ -7,6 +7,8 @@ title: 2026寒假个人训练赛第一场
 
 ## A. 评奖
 
+<!-- algorithm-tags: simulation -->
+
 [洛谷](https://www.luogu.com.cn/problem/B4425)
 
 简单模拟。
@@ -43,6 +45,8 @@ int main() {
 
 ## B. IOI 串
 
+<!-- algorithm-tags: bruteforcing, prefix_sum -->
+
 [洛谷](https://www.luogu.com.cn/problem/B4426)
 
 $n^2$ 枚举分隔点即可。
@@ -78,6 +82,8 @@ int main() {
 
 
 ## C. 能量水晶
+
+<!-- algorithm-tags: greedy, binary_search -->
 
 [洛谷](https://www.luogu.com.cn/problem/B4427)
 
@@ -152,6 +158,8 @@ int main() {
 
 ## D. 勇者斗恶龙
 
+<!-- algorithm-tags: dp -->
+
 [洛谷](https://www.luogu.com.cn/problem/B4428)
 
 不难发现任何一个勇者想要和两边都不一样至多只会提升 2 次，所以就可以做线性 dp 了，维护第 $i$ 个勇者提升 $j (j \le 2)$ 时前 $i$ 个勇者不冲突的最少代价。
@@ -192,6 +200,8 @@ int main() {
 ```
 
 ## E. 异或和
+
+<!-- algorithm-tags: greedy, hash_set -->
 
 [洛谷](https://www.luogu.com.cn/problem/P14359)
 
@@ -234,6 +244,8 @@ int main() {
 ```
 
 ## F. 多边形
+
+<!-- algorithm-tags: dp, combinatorics -->
 
 [洛谷](https://www.luogu.com.cn/problem/P14360)
 
