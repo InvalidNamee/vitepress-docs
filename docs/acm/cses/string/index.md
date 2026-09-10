@@ -12,6 +12,8 @@ title: CSES String Algorithm
 
 ## Word Combinations
 
+<!-- algorithm-tags: kmp, dp -->
+
 用 kmp 把词在串里出现的位置算出来标记上，然后做线性 DP。
 
 ```cpp
@@ -61,6 +63,8 @@ int main() {
 
 ## String Matching
 
+<!-- algorithm-tags: kmp -->
+
 KMP 纯板子。
 
 ```cpp
@@ -96,6 +100,8 @@ int main() {
 
 ## Finding Borders
 
+<!-- algorithm-tags: hashing, bruteforcing -->
+
 暴力枚举，用字符串哈希比较。
 
 ```cpp
@@ -129,6 +135,8 @@ int main() {
 ```
 
 ## Finding Periods
+
+<!-- algorithm-tags: hashing, bruteforcing -->
 
 > [!NOTE]
 > 这道题看了题解。
@@ -183,6 +191,8 @@ int main() {
 
 ## Minimal Rotation
 
+<!-- algorithm-tags: hashing, binary_search -->
+
 比较两个串的大小可以用哈希 + 二分（二分第一个哈希值不一样的前缀，比较最后一位大小）优化成 log，然后暴力处理时间复杂度就成了 $O(n \log n)$。
 
 怎么会有人蠢到暴力枚举能少枚举呢😭，wa 了好几发。
@@ -234,6 +244,8 @@ int main() {
 ```
 
 ## Longest Palindrome
+
+<!-- algorithm-tags: hashing, binary_search -->
 
 仍然可以哈希 + 二分，正着和反着分别维护一遍哈希表，然后暴力枚举中间点下标，二分回文子串的长度。我感觉可能是因为自然溢出需要都是同一个串的前缀所以会出错，这里哈希需要取模。
 
@@ -306,6 +318,8 @@ int main() {
 
 ## Required Substring
 
+<!-- algorithm-tags: dp, kmp -->
+
 可以 DP，维护 $f_{i, j}$ 表示前 $i$ 个并且末尾已经匹配了 $j$ 个的方案数，已经成功匹配一次的全算到 $f_{i, m}$ 里面。更新的时候考虑试填字母模拟 KMP 的过程，找到填完之后仍能匹配几个。
 
 ```cpp
@@ -354,6 +368,8 @@ int main() {
 ```
 
 ## Palindrome Queries
+
+<!-- algorithm-tags: hashing, data_structures -->
 
 可以用哈希，正向和反向哈希值一样就说明是回文的，动态的哈希可以用树状数组或者线段树做。我用了树状数组。
 
@@ -445,6 +461,8 @@ int main() {
 
 ## Finding Patterns
 
+<!-- algorithm-tags: aho_corasick -->
+
 AC 自动机（实际上最好用优化版的 Trie 图）的板子，需要注意打访问标记否则时间复杂度不对。
 
 ```cpp
@@ -517,6 +535,8 @@ int main() {
 ```
 
 ## Counting Patterns
+
+<!-- algorithm-tags: aho_corasick -->
 
 AC 自动机板子，如果不优化可能会造成 TLE，先不下传答案，都记到第一个匹配的位置，最后拓扑排序一并更新答案，保证时间复杂度是线性的。
 
@@ -605,6 +625,8 @@ int main() {
 
 ## Pattern Positions
 
+<!-- algorithm-tags: aho_corasick -->
+
 还是 AC 自动机的板子，这次是找第一次出现的位置。
 
 ```cpp
@@ -681,6 +703,8 @@ int main() {
 
 ## Distinct Substrings
 
+<!-- algorithm-tags: string -->
+
 这个是后缀自动机的板子题，结点 i 子串数量就是 $len(i) - len(fa(i))$，全部求和即可。
 
 ```cpp
@@ -732,6 +756,8 @@ int main() {
 
 ## Distinct Subsequences
 
+<!-- algorithm-tags: dp -->
+
 > [!NOTE]
 > 这道题看了题解。
 
@@ -768,6 +794,8 @@ int main() {
 ```
 
 ## Repeating Substring
+
+<!-- algorithm-tags: string -->
 
 构建后缀自动机的时候记录一下最长的路径是从哪里来的，或者在后缀自动机上 dfs，限制只能走长度 + 1 的边（这样能保证是字典序最小的一个，不会因为没有 spj 被卡掉）。
 
@@ -865,6 +893,8 @@ int main() {
 
 ## String Functions
 
+<!-- algorithm-tags: hashing, kmp, binary_search -->
+
 第一行可以用字符串哈希 + 二分做，第二行其实就是 KMP 的 next 数组。
 
 ```cpp
@@ -926,6 +956,8 @@ int main() {
 ```
 
 ## Inverse Suffix Array
+
+<!-- algorithm-tags: string, segtree -->
 
 > [!NOTE]
 > 这道题看了题解，刚学完一个新知识点上来就活用性质真的很难。
@@ -994,7 +1026,11 @@ int main() {
 
 ## String Transform
 
+<!-- algorithm-tags-ignore -->
+
 ## Substring Order I
+
+<!-- algorithm-tags: string, dp -->
 
 涉及到子串，又是后缀自动机。在**后缀自动机上沿着拓扑逆序 DP**（可以用记搜）统计如果走某一条边能让位次增大多少，有了这个值之后一步一步模拟就能得到目标子串了。
 
@@ -1064,6 +1100,8 @@ int main() {
 ```
 
 ## Substring Order II
+
+<!-- algorithm-tags: string, dp -->
 
 除了需要统计重复的子串的个数之外，和上道题基本上完全一样。需要注意一些细节，我直接复制粘贴代码然后把 k 减成负的了导致死循环 OLE😭
 
@@ -1150,6 +1188,8 @@ int main() {
 ```
 
 ## Substring Distribution
+
+<!-- algorithm-tags: string -->
 
 同样是后缀自动机的板子，每个结点 $i$ 能贡献长度为 $\left[len(fa(i)) + 1, len(i)]\right$ distinct sucstring 各一个，维护差分数组，最后前缀和输出。
 

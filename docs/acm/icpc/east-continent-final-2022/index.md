@@ -18,6 +18,8 @@ qoj 链接：[https://qoj.ac/contest/1522](https://qoj.ac/contest/1197)
 
 ## I. Chase Game 2<sup style="color: blue">(未参与)</sup>
 
+<!-- algorithm-tags-ignore -->
+
 我对这道题完全没印象，在讨论这道题的时候我好像在努力 C 题。
 
 ## C. Best Carry Player 2
@@ -200,6 +202,8 @@ int main() {
 ```
 
 ## F. Inversion<sup style="color: blue">(未参与)</sup>
+
+<!-- algorithm-tags-ignore -->
 
 四次查询能确定一对大小关系，但是用归并排序正好会被卡，需要优化。好像是做了类似选择排序的操作。
 

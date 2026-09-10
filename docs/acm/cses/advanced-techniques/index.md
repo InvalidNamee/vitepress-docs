@@ -92,6 +92,8 @@ int main() {
 
 ## Corner Subgrid Check	
 
+<!-- algorithm-tags-ignore -->
+
 卡不过去😭
 
 ## Corner Subgrid Count
